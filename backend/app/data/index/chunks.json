@@ -1,0 +1,1192 @@
+[
+  {
+    "text": "# Rajveer Bishnoi — Resume\n\n**Contact:** rajveer.24bcs10404@sst.scaler.com · github.com/RAJVEER42 · samaysarathi.in · India",
+    "source": "resume",
+    "section": "Rajveer Bishnoi — Resume",
+    "title": "Resume — Rajveer Bishnoi — Resume"
+  },
+  {
+    "text": "## Summary\nFull-stack developer and second-year Computer Science student. Co-founded Samay Sarathi, a national real-time emergency-response platform, and builds production RAG and agent-based applications end to end.",
+    "source": "resume",
+    "section": "Summary",
+    "title": "Resume — Summary"
+  },
+  {
+    "text": "## Education\n**Scaler School of Technology (SST)** — 2024–2028\nB.Sc (Hons) Computer Science, Second Year. CGPA: 8.2 (SST), 8.7 (BITS Pilani).",
+    "source": "resume",
+    "section": "Education",
+    "title": "Resume — Education"
+  },
+  {
+    "text": "## Technical Skills\n- **Languages:** Java, Python, JavaScript, TypeScript, Dart, SQL\n- **Frameworks & Libraries:** React.js, Next.js, Node.js, Express.js, Spring Boot, FastAPI, Flutter, Tailwind CSS\n- **AI & Data:** RAG, LangChain, Qdrant, FAISS, BM25, Groq, Gemini, HuggingFace embeddings\n- **Databases:** PostgreSQL / PostGIS, MySQL, Redis, Firebase\n- **Tools & Cloud:** Docker, GCP Cloud Run, Vercel, Git, CI/CD, REST, WebSocket",
+    "source": "resume",
+    "section": "Technical Skills",
+    "title": "Resume — Technical Skills"
+  },
+  {
+    "text": "## Experience\n**Teaching Assistant, Buddy Program — Scaler School of Technology** (Mar 2026 – Present)\n- Support junior-batch students in Web Development and Linear Algebra, resolving doubts within 24–48 hours and assisting in lab sessions.\n- Run weekly one-on-one mentoring sessions and track each student's academic progress, coursework, and engineering practice.",
+    "source": "resume",
+    "section": "Experience",
+    "title": "Resume — Experience"
+  },
+  {
+    "text": "## Projects\n**Samay Sarathi** — Flutter, Spring Boot, WebSocket, PostgreSQL, Redis (Live) — 2025–Present\n- Co-founded a national real-time platform that connects ambulances, hospitals, and traffic police on a single network to save critical response time.\n- Built multi-role Flutter apps with live WebSocket tracking, a hospital-recommendation engine, and green-corridor routing; presented at India Innovates 2026.",
+    "source": "resume",
+    "section": "Projects",
+    "title": "Resume — Projects"
+  },
+  {
+    "text": "mendation engine, and green-corridor routing; presented at India Innovates 2026. **DocBlock** — Next.js, React, LangChain, Qdrant, Groq (Live) (Code) — 2026\n- Built a RAG application that lets users upload a PDF and chat with it, grounding every answer in retrieved excerpts with page-level citations.\n- Isolated each document in its own Qdrant collection and added recursive chunking and a refusal prompt to keep answers strictly within the source.\n\n**AI-Persona** — React, Vite, Node.js, Express, Google Gemini (Live) (Code) — 2026\n- Built a chatbot with three distinct instructor personas using custom system prompts with few-shot and chain-of-thought examples; deployed on Vercel.",
+    "source": "resume",
+    "section": "Projects",
+    "title": "Resume — Projects"
+  },
+  {
+    "text": "system prompts with few-shot and chain-of-thought examples; deployed on Vercel. **Agent CLI** — Node.js, OpenAI SDK (Code) — 2026\n- Built a conversational CLI agent with a multi-step reasoning loop (think, call tool, observe, repeat) that clones a live website into working HTML, CSS, and JavaScript, with support for multiple LLM providers.\n\n**Student Attendance & Resource Predictor** — 2024\n- Built a production tool that predicts student attendance and at-risk students by professor, day, and time slot; awarded a Certificate of Excellence by the administration.",
+    "source": "resume",
+    "section": "Projects",
+    "title": "Resume — Projects"
+  },
+  {
+    "text": "## Achievements\n- Top 100, Meta Hackathon (2025) — among the top 100 teams nationally.\n- Top 7.5% in Classical Machine Learning across the Scaler School of Technology cohort.\n- A* (top-performer) grades in two consecutive terms: Machine Learning Foundations & Techniques (ML I) and Advanced Machine Learning (ML II).\n- Rank 60, Social Summer of Code (SSOC'25) — 260 points across 7 merged pull requests.",
+    "source": "resume",
+    "section": "Achievements",
+    "title": "Resume — Achievements"
+  },
+  {
+    "text": "## Leadership & Activities\n- Sports Club President, Scaler School of Technology (Jan 2025 – Mar 2026): founded the SST Premier League with 120+ participants and partnerships with 6–8 regional colleges.\n- School Captain and Cultural Captain, DPS Jodhpur (2021–2023): led a student body of 1000+ and organised large-scale cultural and academic events.\n- State-Level Basketball, Rajasthan State Championships (2022–2023).",
+    "source": "resume",
+    "section": "Leadership & Activities",
+    "title": "Resume — Leadership & Activities"
+  },
+  {
+    "text": "# Scaler Personas — Bauhaus Chat\n\n> **Author:** Rajveer Bishnoi\n> **Live demo:** [ai-persona-ten.vercel.app](https://ai-persona-ten.vercel.app)\n\nA multi-persona chatbot where students chat with three Scaler instructor personas — **Anshuman Singh**, **Kshitij Mrigank**, and **Abhimanyu Saxena** — each backed by a different Gemini system prompt, few-shot example set, and reasoning style.\n\nThe frontend is built around a strict **Bauhaus design system**: primary red / blue / yellow color blocks, hard offset shadows, thick black borders, and the geometric Outfit typeface.\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "*Bauhaus design system**: primary red / blue / yellow color blocks, hard offset shadows, thick black borders, and the geometric Outfit typeface.\n\n---\n Personas\n\n| Persona | Voice | Color | Shape |\n|---|---|---|---|\n| **Anshuman Singh** | Strict + Conceptual — demands precise definitions, ends every reply with a sharp follow-up question | Red `#D02020` | Circle |\n| **Kshitij Mrigank** | Interactive + Pattern-Driven — Socratic DSA dialogue, brute force → optimal, hints over answers | Blue `#1040C0` | Square |\n| **Abhimanyu Saxena** | Chill + Practical — analogy first (coffee shops, restaurants, APIs as waiters), technical bridge after | Yellow `#F0C020` | Triangle |\n\nEach system prompt contains: persona description, chain-of-thought instruction, output format rules, hard constraints, and 4 few-shot examples. Full annotated prompts are in [`prompts.md`](./prompts.md).\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "thought instruction, output format rules, hard constraints, and 4 few-shot examples. Full annotated prompts are in [`prompts.md`](./prompts.md).\n\n---\n Tech Stack\n\n- **Frontend** — React + Vite, vanilla CSS (Bauhaus design tokens), `lucide-react` icons, Outfit font\n- **Backend** — Node.js + Express\n- **LLM** — Google Gemini API (`gemini-2.0-flash` by default)\n\n```text\n.\n├── frontend/         # Vite + React app\n├── backend/          # Express API + Gemini integration\n├── prompts.md        # All three system prompts, annotated\n├── reflection.md     # 300-500 word reflection\n└── README.md\n```\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "Gemini integration\n├── prompts.md        # All three system prompts, annotated\n├── reflection.md     # 300-500 word reflection\n└── README.md\n```\n\n---\n Setup\n\n### 1. Install dependencies\n\n```bash\nnpm install --prefix frontend\nnpm install --prefix backend\n```\n\n### 2. Configure backend environment\n\n```bash\ncp backend/.env.example backend/.env\n```\n\nEdit `backend/.env` and set:\n\n```env\nGEMINI_API_KEY=your_api_key_here\nGEMINI_MODEL=gemini-2.0-flash\nPORT=5000\nFRONTEND_ORIGIN=http://localhost:5173\n```\n\n> The API key is only ever read from the environment — it is never bundled into the frontend or committed to the repo.\n\n### 3. Run both servers\n\nIn two terminals:\n\n```bash\n# terminal 1\nnpm run dev --prefix backend\n```\n\n```bash\n# terminal 2\nnpm run dev --prefix frontend\n```\n\nOpen **http://localhost:5173**.\n\nIf `GEMINI_API_KEY` is missing, the backend returns a clearly-marked local fallback reply per persona, so the UI keeps working for design review.\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "f `GEMINI_API_KEY` is missing, the backend returns a clearly-marked local fallback reply per persona, so the UI keeps working for design review.\n\n---\n Features\n\n- **Persona switcher tabs** are always visible at the top of the screen — clicking a tab swaps the system prompt **and resets the conversation**.\n- **Active persona banner** shows the current persona's name, role, and color so it's never ambiguous which voice you're talking to.\n- **Suggestion chips** offer 3 quick-start prompts per persona.\n- **Typing indicator** with three colored dots animates while Gemini is generating.\n- **Reset button** clears the current conversation without changing personas.\n- **Hard error UI** — if the backend is unreachable, an inline error bubble explains what's wrong instead of crashing.\n- **Mobile responsive** — single-column layout, condensed tabs, and reduced shadows below 720px.\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "bble explains what's wrong instead of crashing.\n- **Mobile responsive** — single-column layout, condensed tabs, and reduced shadows below 720px.\n\n---\n API\n\n### `GET /api/health`\n```json\n{ \"ok\": true, \"service\": \"persona-chatbot-backend\" }\n```\n\n### `GET /api/personas`\n```json\n[\n  { \"id\": \"anshuman\", \"name\": \"Anshuman Singh\", \"title\": \"Strict + Conceptual\" },\n  { \"id\": \"kshitij\",  \"name\": \"Kshitij Mrigank\", \"title\": \"Interactive + Pattern-Driven\" },\n  { \"id\": \"abhimanyu\",\"name\": \"Abhimanyu Saxena\",\"title\": \"Chill + Practical\" }\n]\n```\n\n### `POST /api/chat`\n```json\n{\n  \"personaId\": \"anshuman\",\n  \"message\": \"What is a stack?\",\n  \"history\": [\n    { \"role\": \"user\", \"text\": \"...\" },\n    { \"role\": \"assistant\", \"text\": \"...\" }\n  ]\n}\n```\n\nReturns:\n```json\n{ \"text\": \"...\", \"source\": \"gemini\" }\n```\n\n`source` is either `\"gemini\"` (live API call) or `\"fallback\"` (local stub when key is missing or upstream is throttled).\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "ource\": \"gemini\" }\n```\n\n`source` is either `\"gemini\"` (live API call) or `\"fallback\"` (local stub when key is missing or upstream is throttled).\n\n---\n Deployment (Vercel — single deploy)\n\nThis project is deployed to **Vercel** as a single unit:\n\n- Frontend (`/frontend`) — Vite static build\n- API (`/api/*.js`) — Vercel serverless functions that wrap `backend/src/{personas,gemini}.js`\n\n### One-shot deploy\n\n```bash\nvercel              # first time — link / create the project\nvercel --prod       # production deploy\n```\n\n### Environment variable (set in Vercel project settings)\n\n| Key | Value |\n|---|---|\n| `GEMINI_API_KEY` | your Gemini API key |\n| `GEMINI_MODEL` | `gemini-2.0-flash` (optional) |\n\n`VITE_API_URL` is **not** required in production — the frontend uses relative paths (`/api/*`) when deployed, since both halves live on the same Vercel domain. It only needs to be set in local dev (and even then, it defaults to `http://localhost:5000`).\n\n### Local Express server (alt path)\n\nThe original Express server at `backend/src/server.js` is",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "nd even then, it defaults to `http://localhost:5000`).\n\n### Local Express server (alt path)\n\nThe original Express server at `backend/src/server.js` is nd even then, it defaults to `http://localhost:5000`).\n\n### Local Express server (alt path)\n\nThe original Express server at `backend/src/server.js` is still functional for local development — `npm run dev --prefix backend` starts it on port 5000. The serverless `api/*.js` handlers re-use the same `personas.js` and `gemini.js` modules, so logic stays in one place.\n\n---",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "` starts it on port 5000. The serverless `api/*.js` handlers re-use the same `personas.js` and `gemini.js` modules, so logic stays in one place.\n\n---\n Testing\n\nA quick smoke test once both servers are running:\n\n```bash\n# health\ncurl http://localhost:5000/api/health\n\n# list personas\ncurl http://localhost:5000/api/personas\n\n# chat with Kshitij\ncurl -X POST http://localhost:5000/api/chat \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"personaId\":\"kshitij\",\"message\":\"How do I solve two sum?\",\"history\":[]}'\n\n# bad request — should 400\ncurl -X POST http://localhost:5000/api/chat \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"personaId\":\"kshitij\"}'\n```\n\n---\n\n## What's in the repo\n\n- `prompts.md` — all three system prompts with inline commentary on every design decision\n- `reflection.md` — 300–500 word reflection on what worked, the GIGO lesson, and what I'd improve\n- `backend/.env.example` — template env file (no real keys)\n- `.gitignore` — excludes `node_modules/`, `.env`, build artifacts",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "readme",
+    "title": "GitHub README — AI-Persona"
+  },
+  {
+    "text": "# Livo_RAG\n\nA gold-standard QA evaluation dataset for RAG systems, built from four ML/AI educational YouTube videos.\n\n## Videos Used\n\n| Key | Title | Language |\n|---|---|---|\n| v1 | 3Blue1Brown — But what is a Neural Network? | English |\n| v2 | 3Blue1Brown — Transformers, the tech behind LLMs | English |\n| v3 | CampusX — What is Deep Learning? | Hindi (translated) |\n| v4 | CodeWithHarry — All About ML & Deep Learning | Hindi (translated) |\n\n## Pipeline\n\n```\npull_transcripts.py   →  transcripts/\ntranslate_hindi.py    →  transcripts/*_translated.json\nannotate.py           →  annotations/\ngenerate_qa_pairs.py  →  qa_pairs/\nevaluate_rag.py       →  eval_results/retrieval_report.txt\nevaluate_answers.py   →  eval_results/answer_quality_report.txt\n```",
+    "source": "github",
+    "repo": "Livo_RAG",
+    "doc_type": "readme",
+    "title": "GitHub README — Livo_RAG"
+  },
+  {
+    "text": "pairs.py  →  qa_pairs/\nevaluate_rag.py       →  eval_results/retrieval_report.txt\nevaluate_answers.py   →  eval_results/answer_quality_report.txt\n```\n Setup\n\n```bash\npip install youtube-transcript-api deep-translator anthropic scikit-learn rank-bm25 sentence-transformers claude-agent-sdk anyio\n```\n\n## Usage\n\n```bash\npython pull_transcripts.py     # fetch transcripts\npython translate_hindi.py      # translate Hindi videos\npython annotate.py             # keyword annotation\npython generate_qa_pairs.py    # generate QA pairs\npython evaluate_rag.py         # retrieval evaluation\npython evaluate_answers.py     # answer quality evaluation\n```\n\n## Results\n\n**29 QA pairs** across 5 failure modes: `semantic_precision`, `multi_hop`, `negation_misconception`, `contrast`, `taxonomy`.\n\n| Retriever | Recall@1 | MRR |\n|---|---|---|\n| TF-IDF | 0.724 | 0.790 |\n| BM25 | 0.793 | 0.830 |\n| Dense (MiniLM) | 0.724 | 0.807 |\n\nSee `SUBMISSION.md` for the 5 selected QA pairs and methodology.",
+    "source": "github",
+    "repo": "Livo_RAG",
+    "doc_type": "readme",
+    "title": "GitHub README — Livo_RAG"
+  },
+  {
+    "text": "# CIPHER\n\n> **Contextual-Integrity Privacy via Hardened Episodic Reasoning** —\n> an OpenEnv multi-agent RL environment that trains LLMs to share what's\n> needed and withhold what isn't, under an adversary that infers what you\n> didn't say.\n>\n> *Meta OpenEnv Hackathon Finals · India · April 2026 · Theme #1 (Multi-Agent Interactions)*\n\n[](https://youtu.be/YpeJEbbsQno)\n[](https://huggingface.co/spaces/Itachi-42/CIPHER)\n[](https://itachi-42-cipher.hf.space/play)\n[](https://huggingface.co/Itachi-42/disclosure-game-qwen-0.5b-grpo-v2)\n[](https://github.com/meta-pytorch/OpenEnv)\n\n> *We are not training a model to redact secrets.*\n> *We are training a model to develop a **privacy instinct.***\n>\n> Share enough to get the job done. Withhold enough to stay safe.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "o redact secrets.*\n> *We are training a model to develop a **privacy instinct.***\n>\n> Share enough to get the job done. Withhold enough to stay safe.\n 📦 Materials for judges\n\nEverything required by the submission spec, in one place:\n\n| Resource | Link |\n| --- | --- |\n| 🤗 **Hugging Face Space** (env, runnable) |   |\n| ▶️ **Live pixel UI demo** (play in browser) |   |\n| 📓 **Training notebook** (Colab T4, runnable) | [`privacy_game/notebooks/grpo_train.py`](privacy_game/notebooks/grpo_train.py) · [recipe](privacy_game/notebooks/README.md) |\n| 📈 **Reward + loss plots** (from real run) | [`privacy_game/figures_v2/`](privacy_game/figures_v2/) |\n| 🤖 **Trained adapters** (3 sizes on HF Hub) | [0.5B](https://huggingface.co/Itachi-42/disclosure-game-qwen-0.5b-grpo-v2) · [1.5B](https://huggingface.co/Itachi-42/disclosure-game-qwen-1.5b-grpo) · [3B](https://huggingface.co/Itachi-42/disclosure-game-qwen-3b-grpo) |\n| 📝 **Blog post** (technical writeup, mini-blog) | [`BLOG_POST.md`](BLOG_POST.md) |\n| 🎬 **  |\n| 🎙️ **Deep-dive walkthrough** (longer, na",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "en-3b-grpo) |\n| 📝 **Blog post** (technical writeup, mini-blog) | [`BLOG_POST.md`](BLOG_POST.md) |\n| 🎬 **  |\n| 🎙️ **Deep-dive walkthrough** (longer, na en-3b-grpo) |\n| 📝 **Blog post** (technical writeup, mini-blog) | [`BLOG_POST.md`](BLOG_POST.md) |\n| 🎬 **  |\n| 🎙️ **Deep-dive walkthrough** (longer, narrated) |   |\n| 📊 **Eval JSONs** (50 episodes/policy, full reward dist) | [`privacy_game/outputs/`](privacy_game/outputs/) |\n| 🧠 **Paper roadmap** (post-hackathon) | [`docs/PAPER_ROADMAP.md`](docs/PAPER_ROADMAP.md) |",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "ist) | [`privacy_game/outputs/`](privacy_game/outputs/) |\n| 🧠 **Paper roadmap** (post-hackathon) | [`docs/PAPER_ROADMAP.md`](docs/PAPER_ROADMAP.md) |\n 🎬 Watch the demo\n\n| The proof — live screen recording | The pitch — deep-dive walkthrough |\n|---|---|\n| [](https://youtu.be/YpeJEbbsQno) | [](https://youtu.be/OnEKRTlZOec) |\n| Env running live, reward bar in motion, before/after behavior. | Problem, environment design, GRPO training, what the agent learned. |\n|   |   |",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "|\n| Env running live, reward bar in motion, before/after behavior. | Problem, environment design, GRPO training, what the agent learned. |\n|   |   |\n The problem\n\nLLM privacy work usually treats privacy as **redaction**: detect a SSN, mask a\nphone number. Useful, but contextual integrity is harder. Telling your\n*pharmacist* that you take metformin is fine; telling a *random caller*\nthe same thing leaks your diabetes diagnosis. Telling an *insurance company*\nyour zip + DOB + gender is harmless field-by-field but uniquely identifies\n**87% of US adults** (Sweeney, *L-Diversity*, 2000).\n\nNo public RL environment trains an LLM on this — **multi-turn, multi-agent,\nunder adversarial inference**. Single-turn redaction has been done\n([Lusk 2026](https://www.youtube.com/results?search_query=adam+lusk+RLVR+PII)\ntrained Qwen3-4B on AI4Privacy redaction with `verifiers`, hitting +0.89 vs\nGPT-5's +0.68). We extend that line of work to the case that actually\nmatters in practice: an agent that has to **converse**, **disclose**, and\n**defend against c",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "8). We extend that line of work to the case that actually\nmatters in practice: an agent that has to **converse**, **disclose**, and\n**defend against c 8). We extend that line of work to the case that actually\nmatters in practice: an agent that has to **converse**, **disclose**, and\n**defend against compositional inference attacks**.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "the case that actually\nmatters in practice: an agent that has to **converse**, **disclose**, and\n**defend against compositional inference attacks**.\n The environment in 30 seconds\n\n```\n┌────────────────┐  asks for fields  ┌────────────────┐\n│ Relying Party  │ ────────────────▶ │   Discloser    │ ◀── trained agent\n│ (state machine)│ ◀──── replies ──── │ (your persona) │\n└────────────────┘                   └────────────────┘\n        │                                     │\n        │       full transcript               │\n        ▼                                     ▼\n┌─────────────────────────────────────────────────────┐\n│  Adversary  (rule-based, deterministic, automatic)  │\n│  • Sweeney triangulation: zip + DOB + gender → name │\n│  • Drug → diagnosis lookup (60+ pairs)              │\n│  • Employer → religion / politics / health          │\n│  • Over-share: location revealed during vacation    │\n└─────────────────────────────────────────────────────┘\n        │\n        ▼\n       reward = utility × (1 − reconstruction) − verbosity\n```\n\n**",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "on    │\n└─────────────────────────────────────────────────────┘\n        │\n        ▼\n       reward = utility × (1 − reconstruction) − verbosity\n```\n\n** on    │\n└─────────────────────────────────────────────────────┘\n        │\n        ▼\n       reward = utility × (1 − reconstruction) − verbosity\n```\n\n**14 tasks across 3 phases** (P1 easy → P2 medium → P3 adversarial-inference).\n**8 turns max.** **Profiles sourced from AI4Privacy `pii-masking-400k`** —\nreal names, addresses, DOBs, emails. **No LLM-judge in the reward path** —\nthe adversary is pure rule + lookup.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "rom AI4Privacy `pii-masking-400k`** —\nreal names, addresses, DOBs, emails. **No LLM-judge in the reward path** —\nthe adversary is pure rule + lookup.\n The reward — a 4-rubric composable stack\n\nPer the deck, *\"composable rubrics > monolithic scoring.\"* We do both: 4\nindependent rubrics that compose two ways.\n\n| Rubric                       | Sign | Weight | What it checks |\n| ---------------------------- | :--: | -----: | --- |\n| **Utility**                  |  +   |   1.0  | RP collected required fields at acceptable tier |\n| **Reconstruction (rules)**   |  −   |   1.0  | Sweeney + drug→dx + employer→attr + over-share + homoglyph-folded |\n| **Reconstruction (Presidio)**|  −   |   0.5  | Microsoft Presidio NER finds raw PII (independent grader) |\n| **Verbosity**                |  −   |  0.01  | Token count / 800 (anti-rambling) |\n\nTwo composition modes:\n\n- **`additive`**: `reward = utility − reconstruction − verbosity`\n- **`pareto_it`** *(default)*: `reward = utility × (1 − reconstruction) − verbosity`\n\nThe Pareto-multiplicative mode is",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "− reconstruction − verbosity`\n- **`pareto_it`** *(default)*: `reward = utility × (1 − reconstruction) − verbosity`\n\nThe Pareto-multiplicative mode is − reconstruction − verbosity`\n- **`pareto_it`** *(default)*: `reward = utility × (1 − reconstruction) − verbosity`\n\nThe Pareto-multiplicative mode is the interesting one — it forces the agent\nto care about utility AND privacy *simultaneously*. Naive over-sharing\ncollapses `(1 − reconstruction) → 0`, so reward → 0 even with full utility.\nYou can't trade them linearly.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "ivacy *simultaneously*. Naive over-sharing\ncollapses `(1 − reconstruction) → 0`, so reward → 0 even with full utility.\nYou can't trade them linearly.\n Why this is RLVR\n\nPer **Jason Wei's verifier's rule**: *\"the ease of training AI to solve a\ntask is proportional to how verifiable it is.\"* Our adversary is a\ndeterministic rule-based scorer — the reward signal is automatic, objective,\nand bounded `[0, 1]`. There is no LLM judge, no preference model, no human\nrater in the loop.\n\nThis places the environment in the **RLVR regime that produced DeepSeek\nR1's emergent reasoning** (Guo et al. 2025) and the procedural-learning\nwins documented in **Apple's *RL for Long-Horizon Interactive LLM Agents***\n(2025) — same recipe, different domain.\n\nThe novel angle vs prior PII-redaction RLVR work\n([Lusk 2026](https://www.youtube.com/results?search_query=adam+lusk+RLVR+PII)):\ninstead of `text → masked text`, ours is a **multi-turn 3-agent game**\nwhere the adversary runs *contextual-integrity inference* — combining\nquasi-identifiers across turns (zip +",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "t`, ours is a **multi-turn 3-agent game**\nwhere the adversary runs *contextual-integrity inference* — combining\nquasi-identifiers across turns (zip +  t`, ours is a **multi-turn 3-agent game**\nwhere the adversary runs *contextual-integrity inference* — combining\nquasi-identifiers across turns (zip + DOB + gender → name via Sweeney) and\ncategory lookups (`metformin → diabetes`). The Discloser must learn not\njust what to redact, but how disclosures **combine** to leak information\nthe agent never said directly.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "in → diabetes`). The Discloser must learn not\njust what to redact, but how disclosures **combine** to leak information\nthe agent never said directly.\n Results\n\n> **Headline**: A trained 0.5B parameter model lifts **5× above untrained 7B/8B\n> frontier models** at multi-turn contextual-integrity disclosure. Training\n> scales cleanly across model sizes — Qwen2.5 0.5B → 1.5B both show monotonic\n> Δ improvement on the same v2 reward.\n\n### Scaling across Qwen2.5 sizes (v2 hand-shaped reward, n=50)\n\nWe trained **three model sizes** of the Qwen2.5-Instruct family with the\nsame GRPO config (200 steps, lr=1e-5, LoRA r=16, same v2 reward shape)\nand evaluated all three against their untrained bases on the same 50\nheld-out episodes:\n\n| Model | Trained mean | Base mean | **Δ** | Trained std | GPU / time |\n| --- | ---: | ---: | ---: | ---: | --- |\n| Qwen2.5-0.5B + GRPO | +0.4313 | +0.3707 | **+0.0606** | 0.527 | RTX 4060, 143 min |\n| Qwen2.5-1.5B + GRPO | +0.5807 | +0.4994 | **+0.0813** ⭐ | 0.432 | H200, 63 min |\n| Qwen2.5-3B + GRPO | +0.6040 | +0.59",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "| 0.527 | RTX 4060, 143 min |\n| Qwen2.5-1.5B + GRPO | +0.5807 | +0.4994 | **+0.0813** ⭐ | 0.432 | H200, 63 min |\n| Qwen2.5-3B + GRPO | +0.6040 | +0.59 | 0.527 | RTX 4060, 143 min |\n| Qwen2.5-1.5B + GRPO | +0.5807 | +0.4994 | **+0.0813** ⭐ | 0.432 | H200, 63 min |\n| Qwen2.5-3B + GRPO | +0.6040 | +0.5947 | +0.0093 | 0.502 | H200, 61 min |\n\n**Trained-model performance scales monotonically with size**\n(+0.43 → +0.58 → +0.60), as does the **base** (+0.37 → +0.50 → +0.59) —\nlarger pre-trained models are already closer to optimal disclosure\nbehavior even before RL.\n\n**The Δ from training peaks at 1.5B and shrinks at 3B** because the 3B\nbase model is already nearly as good as the trained 1.5B\n(+0.5947 vs +0.5807). This is a real research finding — *larger\ninstruction-tuned LLMs need less privacy-aware RL because their base\nalready exhibits more careful disclosure behavior*. Diminishing\nreturns of RL fine-tuning at scale, on a privacy-disclosure task, with\na fixed 200-step training budget.\n\nPractical implication: **for resource-constrained depl",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "RL fine-tuning at scale, on a privacy-disclosure task, with\na fixed 200-step training budget.\n\nPractical implication: **for resource-constrained depl RL fine-tuning at scale, on a privacy-disclosure task, with\na fixed 200-step training budget.\n\nPractical implication: **for resource-constrained deployments, training\nQwen2.5-1.5B with GRPO gives the best privacy-improvement-per-FLOP** —\nmatches the absolute reward of an untrained 3B while using 2× fewer\nparameters at inference.\n\nTrained adapters on HF Hub:\n[`Itachi-42/disclosure-game-qwen-0.5b-grpo-v2`](https://huggingface.co/Itachi-42/disclosure-game-qwen-0.5b-grpo-v2),\n[`Itachi-42/disclosure-game-qwen-1.5b-grpo`](https://huggingface.co/Itachi-42/disclosure-game-qwen-1.5b-grpo),\n[`Itachi-42/disclosure-game-qwen-3b-grpo`](https://huggingface.co/Itachi-42/disclosure-game-qwen-3b-grpo).\n\n### Apples-to-apples vs. frontier (env-native `pareto_it` reward)\n\nAll policies evaluated on the same held-out task distribution under the\nenvironment's native Pareto-multiplicative reward (`utility × (1",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "_it` reward)\n\nAll policies evaluated on the same held-out task distribution under the\nenvironment's native Pareto-multiplicative reward (`utility × (1 _it` reward)\n\nAll policies evaluated on the same held-out task distribution under the\nenvironment's native Pareto-multiplicative reward (`utility × (1 −\nreconstruction) − verbosity_penalty`):\n\n| Policy                                                     | Mean reward |   n  |\n| ---------------------------------------------------------- | ----------: | ---: |\n| `smart_generalize` (scripted oracle ceiling)               |      +0.833 |  200 |\n| `always_reveal` (scripted)                                 |      +0.774 |  200 |\n| `random` (scripted)                                        |      +0.764 |  200 |\n| **trained Qwen2.5-0.5B + GRPO** (this work)                |  **+0.675** |   50 |\n| **Llama-3.1-8B-Instruct (untrained, HF Inference)**        |      +0.150 |   30 |\n| **Qwen2.5-7B-Instruct (untrained, HF Inference)**          |      +0.133 |   30 |\n| `always_refuse` (scripted)",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "|      +0.150 |   30 |\n| **Qwen2.5-7B-Instruct (untrained, HF Inference)**          |      +0.133 |   30 |\n| `always_refuse` (scripted)        |      +0.150 |   30 |\n| **Qwen2.5-7B-Instruct (untrained, HF Inference)**          |      +0.133 |   30 |\n| `always_refuse` (scripted)                                 |      −0.001 |  200 |\n\nUntrained instruction-tuned LLMs at 7B / 8B parameters score barely above\nrandom refusal — they are not pre-disposed to balance utility against\nadversarial reconstruction. **Our trained 0.5B model lifts to +0.675**\n(80 GRPO steps on a free Colab T4), beating Llama-3.1-8B by **Δ=+0.525**\nand Qwen-2.5-7B by **Δ=+0.542**, while running on **14-16× fewer\nparameters**.\n\nReference for \"trained 0.5B beats frontier\" framing:\n[Lusk 2026](https://www.youtube.com/results?search_query=adam+lusk+RLVR+PII)\nshowed the same effect for single-turn PII redaction (trained Qwen3-4B\nbeat GPT-5). We extend that line of work to multi-turn adversarial-\ninference disclosure.\n\n### Training curve — GRPO v2 (200 steps,",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "(trained Qwen3-4B\nbeat GPT-5). We extend that line of work to multi-turn adversarial-\ninference disclosure.\n\n### Training curve — GRPO v2 (200 steps, (trained Qwen3-4B\nbeat GPT-5). We extend that line of work to multi-turn adversarial-\ninference disclosure.\n\n### Training curve — GRPO v2 (200 steps, lr=1e-5, RTX 4060 Laptop GPU)\n\n*v2 was trained with a sharper hand-shaped reward (raw zip5 / full DOB /\nSSN penalized at −1.0, tier-2 generalization bonused at +0.3) for 200\nsteps on a single RTX 4060 Laptop GPU (8 GB, bf16, ~143 min wall-clock).\nReward stabilizes above the base-model floor and crosses the smart-policy\nceiling on individual generations.*\n\n*Same 50 held-out episodes per policy. v2 reward is stricter than\npareto_it (uncapped raw-PII penalties), so absolute numbers are lower\nthan the table above — but the trained-vs-base **Δ = +0.061** (16%\nrelative lift) and the **21% std reduction** (0.669 → 0.527) show\nthe training is teaching the right tradeoff: fewer catastrophic\nraw-PII leaks, even at the cost of a few perfect responses",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "tion** (0.669 → 0.527) show\nthe training is teaching the right tradeoff: fewer catastrophic\nraw-PII leaks, even at the cost of a few perfect responses tion** (0.669 → 0.527) show\nthe training is teaching the right tradeoff: fewer catastrophic\nraw-PII leaks, even at the cost of a few perfect responses.*\n\n| v2-reward metric                | Trained Qwen2.5-0.5B | Base Qwen2.5-0.5B |    Δ    |\n| ------------------------------- | -------------------: | ----------------: | ------: |\n| Mean reward                     |               +0.431 |            +0.371 | +0.061  |\n| Std (lower = more consistent)   |                0.527 |             0.669 | −0.141  |\n| Worst-case reward               |                −0.70 |             −1.00 | +0.30   |\n| Catastrophic leaks (r   reveal > refuse with margin > 0.05\n\n# 56-test red-team battery\npython -m privacy_game.server.redteam\n# Expected: 56/56 passed\n```\n\n### Train on Colab (~25 min on a free T4)\n\nOpen [`privacy_game/notebooks/grpo_train.py`](privacy_game/notebooks/grpo_train.py)\nin Colab (`File →",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "```\n\n### Train on Colab (~25 min on a free T4)\n\nOpen [`privacy_game/notebooks/grpo_train.py`](privacy_game/notebooks/grpo_train.py)\nin Colab (`File → ```\n\n### Train on Colab (~25 min on a free T4)\n\nOpen [`privacy_game/notebooks/grpo_train.py`](privacy_game/notebooks/grpo_train.py)\nin Colab (`File → Open notebook → GitHub`, paste this repo URL). Set\nruntime to T4 GPU. Run all cells. Per-step metrics stream to\n`outputs/metrics/grpo_run.jsonl` so plots survive a Colab disconnect.\n\n5-step recipe with credit budget + troubleshooting:\n[`privacy_game/notebooks/README.md`](privacy_game/notebooks/README.md).\n\n### Eval the trained checkpoint vs frontier models\n\n```bash\n# Trained checkpoint (after Colab run)\nPRIVACY_GAME_LLM_CHECKPOINT=\"Itachi-42/disclosure-game-qwen-0.5b-grpo-v2\" \\\npython -m privacy_game.eval.pilot run \\\n    --policy callable:privacy_game.eval.llm_adapter:trained_model_policy \\\n    --n 50 --label \"qwen-grpo\"\n\n# GPT-4o-mini  (set OPENAI_API_KEY)\nOPENAI_MODEL=\"gpt-4o-mini\" \\\npython -m privacy_game.eval.pilot run \\\n    --policy c",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "--n 50 --label \"qwen-grpo\"\n\n# GPT-4o-mini  (set OPENAI_API_KEY)\nOPENAI_MODEL=\"gpt-4o-mini\" \\\npython -m privacy_game.eval.pilot run \\\n    --policy c --n 50 --label \"qwen-grpo\"\n\n# GPT-4o-mini  (set OPENAI_API_KEY)\nOPENAI_MODEL=\"gpt-4o-mini\" \\\npython -m privacy_game.eval.pilot run \\\n    --policy callable:privacy_game.eval.llm_adapter:openai_policy \\\n    --n 50 --label \"gpt-4o-mini\"\n\n# Claude Haiku 4.5  (set ANTHROPIC_API_KEY)\nANTHROPIC_MODEL=\"claude-haiku-4-5-20251001\" \\\npython -m privacy_game.eval.pilot run \\\n    --policy callable:privacy_game.eval.llm_adapter:anthropic_policy \\\n    --n 50 --label \"claude-haiku\"\n\n# Diff\npython -m privacy_game.eval.pilot compare \\\n    outputs/trajectories/run_*qwen-base*.jsonl \\\n    outputs/trajectories/run_*qwen-grpo*.jsonl\n```",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "Diff\npython -m privacy_game.eval.pilot compare \\\n    outputs/trajectories/run_*qwen-base*.jsonl \\\n    outputs/trajectories/run_*qwen-grpo*.jsonl\n```\n Engineering quality\n\n- **OpenEnv-compliant** — `Environment` base class, Gym-style `reset`/`step`/`state`,\n  client/server separation, valid `openenv.yaml`, multi-stage Dockerfile,\n  WebSocket + HTTP endpoints.\n- **56-test adversarial red-team battery** ([`privacy_game/server/redteam.py`](privacy_game/server/redteam.py)) —\n  closes Unicode evasions, homoglyph attacks (Cyrillic / Greek), substring\n  false positives, JSON-injection, bag-of-words splits, decoy-probe leaks.\n- **Brutal red-team v2** with web-researched attacks — found and fixed\n  Cyrillic homoglyph PII bypass (CVE-2025-52488 family), ffmpeg HTTP-500\n  on malformed audio (now 400), Piper voice_id path traversal, /api/start\n  validation. All in `git log`.\n- **Trajectory logger** — env-var-gated JSONL captures every terminated\n  episode for offline replay + plot regeneration.\n- **Pilot eval** — `pilot.py run` for any policy + `p",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "env-var-gated JSONL captures every terminated\n  episode for offline replay + plot regeneration.\n- **Pilot eval** — `pilot.py run` for any policy + `p env-var-gated JSONL captures every terminated\n  episode for offline replay + plot regeneration.\n- **Pilot eval** — `pilot.py run` for any policy + `pilot.py compare` with\n  Welch's t-test, per-task breakdown, automatic verdict.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "lot regeneration.\n- **Pilot eval** — `pilot.py run` for any policy + `pilot.py compare` with\n  Welch's t-test, per-task breakdown, automatic verdict.\n Voice extension (Theme bonus)\n\n`privacy_game/voice/` ships a TTS↔ASR pipeline using:\n- **macOS `say`** (default, zero-dep) or\n- **Piper neural TTS** with voice models trained on **real LibriTTS / VCTK /\n  Common Voice speech** — voice provenance documented per HF model card.\n\nCross-modality finding: text-trained `smart` policy's privacy\n**transfers cleanly to voice** (Δrecon = 0 across all 4 P3 tasks).\n`reveal` leaks *less* via voice because Whisper `base.en` mis-transcribes\nrare medical entities ~60% of the time (`metformin → \"met for men\"`,\n`efavirenz → \"a faverens\"`) — accidental privacy for naive policies.\n\nFull caveat in [`privacy_game/voice/README.md`](privacy_game/voice/README.md).",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "`efavirenz → \"a faverens\"`) — accidental privacy for naive policies.\n\nFull caveat in [`privacy_game/voice/README.md`](privacy_game/voice/README.md).\n Citations + prior work\n\n- **Sweeney, L.** (2000). *Simple Demographics Often Identify People Uniquely.*\n  Carnegie Mellon, Data Privacy Working Paper 3.\n- **Mireshghallah, N. et al.** (2023). *ConfAIde: Can LLMs Keep a Secret?\n  Testing Privacy Implications of LLMs via Contextual Integrity Theory.*\n  arXiv 2310.17884.\n- **Nissenbaum, H.** (2010). *Privacy in Context: Technology, Policy, and\n  the Integrity of Social Life.*\n- **Guo et al. (DeepSeek-AI)** (2025). *DeepSeek-R1: Incentivizing Reasoning\n  in LLMs via Reinforcement Learning.* arXiv 2501.12948.\n- **Apple ML Research** (2025). *Reinforcement Learning for Long-Horizon\n  Interactive LLM Agents.*\n- **Lusk, A.** (2026). *Reinforcement Learning with Verifiable Rewards on\n  PII Masking.* YouTube — single-turn predecessor to this multi-turn work.\n- **Wei, J.** (2025). *The Verifier's Rule.* (Coined the framing for RLVR.)\n- **Shao et al",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "YouTube — single-turn predecessor to this multi-turn work.\n- **Wei, J.** (2025). *The Verifier's Rule.* (Coined the framing for RLVR.)\n- **Shao et al YouTube — single-turn predecessor to this multi-turn work.\n- **Wei, J.** (2025). *The Verifier's Rule.* (Coined the framing for RLVR.)\n- **Shao et al. (DeepSeek-AI)** (2024). *DeepSeekMath: GRPO.* arXiv 2402.03300.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "i, J.** (2025). *The Verifier's Rule.* (Coined the framing for RLVR.)\n- **Shao et al. (DeepSeek-AI)** (2024). *DeepSeekMath: GRPO.* arXiv 2402.03300.\n Repo layout\n\n```\nMETA_H/\n├── README.md                                  ← this file\n├── docs/                                       hackathon docs + design notes\n├── privacy_game/figures_v2/                    v2 training plots (reward, loss, before-after)\n└── privacy_game/                               the OpenEnv environment\n    ├── README.md                               env-specific README (HF Space card)\n    ├── client.py · models.py · openenv.yaml    OpenEnv contract\n    ├── pyproject.toml · server/Dockerfile      packaging + container\n    ├── server/                                 env logic\n    │   ├── privacy_game_environment.py         Environment subclass\n    │   ├── relying_party.py                    RP state machine + tier extractor\n    │   ├── adversary.py                        Sweeney + drug→dx + employer→attr + homoglyph fold\n    │   ├── rubrics.py",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "ractor\n    │   ├── adversary.py                        Sweeney + drug→dx + employer→attr + homoglyph fold\n    │   ├── rubrics.py                       ractor\n    │   ├── adversary.py                        Sweeney + drug→dx + employer→attr + homoglyph fold\n    │   ├── rubrics.py                          composable RubricStack\n    │   ├── tasks.py                            14 tasks across 3 phases\n    │   ├── profiles.py                         AI4Privacy bridge → real personas\n    │   ├── baselines.py                        sanity gate (refuse / reveal / smart / random)\n    │   ├── redteam.py                          56-test adversarial battery\n    │   └── trajectory_logger.py                JSONL replay\n    ├── eval/\n    │   ├── pilot.py                            run + compare CLI\n    │   ├── plot_results.py                     reward/loss/before-after PNGs\n    │   └── llm_adapter.py                      base / trained / OpenAI / Anthropic policies\n    ├── voice/                                  TTS↔ASR pipeline\n    │   ├── tts_pipe",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "base / trained / OpenAI / Anthropic policies\n    ├── voice/                                  TTS↔ASR pipeline\n    │   ├── tts_pipe base / trained / OpenAI / Anthropic policies\n    ├── voice/                                  TTS↔ASR pipeline\n    │   ├── tts_piper.py · tts_setup.py         real-dataset-trained Piper TTS\n    │   ├── demo_live.py                        FastAPI + pixel UI demo\n    │   └── voice_redteam.py                    voice-mode adversarial tests\n    └── notebooks/\n        ├── grpo_train.py                       Colab T4 training script\n        └── README.md                           5-step Colab recipe\n```",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "oks/\n        ├── grpo_train.py                       Colab T4 training script\n        └── README.md                           5-step Colab recipe\n```\n Demo script (90 seconds)\n\n1. **Hook**: *\"The secret was never said. The adversary inferred it anyway.\"*\n2. **Leaky baseline**: untrained Qwen2.5-7B / Llama-3.1-8B says\n   `\"My ZIP is 94115, DOB 1988-04-12, female\"` → adversary recovers\n   `full_name` via Sweeney triangulation.\n3. **Trained CIPHER 0.5B**: same task, same persona, says `\"I'm in\n   the 941XX area, born 1988, female\"` → adversary fails. Task still\n   approved.\n4. **Reward bar**: utility stays high, reconstruction collapses to\n   zero, reward rises 5×.\n5. **Thesis card**: *\"Privacy for agents is not just redaction. It is\n   contextual decision-making under adversarial inference.\"*",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": ", reward rises 5×.\n5. **Thesis card**: *\"Privacy for agents is not just redaction. It is\n   contextual decision-making under adversarial inference.\"*\n Submission checklist\n\n- [x] Use OpenEnv (latest release) — `openenv-core 0.2.3`\n- [x] Environment / MCPEnvironment base classes used properly\n- [x] Client / server separation\n- [x] Standard Gym-style API (`reset`, `step`, `state`)\n- [x] Valid `openenv.yaml` manifest\n- [x] No reserved tool names (`reset`, `step`, `state`, `close`)\n- [x] Working training script via TRL — [`notebooks/grpo_train.py`](privacy_game/notebooks/grpo_train.py)\n- [x] Loss + reward plots from a real run — [`privacy_game/figures_v2/`](privacy_game/figures_v2/)\n- [x] Pushed environment to HF Space —  \n- [x] README motivates problem, explains env, shows results, links all materials\n- [x]   · [deep-dive](https://youtu.be/OnEKRTlZOec)\n\n— *Built for the Meta OpenEnv Hackathon Finals · India · April 2026.*\n*Privacy is contextual. Rewards are verifiable. The instinct is learned.*",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "readme",
+    "title": "GitHub README — META_H"
+  },
+  {
+    "text": "# Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-\n\n# ⚡ Multi-threaded HTTP Server\n\nA **from-scratch, high-performance HTTP/1.1 web server** written in **pure Python**, developed for a **Computer Networks assignment**.  \nIt demonstrates the core principles of **network programming**, **multi-threading**, and **secure file handling** — all implemented using only Python’s standard library.\n\n---\n\n## 👨‍💻 Author Information\n\n**Author:** Rajveer Bishnoi  \n**Roll No:** 10404  \n**Batch:** A  \n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "emented using only Python’s standard library.\n\n---\n\n## 👨‍💻 Author Information\n\n**Author:** Rajveer Bishnoi  \n**Roll No:** 10404  \n**Batch:** A  \n\n---\n 🚀 Features\n\n- 🧵 **Multi-threading:** Efficient thread pool for concurrent client handling (default: 10 threads).  \n- 🌐 **HTTP/1.1 Support:** Full header parsing, persistent (keep-alive) connections, and proper response formatting.  \n- 📂 **Static & Binary File Serving:** Serves `.html`, `.txt`, `.png`, `.jpg`, and `.jpeg` files directly from the `resources/` directory.  \n- 📦 **JSON Upload API:** Accepts `POST` requests with JSON payloads and securely writes them to the `resources/uploads/` folder.  \n- 🔒 **Security Built-in:** Path traversal prevention and Host header validation for request integrity.  \n- ⚙️ **Error Handling:** Graceful HTTP responses for all major error codes — `400`, `403`, `404`, `405`, `415`, `500`, and `503`.  \n- 🧾 **Detailed Logging:** Logs every connection, request, and error with timestamps and thread info.  \n- 🧱 **No Dependencies:** 100% built with Python’s standa",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "ailed Logging:** Logs every connection, request, and error with timestamps and thread info.  \n- 🧱 **No Dependencies:** 100% built with Python’s standa ailed Logging:** Logs every connection, request, and error with timestamps and thread info.  \n- 🧱 **No Dependencies:** 100% built with Python’s standard library — **no frameworks required**.\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "t, and error with timestamps and thread info.  \n- 🧱 **No Dependencies:** 100% built with Python’s standard library — **no frameworks required**.\n\n---\n 🧰 Requirements\n\n- Python **3.7** or newer  \n- Works on **Windows**, **macOS**, and **Linux**\n\n---\n\n## ⚙️ Usage\n\n### ▶️ Start the Server\n\n```bash\n# Default (host: 127.0.0.1, port: 8080, threads: 10)\npython server.py\n````\n\n### 🧩 Custom Configurations\n\n```bash\n# Run on a custom port\npython server.py 8000\n\n# Run on all interfaces (useful for LAN testing)\npython server.py 8080 0.0.0.0\n\n# Specify custom port, host, and thread pool size\npython server.py 8080 127.0.0.1 20\n```\n\nTo **stop the server**, press `Ctrl + C` for a graceful shutdown.\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "ustom port, host, and thread pool size\npython server.py 8080 127.0.0.1 20\n```\n\nTo **stop the server**, press `Ctrl + C` for a graceful shutdown.\n\n---\n 🧪 Testing the Server\n\n### 🌐 HTML Endpoints\n\n| URL                                  | Description         |\n| ------------------------------------ | ------------------- |\n| `http://localhost:8080/`             | Serves `index.html` |\n| `http://localhost:8080/about.html`   | Serves About page   |\n| `http://localhost:8080/contact.html` | Serves Contact page |\n\n---\n\n### 📦 Binary File Downloads\n\n| URL                                | File Type  |\n| ---------------------------------- | ---------- |\n| `http://localhost:8080/sample.txt` | Text file  |\n| `http://localhost:8080/logo.png`   | PNG image  |\n| `http://localhost:8080/photo.jpg`  | JPEG image |\n\n---\n\n### 💾 JSON Upload Endpoint\n\nUpload JSON data securely using the `/upload` route.\n\n```bash\ncurl -X POST http://localhost:8080/upload \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Host: localhost:8080\" \\\n  -d '{\"message\": \"Hello Server\", \"t",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "curl -X POST http://localhost:8080/upload \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Host: localhost:8080\" \\\n  -d '{\"message\": \"Hello Server\", \"t curl -X POST http://localhost:8080/upload \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Host: localhost:8080\" \\\n  -d '{\"message\": \"Hello Server\", \"timestamp\": \"2025-10-10\"}'\n```\n\n#### ✅ Example Response (201 Created)\n\n```json\n{\n  \"status\": \"success\",\n  \"message\": \"File created successfully\",\n  \"filepath\": \"/uploads/upload_20251010_212200_abcd.json\"\n}\n```\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "ted)\n\n```json\n{\n  \"status\": \"success\",\n  \"message\": \"File created successfully\",\n  \"filepath\": \"/uploads/upload_20251010_212200_abcd.json\"\n}\n```\n\n---\n 📁 Project Structure\n\n```bash\nproject/\n├── server.py            # Main server implementation\n├── test_server.py       # Automated test script\n├── README.md            # Project documentation\n├── requirements.md      # Assignment requirements\n└── resources/           # Static and uploaded files\n    ├── index.html       # Default home page\n    ├── about.html       # About page\n    ├── contact.html     # Contact page\n    ├── sample.txt       # Sample text file\n    ├── logo.png         # Sample PNG image\n    ├── photo.jpg        # Sample JPEG image\n    └── uploads/         # Directory for uploaded JSON files\n```\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "ogo.png         # Sample PNG image\n    ├── photo.jpg        # Sample JPEG image\n    └── uploads/         # Directory for uploaded JSON files\n```\n\n---\n 🧠 Implementation Details\n\n### 🧵 Thread Pool\n\n* A **fixed-size thread pool** manages client connections efficiently.\n* Uses a **thread-safe queue** to store incoming connections.\n* Ensures **controlled concurrency** and avoids resource starvation under load.\n\n### 🔄 Persistent Connections (Keep-Alive)\n\n* Supports **multiple requests per TCP connection** for efficiency.\n* Automatically closes idle connections after a timeout period.\n\n### 🧩 File Handling\n\n* Serves **text and binary files** correctly with proper headers.\n* Uses `sendall()` to ensure complete data transfer.\n* Sets accurate `Content-Length` and `Content-Type` headers.\n\n### 🔒 Security Features\n\n* **Path Traversal Protection:**\n  Prevents access to files outside the `resources/` directory using `os.path.abspath`.\n* **Host Header Validation:**\n  Rejects requests with invalid or spoofed Host headers.\n\n### ⚙️ Error Handling\n\nCompreh",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "ectory using `os.path.abspath`.\n* **Host Header Validation:**\n  Rejects requests with invalid or spoofed Host headers.\n\n### ⚙️ Error Handling\n\nCompreh ectory using `os.path.abspath`.\n* **Host Header Validation:**\n  Rejects requests with invalid or spoofed Host headers.\n\n### ⚙️ Error Handling\n\nComprehensive support for standard HTTP status codes:\n\n| Code | Meaning                | Description                            |\n| ---- | ---------------------- | -------------------------------------- |\n| 400  | Bad Request            | Malformed request syntax               |\n| 403  | Forbidden              | Invalid Host or path traversal attempt |\n| 404  | Not Found              | Requested resource missing             |\n| 405  | Method Not Allowed     | Unsupported HTTP method                |\n| 415  | Unsupported Media Type | Invalid Content-Type in POST           |\n| 500  | Internal Server Error  | Unexpected server error                |\n| 503  | Service Unavailable    | Thread pool saturation or overload     |\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "| Internal Server Error  | Unexpected server error                |\n| 503  | Service Unavailable    | Thread pool saturation or overload     |\n\n---\n ror  | Unexpected server error                |\n| 503  | Service Unavailable    | Thread pool saturation or overload     |\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "ror  | Unexpected server error                |\n| 503  | Service Unavailable    | Thread pool saturation or overload     |\n\n---\n 🧾 Logging System\n\nEvery server event is logged in real-time.\n\nExample log:\n\n```\n[2025-10-10 21:30:05] [Thread-3] 127.0.0.1 GET /index.html → 200 OK (5321 bytes)\n```\n\n**Logs include:**\n\n* Timestamp\n* Thread name\n* Client IP address\n* HTTP method & request path\n* Response status and size\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "00 OK (5321 bytes)\n```\n\n**Logs include:**\n\n* Timestamp\n* Thread name\n* Client IP address\n* HTTP method & request path\n* Response status and size\n\n---\n 📋 Assignment Requirements — ✅ Completed\n\n| Requirement                             | Implemented |\n| --------------------------------------- | ----------- |\n| Multi-threaded server using thread pool | ✅           |\n| TCP socket-based HTTP communication     | ✅           |\n| HTTP request parsing                    | ✅           |\n| GET for HTML and binary files           | ✅           |\n| POST for JSON uploads                   | ✅           |\n| Path traversal and host validation      | ✅           |\n| Connection management (keep-alive)      | ✅           |\n| Full error code support                 | ✅           |\n| Logging and security                    | ✅           |\n| Binary file transfer                    | ✅           |\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "| ✅           |\n| Logging and security                    | ✅           |\n| Binary file transfer                    | ✅           |\n\n---\n ⚠️ Limitations\n\n* Entire files are read into memory — not suitable for files >100MB.\n* No support for **HTTPS/TLS** (unencrypted HTTP).\n* Missing advanced HTTP features like:\n\n  * Chunked Transfer Encoding\n  * GZIP Compression\n  * Caching Headers (ETag, Last-Modified)\n* MIME types are hardcoded for simplicity.\n\n---\n\n## 🚧 Future Enhancements\n\n* Implement **asynchronous I/O (asyncio)** for non-blocking scalability.\n* Add **HTTPS** via Python’s `ssl` module.\n* Improve **MIME type detection** using `mimetypes` library.\n* Enable **directory listing** for resource browsing.\n* Add **API routes** for PUT/DELETE requests.\n\n---\n\n## 🏁 Summary\n\nThis project demonstrates:\n\n* Core concepts of **multi-threaded network programming**\n* Manual **HTTP/1.1 protocol handling**\n* **Secure and concurrent** request management\n* Educational understanding of **how web servers work internally**\n\n---",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "readme",
+    "title": "GitHub README — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "# Network_Security_ML\n\n---\n\nTL;DR\n- Purpose: Build reproducible ML pipelines for network intrusion and anomaly detection with emphasis on real-world constraints: imbalanced data, concept drift, low-latency inference, interpretability, and adversarial robustness.\n- Includes: data ingestion, preprocessing, feature engineering, classical and deep models, evaluation scripts, and notebooks to reproduce experiments and visualizations.\n- Interview-ready: Sections with architecture rationale, complexity and scalability analysis, explanations you can use to demonstrate technical depth in interviews.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "ady: Sections with architecture rationale, complexity and scalability analysis, explanations you can use to demonstrate technical depth in interviews. Highlights / Why this repo is interesting\n- Multi-paradigm: supervised, unsupervised, and self-supervised approaches for detection.\n- Production-minded: attention to inference latency, streaming-friendly preprocessing, and monitoring.\n- Explainability & Safety: SHAP explanations, evaluation under class imbalance, and notes on adversarial robustness.\n- Reproducible experiments: deterministic seeds, config-driven runs, and instructions for Docker/conda reproducibility.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "tes on adversarial robustness.\n- Reproducible experiments: deterministic seeds, config-driven runs, and instructions for Docker/conda reproducibility. Contents\n- data/              — data download & raw dumps (not committed large files)\n- notebooks/         — exploratory analysis and step-by-step reproductions\n- src/               — training, evaluation, feature pipelines, utils\n- models/            — saved model artifacts (gitignored)\n- experiments/       — config files and results\n- reports/           — charts and final writeups\n- scripts/           — helper scripts: run_experiment.sh, evaluate.sh\n- README.md\n\n(If your repo differs slightly, adapt the paths above — this README is written to fit a typical structure.)\n\nQuickstart — run an experiment locally (5–15 minutes)\n1. Clone\n   git clone https://github.com/RAJVEER42/Network_Security_ML.git\n   cd Network_Security_ML",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "kstart — run an experiment locally (5–15 minutes)\n1. Clone\n   git clone https://github.com/RAJVEER42/Network_Security_ML.git\n   cd Network_Security_ML 2. Create environment\n   - Conda (recommended):\n     conda create -n nsm python=3.10 -y\n     conda activate nsm\n     pip install -r requirements.txt\n   - Or use Docker: see docker/Dockerfile (optional)\n\n3. Download a dataset (examples supported)\n   - NSL-KDD: https://github.com/defcom17/NSL_KDD\n   - CIC-IDS2017: https://www.unb.ca/cic/datasets/ids-2017.html\n   - UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset\n   Example helper (will place data/raw/*):\n     python scripts/download_data.py --dataset nsl_kdd --out_dir data/raw\n\n4. Preprocess & featurize\n   python src/preprocess.py --config experiments/configs/nsl_kdd_preprocess.yaml\n\n5. Train a baseline model (RandomForest + PCA)\n   python src/train.py --config experiments/configs/rf_baseline.yaml",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "s/configs/nsl_kdd_preprocess.yaml\n\n5. Train a baseline model (RandomForest + PCA)\n   python src/train.py --config experiments/configs/rf_baseline.yaml 6. Evaluate\n   python src/evaluate.py --model models/rf_baseline.pkl --test data/processed/test.csv --out results/rf_baseline.json\n\n7. Visualize (Jupyter)\n   jupyter lab notebooks/analysis.ipynb",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "l models/rf_baseline.pkl --test data/processed/test.csv --out results/rf_baseline.json\n\n7. Visualize (Jupyter)\n   jupyter lab notebooks/analysis.ipynb Design & Technical Approach (short)\n- Problem framing: We treat network security detection as both (1) supervised classification (malicious vs benign and attack-type classification) and (2) anomaly detection (novel attacks, concept drift).\n- Data challenges:\n  - Extreme class imbalance and label noise.\n  - High-dimensional flows/time-series & categorical-heavy features.\n  - Streaming data & low-latency processing requirements.\n- Pipeline stages:\n  - Ingestion: chunked streaming parsers, memory-efficient CSV readers.\n  - Feature engineering: protocol-categorical encodings, rolling statistical features per flow/IP, one-hot + entity embeddings for high-cardinality fields.\n  - Modeling: comparison between tree ensembles (XGBoost/LightGBM), neural networks (1D-CNN, LSTM, Transformer-based sequence models), and unsupervised methods (Autoencoders, Isolation Forest).\n  - Postprocessing: threshol",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "al networks (1D-CNN, LSTM, Transformer-based sequence models), and unsupervised methods (Autoencoders, Isolation Forest).\n  - Postprocessing: threshol al networks (1D-CNN, LSTM, Transformer-based sequence models), and unsupervised methods (Autoencoders, Isolation Forest).\n  - Postprocessing: thresholding by ROC/PR operating point, calibrated probabilities, ensemble stacking for production.\n  - Explainability: SHAP per-decision and global feature importance.\n- Reliability & production:\n  - Deterministic experiments (seeds, saved configs).\n  - Inference-time pruning, quantization where necessary.\n  - Monitoring: drift detection using population stability index (PSI), alerts on metric degradation.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "ence-time pruning, quantization where necessary.\n  - Monitoring: drift detection using population stability index (PSI), alerts on metric degradation. Models included (examples)\n- Baselines\n  - Logistic Regression, Random Forest, XGBoost\n- Deep models\n  - Autoencoder (unsupervised anomaly score)\n  - LSTM / Transformer for flow-sequence classification\n  - 1D-CNN for packet/byte-level patterns\n- Ensembles & calibration\n  - Stacking classifier with calibrated outputs (Platt scaling or isotonic regression)\n\nEvaluation & Metrics\n- Standard: Precision, Recall, F1-score, ROC AUC, PR AUC\n- Operational: False Positive Rate (FPR) at fixed True Positive Rate (TPR), Precision@K, detection latency\n- Robustness: evaluate under injected noise, distribution shift, and adversarial perturbations (basic FGSM-style for numeric features)\n- For imbalanced data, prefer Precision-Recall AUC and per-class F1; show confusion matrix and per-class recall.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "asic FGSM-style for numeric features)\n- For imbalanced data, prefer Precision-Recall AUC and per-class F1; show confusion matrix and per-class recall. Reproducibility\n- experiments/ contains YAML configs to reproduce any run.\n- Set seed in config (random, numpy, torch).\n- Recommended: run within the provided Docker container or conda environment.\n- Use MLflow or Weights & Biases to track experiments (integration scripts provided in src/trackers/).\n\nCode snippets (inference example)\npython\nfrom src.infer import load_model, predict\nmodel = load_model('models/rf_baseline.pkl')\nsample = {'duration': 0, 'protocol_type': 'tcp', 'service': 'http', ...}\npred = predict(model, sample)\nprint(pred)  # probability, label\n\n(See src/infer.py for bulk inference and stream-friendly APIs.)",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "ervice': 'http', ...}\npred = predict(model, sample)\nprint(pred)  # probability, label\n\n(See src/infer.py for bulk inference and stream-friendly APIs.) Scalability & Complexity — what to be ready to explain in interviews\n- Data pipeline complexity:\n  - Preprocessing: O(N * f) where N = number of records, f = features per record. Use chunking and vectorized ops to reduce memory pressure.\n  - Feature windowing for streaming: maintain O(W) state per entity (W = window size).\n- Model training:\n  - Tree ensembles: O(ntrees * depth * N * log F) typical rules-of-thumb; good tradeoff for tabular data.\n  - Neural sequence models: O(N * L * d^2) per epoch where L = seq length, d = hidden dim (opt for truncated sequences and batching).\n- Inference:\n  - Aim for <10ms per flow for real-time detection (depends on hardware). Discuss batching and model quantization.\n- Memory & disk: use memory-mapped datasets or parquet for large datasets to avoid loading everything in memory.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "cuss batching and model quantization.\n- Memory & disk: use memory-mapped datasets or parquet for large datasets to avoid loading everything in memory. Explainability & Security\n- SHAP for feature attribution; produce per-sample waterfall plots in notebooks/.\n- Adversarial considerations:\n  - Attack surface: crafted packets/flows to mimic benign features; address by adversarial training and robust feature sets (e.g., aggregated statistics harder to spoof).\n  - Defense approaches: input validation, ensemble agreement checks, runtime anomaly detectors for model inputs.\n\nAblation studies & good talking points\n- Single feature importance vs. grouped features (protocol/service vs. timing features).\n- Supervised vs. unsupervised performance when labeled attacks are scarce.\n- Impact of class weighting and sampling (SMOTE, undersampling, focal loss).\n- Latency vs. accuracy trade-offs when pruning models or distilling models to smaller networks.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "hting and sampling (SMOTE, undersampling, focal loss).\n- Latency vs. accuracy trade-offs when pruning models or distilling models to smaller networks. How to present this project in a FAANG interview\n- Start with a 1–2 sentence elevator pitch: \"I built a reproducible ML system to detect network intrusions that balances detection performance with production constraints like low-latency inference and interpretability.\"\n- Highlight the constraint you optimized for (e.g., real-time detection with <10 ms latency, or ability to detect novel attacks).\n- Explain data challenges (imbalance, label quality) and a concrete mitigation (e.g., per-class weighting + semi-supervised pretraining).\n- Summarize an experiment concisely: dataset → metric → model → result → takeaway.\n- Be ready to answer follow-ups about: complexity classes, deployment choices, failure modes, and mitigation strategies.\n\nReproducible experiment example (command)\npython src/runner.py --config experiments/configs/complete_run.yaml --run_id my_experiment",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "tion strategies.\n\nReproducible experiment example (command)\npython src/runner.py --config experiments/configs/complete_run.yaml --run_id my_experiment CI / Tests\n- Unit tests for preprocessing, feature transforms, and small integration tests live in tests/.\n- Example: pytest -q tests/test_preprocess.py\n\nContributing\n- Fork, create a branch, add tests for new features, open PR with clear description.\n- Follow code style (black/flake8). Run pre-commit hooks (if configured).\n\nLicense\n- MIT License (or select appropriate license). See LICENSE file.\n\nCitations / References\n- Papers & datasets commonly used:\n  - NSL-KDD, CIC-IDS2017, UNSW-NB15\n  - LSTM/Transformer sequence modeling literature\n  - Papers on adversarial ML and explainability (SHAP)\n\nContact\n- Author / Maintainer: RAJVEER42\n- For quick questions open an issue or ping me on GitHub.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "readme",
+    "title": "GitHub README — Network_Security_ML"
+  },
+  {
+    "text": "# DocBlock\n\n### A neo-brutalist take on Google NotebookLM — drop a PDF, talk to it.\n\n \n\n  \n\n**Built by [Rajveer Bishnoi](https://github.com/RAJVEER42) · Assignment 03**\n\n[Live Demo](https://your-vercel-deployment.vercel.app/) · [Report Bug](https://github.com/RAJVEER42/notebook-LLM/issues) · [Request Feature](https://github.com/RAJVEER42/notebook-LLM/issues)\n\n \n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": ".app/) · [Report Bug](https://github.com/RAJVEER42/notebook-LLM/issues) · [Request Feature](https://github.com/RAJVEER42/notebook-LLM/issues)\n\n \n\n---\n What is this?\n\nDocBlock is a Retrieval-Augmented Generation (RAG) app that turns any document\ninto a chat partner. You upload a file, it gets chunked, embedded, and indexed\ninto a private vector collection — then every answer the LLM gives is grounded\nin retrieved excerpts from *your* document, with page-level citations.\n\nThe UI is deliberately loud: thick black strokes, candy-bright blocks, hard\noffset shadows, and mono type. It's designed to look like a sticker pack, not\na chatbot.\n\n> **Why \"neo-brutalist\"?**\n> Most AI products lean glassy and polite. DocBlock leans the other way —\n> chunky borders, raw color blocks, sharp shadows. The interface should feel\n> as physical as the document you just dropped into it.\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "other way —\n> chunky borders, raw color blocks, sharp shadows. The interface should feel\n> as physical as the document you just dropped into it.\n\n---\n Highlights\n\n| | |\n|---|---|\n| **Bring-your-own document** | Upload any PDF or `.txt` file (≤ 15 MB) |\n| **Per-document isolation** | Every upload gets its own Qdrant collection — chats never leak across files |\n| **Grounded answers** | The LLM is forced to refuse questions it can't answer from the retrieved context |\n| **Page-aware citations** | Each answer expands to show exact chunks with page numbers |\n| **Persistent session** | Refresh-safe via `localStorage` |\n| **Snappy UI** | 3px strokes, hard shadows, hover-tilt on every interactive surface |\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "*Persistent session** | Refresh-safe via `localStorage` |\n| **Snappy UI** | 3px strokes, hard shadows, hover-tilt on every interactive surface |\n\n---\n Architecture\n\n```\n        ┌─────────────────────────┐\n        │   Upload (PDF / TXT)    │\n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │   Page-level loader     │  WebPDFLoader / inline text\n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │ Recursive chunking      │  size 1100, overlap 180\n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │ HuggingFace embeddings  │  all-MiniLM-L6-v2 · 384-d\n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │   Qdrant collection     │  docblock_ \n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │  Question  ─►  top-k=6  │\n        └────────────┬────────────┘\n                     ▼",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "▼\n        ┌─────────────────────────┐\n        │  Question  ─►  top-k=6  │\n        └────────────┬────────────┘\n                     ▼\n       ▼\n        ┌─────────────────────────┐\n        │  Question  ─►  top-k=6  │\n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │ Groq · Llama 3.3 70B    │  temperature 0.15\n        └────────────┬────────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │  Answer + Citations     │\n        └─────────────────────────┘\n```\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "────────┘\n                     ▼\n        ┌─────────────────────────┐\n        │  Answer + Citations     │\n        └─────────────────────────┘\n```\n\n---\n Tech stack\n\n \n   \n      Frontend  \n     Next.js 16 (App Router) · React 19 · Tailwind v4 · custom brutalist CSS \n   \n   \n      Backend  \n     Next.js Route Handlers (Node runtime) \n   \n   \n      Vector DB  \n     Qdrant Cloud (free tier) \n   \n   \n      Embeddings  \n     HuggingFace Inference API ·  sentence-transformers/all-MiniLM-L6-v2  \n   \n   \n      LLM  \n     Groq ·  llama-3.3-70b-versatile  \n   \n   \n      RAG glue  \n     LangChain ( community ,  qdrant ,  textsplitters ) \n   \n   \n      PDF parsing  \n      WebPDFLoader  — browser-compatible, serverless-safe \n   \n   \n      Hosting  \n     Vercel \n   \n \n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "xtsplitters ) \n   \n   \n      PDF parsing  \n      WebPDFLoader  — browser-compatible, serverless-safe \n   \n   \n      Hosting  \n     Vercel \n   \n \n\n---\n Chunking strategy\n\nDocBlock uses LangChain's `RecursiveCharacterTextSplitter` with a deliberately\nsentence-aware separator chain.\n\n```js\n{\n  chunkSize: 1100,\n  chunkOverlap: 180,\n  separators: [\"\\n\\n\", \"\\n\", \". \", \"? \", \"! \", \"; \", \", \", \" \", \"\"]\n}\n```\n\n**The splitter walks down that list in order** — paragraphs first, then line\nbreaks, then sentence terminators, then clauses, then words, and only falls\nback to character splits as a last resort. This keeps natural prose units\nintact whenever the chunk size allows.\n\nAfter splitting, every chunk is:\n\n- **Trimmed** and **dropped if shorter than 24 characters** — those are\n  almost always page numbers, footers, or splitter artefacts that hurt\n  retrieval recall.\n- **Annotated** with `{ source, page, chunkIndex, charCount, wordCount }`.\n- **Page-tagged** so citations can point at a real page in the source PDF.\n\n> The 1100/180 ratio (~16% over",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "page, chunkIndex, charCount, wordCount }`.\n- **Page-tagged** so citations can point at a real page in the source PDF.\n\n> The 1100/180 ratio (~16% over page, chunkIndex, charCount, wordCount }`.\n- **Page-tagged** so citations can point at a real page in the source PDF.\n\n> The 1100/180 ratio (~16% overlap) is the compromise: large enough to keep\n> ideas spanning a chunk boundary recoverable, small enough to avoid pulling\n> the same content under multiple chunk IDs at retrieval time.\n\nThe chunking config is also returned in the `/api/ingest` response under a\n`strategy` key, which makes A/B testing different splitters trivial.\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "The chunking config is also returned in the `/api/ingest` response under a\n`strategy` key, which makes A/B testing different splitters trivial.\n\n---\n RAG pipeline\n\n### 1. Ingestion · `POST /api/ingest`\n\n- Accepts a single file via `multipart/form-data` (field name `file`).\n- Validates: ≤ 15 MB, MIME `application/pdf` or `text/plain`.\n- PDFs → `WebPDFLoader` with `splitPages: true` so page numbers survive.\n- TXT → wrapped as a single `Document` with `page: 1`.\n- Documents are chunked, filtered, and embedded.\n- A new `sessionId` (10-char nanoid) gets its own collection\n  `docblock_ ` in Qdrant.\n\n \n  Example response  \n\n```json\n{\n  \"sessionId\": \"abc123\",\n  \"fileName\": \"paper.pdf\",\n  \"pages\": 12,\n  \"chunks\": 42,\n  \"strategy\": {\n    \"splitter\": \"recursive-character\",\n    \"chunkSize\": 1100,\n    \"chunkOverlap\": 180\n  }\n}\n```\n\n \n\n### 2. Retrieval + generation · `POST /api/chat`\n\n \n  Request shape  \n\n```json\n{\n  \"sessionId\": \"abc123\",\n  \"question\": \"What is this paper about?\",\n  \"history\": [{ \"role\": \"user\", \"content\": \"...\" }]\n}\n```\n\n \n\nThe r",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "e  \n\n```json\n{\n  \"sessionId\": \"abc123\",\n  \"question\": \"What is this paper about?\",\n  \"history\": [{ \"role\": \"user\", \"content\": \"...\" }]\n}\n```\n\n \n\nThe r e  \n\n```json\n{\n  \"sessionId\": \"abc123\",\n  \"question\": \"What is this paper about?\",\n  \"history\": [{ \"role\": \"user\", \"content\": \"...\" }]\n}\n```\n\n \n\nThe route then:\n\n1. Opens the per-session Qdrant collection.\n2. Runs a top-`k = 6` similarity search using the same embedding model used at index time.\n3. Formats retrieved excerpts as `[excerpt N | page X | chunk #Y]`.\n4. Builds the prompt — strict system prompt + last 6 turns + user question.\n5. Calls Groq's `llama-3.3-70b-versatile` at `temperature: 0.15`.\n6. Returns the answer plus structured citations (page, chunk index, 240-char snippet).\n\n### 3. Grounding\n\nThe system prompt explicitly instructs the model to:\n\n- treat the supplied excerpts as the **only** source of truth;\n- reply `\"I couldn't find that in the document.\"` when the excerpts don't cover the question;\n- cite pages inline as `(p. N)`;\n- never invent facts, numbers, names, or qu",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "find that in the document.\"` when the excerpts don't cover the question;\n- cite pages inline as `(p. N)`;\n- never invent facts, numbers, names, or qu find that in the document.\"` when the excerpts don't cover the question;\n- cite pages inline as `(p. N)`;\n- never invent facts, numbers, names, or quotes.\n\nCombined with the low temperature, this keeps responses tightly bound to the document.\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "p. N)`;\n- never invent facts, numbers, names, or quotes.\n\nCombined with the low temperature, this keeps responses tightly bound to the document.\n\n---\n Project structure\n\n```\napp/\n├── layout.js              ← fonts + metadata\n├── page.js                ← brutalist UI (upload + chat)\n├── globals.css            ← design tokens (palette, shadows, animations)\n└── api/\n    ├── ingest/route.js    ← parse → chunk → embed → index\n    └── chat/route.js      ← retrieve → ground → generate\n\nlib/\n└── rag.js                 ← embedder + Qdrant helpers\n\npublic/                    ← static assets\n.env.local                 ← API keys (gitignored)\n```\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "s                 ← embedder + Qdrant helpers\n\npublic/                    ← static assets\n.env.local                 ← API keys (gitignored)\n```\n\n---\n Getting started\n\n### 1. Clone and install\n\n```bash\ngit clone https://github.com/RAJVEER42/notebook-LLM.git\ncd notebook-LLM\nnpm install --legacy-peer-deps\n```\n\n### 2. Configure environment\n\nCreate `.env.local` at the project root:\n\n```env\nGROQ_API_KEY=your_groq_key\nHUGGINGFACE_API_KEY=your_hf_inference_key\nQDRANT_URL=https://your-cluster.qdrant.io\nQDRANT_API_KEY=your_qdrant_api_key\n```\n\n| Service | Where to get it |\n|---|---|\n| Groq API key | https://console.groq.com/keys |\n| HuggingFace token | https://huggingface.co/settings/tokens (needs Inference API access) |\n| Qdrant cluster | https://cloud.qdrant.io/ (free tier works) |\n\n### 3. Run\n\n```bash\nnpm run dev\n```\n\nOpen   and drop a PDF.\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "rence API access) |\n| Qdrant cluster | https://cloud.qdrant.io/ (free tier works) |\n\n### 3. Run\n\n```bash\nnpm run dev\n```\n\nOpen   and drop a PDF.\n\n---\n Deployment\n\nDocBlock is built for one-click Vercel deploys.\n\n1. Push this repo to GitHub.\n2. Import it into Vercel (auto-detects Next.js).\n3. Add the four env vars above in **Settings → Environment Variables**.\n4. Deploy.\n\n> **Serverless notes**\n> `/api/ingest` runs with `maxDuration: 60`, `/api/chat` with `maxDuration: 300`,\n> both on the Node runtime. PDF parsing uses `WebPDFLoader` so there are no\n> native dependencies — it just works inside Vercel's serverless environment.\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "the Node runtime. PDF parsing uses `WebPDFLoader` so there are no\n> native dependencies — it just works inside Vercel's serverless environment.\n\n---\n Design system\n\nThe brutalist look is enforced via a small set of CSS tokens:\n\n| Token | Value | Used for |\n|---|---|---|\n| Stroke | `3px solid #000` | Every interactive surface |\n| Shadow | `6px 6px 0 0 #000` | Resting elevation |\n| Shadow (lift) | `10px 10px 0 0 #000` | Hover state |\n| Pink | `#ff5da2` | Primary actions, accents |\n| Yellow | `#ffd23f` | Header, active blocks |\n| Blue | `#4d80ff` | User messages, CTAs |\n| Green | `#36d399` | Success, \"live\" indicators |\n| Lilac | `#c084fc` | Tertiary accents |\n| Paper | `#fff8e7` | Background |\n| Display font | Space Grotesk | Headings, body |\n| Mono font | JetBrains Mono | Inputs, labels, tags |\n\n**Interaction rules:**\n\n- Hover → `translate(-2px, -2px)` + thicker shadow + slight tilt\n- Active → `translate(2px, 2px)` + tight shadow (the block \"sinks in\")\n- All transitions in 140–160 ms for a snappy, physical feel\n\n---",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "+ slight tilt\n- Active → `translate(2px, 2px)` + tight shadow (the block \"sinks in\")\n- All transitions in 140–160 ms for a snappy, physical feel\n\n---\n Roadmap\n\n- [ ] Multi-document chat (query across several uploaded files)\n- [ ] Streaming responses (token-by-token)\n- [ ] Highlight the cited region inside an inline PDF preview\n- [ ] Export chat as Markdown / PDF\n- [ ] Hybrid retrieval (BM25 + dense) for keyword-heavy docs\n- [ ] Re-ranking with a cross-encoder\n\n---\n\n## License & credits\n\nBuilt as a learning project — feel free to fork, remix, and ship your own version.\n\n \n\n \n\n**Made by [Rajveer Bishnoi](https://github.com/RAJVEER42)**\n\n GenAI course · Assignment 03 · 2026",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "readme",
+    "title": "GitHub README — Notebook_LLM"
+  },
+  {
+    "text": "# 👾 AI Agent CLI Tool ~ Scaler Website Cloner\n\n \n\n----------\n\nA conversational CLI agent that runs in the terminal and clones the Scaler  \nAcademy website into a working `index.html` / `style.css` / `script.js` set of files.  \nInspired by tools like Cursor and Windsurf, the agent reasons through the task in multiple steps  \nrather than producing the whole site in a single response.\n\n \n\n> Built for **Assignment 02 — AI Agent CLI Tool**  \n> Author: **Rajveer Bishnoi**\n\n \n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "her than producing the whole site in a single response.\n\n \n\n> Built for **Assignment 02 — AI Agent CLI Tool**  \n> Author: **Rajveer Bishnoi**\n\n \n\n---\n What it does\n\nYou launch the CLI, type a natural-language instruction such as:\n\n> Clone the Scaler website with header, hero, and footer into a folder called scaler_clone.\n\nThe agent then loops through a structured reasoning cycle — `START → THINK → TOOL → OBSERVE → THINK → ... → OUTPUT` — calling tools to fetch the live Scaler homepage, plan the layout, and write each file. The final output is a working static website you can open directly in a browser.\n\nA pre-generated example output is included at [`scaler_clone/`](scaler_clone/) so you can see what a full run produces.\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "directly in a browser.\n\nA pre-generated example output is included at [`scaler_clone/`](scaler_clone/) so you can see what a full run produces.\n\n---\n Project structure\n\n```text\n.\n├── index.js              # the CLI agent (entry point)\n├── package.json          # node project config + scripts\n├── .env.example          # template — copy to .env and fill in\n├── .gitignore\n├── scaler_clone/         # example output produced by the agent\n│   ├── index.html        # main layout\n│   ├── css/\n│   │   └── style.css     # light-theme Scaler-style design system\n│   ├── js/\n│   │   └── script.js     # mobile nav, dropdowns, scroll reveal\n│   └── images/\n│       ├── favicon.png   # site icon\n│       └── hero-image.jpg# tech illustration hero image\n└── brutalist_blog/       # bonus: a separate brutalist blog UI demo\n    ├── index.html\n    ├── style.css\n    └── script.js\n```\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "ation hero image\n└── brutalist_blog/       # bonus: a separate brutalist blog UI demo\n    ├── index.html\n    ├── style.css\n    └── script.js\n```\n\n---\n How the agent loop works\n\nThe agent is implemented as a strict state machine. Each model response produces exactly one JSON object whose `step` is one of:\n\n| step      | meaning                                                    |\n| --------- | ---------------------------------------------------------- |\n| `START`   | Restates the user's goal in its own words                  |\n| `THINK`   | A single reasoning step — the agent uses several of these  |\n| `TOOL`    | Calls one tool (with `tool_name` + `tool_args`) then waits |\n| `OUTPUT`  | The final answer to the user                               |\n\nAfter every `TOOL` step the runtime executes the requested tool, captures the result, and feeds it back to the model as an `OBSERVE` message. The agent then continues thinking and deciding the next step. Nothing is produced in a single shot.\n\n### Available tools\n\n| Tool",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "he agent then continues thinking and deciding the next step. Nothing is produced in a single shot.\n\n### Available tools\n\n| Tool                        he agent then continues thinking and deciding the next step. Nothing is produced in a single shot.\n\n### Available tools\n\n| Tool                            | Purpose                                                           |\n| ------------------------------- | ----------------------------------------------------------------- |\n| `executeCommand({ cmd })`       | Runs a shell command (`mkdir`, `ls`, etc.) — used for filesystem ops only |\n| `writeFile({ path, content })`  | Writes a file. Creates parent directories. Used for all HTML/CSS/JS content |\n| `readFile(path)`                | Reads back a file the agent previously wrote, so it can refine it |\n| `fetchScalerSite()`             | Fetches the live `https://www.scaler.com` HTML (scripts/styles stripped) so the agent has a real reference for layout and copy |\n\nThe reason `writeFile` exists separately from `executeCommand` is to avoid",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "/styles stripped) so the agent has a real reference for layout and copy |\n\nThe reason `writeFile` exists separately from `executeCommand` is to avoid  /styles stripped) so the agent has a real reference for layout and copy |\n\nThe reason `writeFile` exists separately from `executeCommand` is to avoid the classic failure mode of trying to embed multi-line HTML inside a shell heredoc, which mangles quoting.\n\n### Robustness features in `index.js`\n\n- **Multi-provider support.** The agent uses the OpenAI SDK with a configurable `OPENAI_BASE_URL`, so it works against OpenAI, Anthropic's OpenAI-compat endpoint, or Gemini's OpenAI-compat endpoint by changing only the `.env`.\n- **JSON-mode auto-detection.** Anthropic's compat endpoint rejects the `response_format: json_object` parameter, so the agent auto-disables JSON mode when the base URL contains `anthropic`. Override with `JSON_MODE=on/off`.\n- **Code-fence stripping.** Some models wrap their JSON in ```json — the agent strips fences before parsing.\n- **Balanced-brace recovery.** Smaller mod",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "**Code-fence stripping.** Some models wrap their JSON in ```json — the agent strips fences before parsing.\n- **Balanced-brace recovery.** Smaller mod **Code-fence stripping.** Some models wrap their JSON in ```json — the agent strips fences before parsing.\n- **Balanced-brace recovery.** Smaller models occasionally emit two JSON objects back-to-back. `extractFirstJsonObject()` pulls the first balanced `{ ... }` block out of the response.\n- **Step fixup.** If a model puts a tool name into the `step` field instead of `tool_name` (a common Gemini Flash Lite failure mode), the agent rewrites it to `step: \"TOOL\"`.\n- **Bounded retries.** Three consecutive parse failures break the loop and print a helpful error rather than spinning forever.\n- **Persistent history.** After the agent finishes a task, the conversation history persists, so follow-up instructions (e.g. *\"now make the hero headline larger\"*) can refine the previous output.\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "task, the conversation history persists, so follow-up instructions (e.g. *\"now make the hero headline larger\"*) can refine the previous output.\n\n---\n arger\"*) can refine the previous output.\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "arger\"*) can refine the previous output.\n\n---\n Setup\n\n### Prerequisites\n\n- Node.js 18+\n- An API key for one of: OpenAI, Anthropic (Claude), Google Gemini , or Hugging Face\n\n### Install\n\n```bash\nnpm install\n````\n\n### Configure\n\n```bash\ncp .env.example .env\n```\n\nThen edit `.env`:\n\n```env\n# Hugging Face Inference API\nOPENAI_API_KEY=hf_...\nOPENAI_BASE_URL=https://router.huggingface.co/v1\nMODEL=openai/gpt-oss-120b\n```\n\nThree provider blocks are pre-written in `.env.example` — just uncomment the one you want and comment out the others.\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "L=openai/gpt-oss-120b\n```\n\nThree provider blocks are pre-written in `.env.example` — just uncomment the one you want and comment out the others.\n\n---\n Run\n\n```bash\nnpm start\n```\n\nYou'll see:\n\n```\nAgent CLI ready. Type an instruction, or 'exit' to quit.\nModel: meta-llama/Llama-3.3-70B-Instruct\nTry: Clone the Scaler website with header, hero, and footer into a folder called scaler_clone.\n\nyou >\n```\n\nType your instruction and press enter. The agent will print each step as it thinks, calls tools, and observes results.\n\n### Example session\n\n```\nyou > Clone the Scaler website with header, hero, and footer into a folder called scaler_clone.\n\n[START] User wants a Scaler homepage clone in a folder called scaler_clone, with header, hero, and footer.\n[THINK] I should fetch the live site first so I have a real reference for copy and structure.\n[TOOL ] fetchScalerSite()\n[OBS  ]     ...\n[THINK] The site uses a light theme with teal accents. I will mirror that.\n[TOOL ] executeCommand({\"cmd\":\"mkdir -p scaler_clone\"})\n[OBS  ] (command \"mkdir -p scaler_",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "e uses a light theme with teal accents. I will mirror that.\n[TOOL ] executeCommand({\"cmd\":\"mkdir -p scaler_clone\"})\n[OBS  ] (command \"mkdir -p scaler_ e uses a light theme with teal accents. I will mirror that.\n[TOOL ] executeCommand({\"cmd\":\"mkdir -p scaler_clone\"})\n[OBS  ] (command \"mkdir -p scaler_clone\" finished with no output)\n[THINK] Now write index.html with semantic header, hero, footer.\n[TOOL ] writeFile({\"path\":\"scaler_clone/index.html\",\"content\":\" ...\"})\n[OBS  ] Wrote 14182 chars to scaler_clone/index.html\n... (continues through style.css and script.js) ...\n\n[OUTPUT] Done. Open scaler_clone/index.html in a browser to view the clone.\n```\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "/index.html\n... (continues through style.css and script.js) ...\n\n[OUTPUT] Done. Open scaler_clone/index.html in a browser to view the clone.\n```\n\n---\n View the generated site\n\n```bash\n# Quick local server (no install)\nnpm run serve\n# or:\npython3 -m http.server 5173 --directory scaler_clone\n```\n\nThen visit **[http://127.0.0.1:5173/](http://127.0.0.1:5173/)**.\n\n---\n\n## Tech stack\n\n* **Node.js** (ES modules)\n* **OpenAI SDK** (`openai` npm package)\n* **axios**\n* **dotenv**\n* No build step. No bundler. The CLI is a single file.\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "**Node.js** (ES modules)\n* **OpenAI SDK** (`openai` npm package)\n* **axios**\n* **dotenv**\n* No build step. No bundler. The CLI is a single file.\n\n---\n Submission\n\n| Item                | Status                                                                                    |\n| ------------------- | ----------------------------------------------------------------------------------------- |\n| GitHub repo         | [Github](https://github.com/RAJVEER42/agent-cli-scaler/)|\n| YouTube demo (2–3m) | [youtube](https://youtu.be/DRwTq1YmQv0?si=Lg2_r5nKrussO64h)        |\n| Agent loop          | Implemented in [`index.js`](index.js) |\n| Generated site      | [`scaler_clone/`](scaler_clone/)      |\n| Documentation       | This README                           |\n\n---",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "js`](index.js) |\n| Generated site      | [`scaler_clone/`](scaler_clone/)      |\n| Documentation       | This README                           |\n\n---\n License / attribution\n\nThis project is a learning exercise. The cloned page imitates the structure and look of the public Scaler homepage; copy was rewritten in original wording, no Scaler image assets were used, and the page links to fonts from Google Fonts only.\n\n---\n\n \n\n**Built by Rajveer Bishnoi** 🧃",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "readme",
+    "title": "GitHub README — agent-cli-scaler"
+  },
+  {
+    "text": "🚀 AI-Powered Job Portal \n\n---\n\nA comprehensive, enterprise-grade job portal application featuring AI-powered matching, modern UI/UX, and production-ready infrastructure.\n\n## 🌟 Overview\n\nThis project is a full-stack AI-powered job portal that connects job seekers with employers through intelligent matching algorithms. Built with Spring Boot backend and React frontend, it includes advanced features like resume parsing, job recommendations, skill gap analysis, and real-time analytics.",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "Boot backend and React frontend, it includes advanced features like resume parsing, job recommendations, skill gap analysis, and real-time analytics.\n 🏗️ Architecture\n\n```\n┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐\n│   React Frontend│    │  Spring Boot    │    │   PostgreSQL    │\n│   (Port 3000)   │◄──►│   Backend       │◄──►│    Database     │\n│                 │    │  (Port 8080)    │    │                 │\n└─────────────────┘    └─────────────────┘    └─────────────────┘\n                              │\n                       ┌─────────────────┐\n                       │   OpenAI API    │\n                       │  (AI Features)  │\n                       └─────────────────┘\n```",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "───────────────┐\n                       │   OpenAI API    │\n                       │  (AI Features)  │\n                       └─────────────────┘\n```\n 📚 Table of Contents\n\n- [Features](#-features)\n- [Tech Stack](#-tech-stack)\n- [Quick Start](#-quick-start)\n- [API Documentation](#-api-documentation)\n- [Database Schema](#-database-schema)\n- [Configuration](#-configuration)\n- [Deployment](#-deployment)\n- [Testing](#-testing)\n- [Documentation](#-documentation)\n- [Contributing](#-contributing)",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "nfiguration](#-configuration)\n- [Deployment](#-deployment)\n- [Testing](#-testing)\n- [Documentation](#-documentation)\n- [Contributing](#-contributing)\n ✨ Features\n\n### 🤖 AI-Powered Features\n- **Intelligent Resume Parsing** - Extract skills, experience, and qualifications\n- **Smart Job Matching** - ML-based job recommendations\n- **Skill Gap Analysis** - Identify missing skills for desired positions\n- **AI Interview Questions** - Generate customized interview questions\n\n### 👥 User Management\n- **Multi-role Authentication** - Candidate, Recruiter, Admin roles\n- **Profile Management** - Comprehensive user profiles\n- **JWT-based Security** - Secure authentication and authorization\n\n### 💼 Job Management\n- **Job Posting** - Rich job descriptions with requirements\n- **Application Tracking** - Complete application lifecycle\n- **Advanced Search** - Filter by location, skills, salary, etc.\n- **Real-time Updates** - Live job status updates\n\n### 📊 Analytics & Monitoring\n- **Performance Metrics** - System health monitoring\n- **Usage Analytics** - Use",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "ime Updates** - Live job status updates\n\n### 📊 Analytics & Monitoring\n- **Performance Metrics** - System health monitoring\n- **Usage Analytics** - Use ime Updates** - Live job status updates\n\n### 📊 Analytics & Monitoring\n- **Performance Metrics** - System health monitoring\n- **Usage Analytics** - User behavior tracking\n- **Cache Management** - Redis caching for performance\n- **Circuit Breaker Pattern** - Fault tolerance\n\n### 🎨 Modern UI/UX\n- **Responsive Design** - Mobile-first approach\n- **Dark/Light Themes** - User preference support\n- **Component Library** - Reusable UI components\n- **Professional Design** - Modern, intuitive interface",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "ark/Light Themes** - User preference support\n- **Component Library** - Reusable UI components\n- **Professional Design** - Modern, intuitive interface\n 🛠️ Tech Stack\n\n### Backend\n- **Spring Boot 3.2.2** - Core framework\n- **Spring Security** - Authentication & authorization\n- **Spring Data JPA** - Database abstraction\n- **PostgreSQL** - Primary database\n- **JWT** - Token-based authentication\n- **OpenAI API** - AI functionality\n- **Swagger/OpenAPI** - API documentation\n- **Docker** - Containerization\n\n### Frontend\n- **React 18** - UI framework\n- **React Router** - Navigation\n- **Axios** - HTTP client\n- **Tailwind CSS** - Styling\n- **Lucide React** - Icons\n- **Context API** - State management\n\n### DevOps & Tools\n- **Docker Compose** - Local development\n- **Kubernetes** - Container orchestration\n- **Nginx** - Reverse proxy\n- **Prometheus** - Monitoring\n- **Grafana** - Visualization",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "Local development\n- **Kubernetes** - Container orchestration\n- **Nginx** - Reverse proxy\n- **Prometheus** - Monitoring\n- **Grafana** - Visualization\n 🚀 Quick Start\n\n### Prerequisites\n- **Java 17+**\n- **Node.js 16+**\n- **PostgreSQL 12+**\n- **Docker** (optional)\n\n### 1. Clone Repository\n```bash\ngit clone  \ncd AI_Job_Portal\n```\n\n### 2. Database Setup\n```bash\n# Create PostgreSQL database\npsql -U postgres\nCREATE DATABASE jobportal_db;\n\\q\n```\n\n### 3. Backend Setup\n```bash\ncd jobportal-backend\n./mvnw clean install\n./mvnw spring-boot:run\n```\n\n### 4. Frontend Setup\n```bash\ncd jobportal-frontend\nnpm install\nnpm start\n```\n\n### 5. Access Application\n- **Frontend**: http://localhost:3000\n- **Backend API**: http://localhost:8080\n- **Swagger UI**: http://localhost:8080/swagger-ui/index.html",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "lication\n- **Frontend**: http://localhost:3000\n- **Backend API**: http://localhost:8080\n- **Swagger UI**: http://localhost:8080/swagger-ui/index.html\n 📖 API Documentation\n\n### 🔗 Swagger UI\nAccess comprehensive API documentation at: **http://localhost:8080/swagger-ui/index.html**\n\n### 🔑 Authentication Endpoints\n\n#### Register User\n```http\nPOST /api/auth/register\nContent-Type: application/json\n\n{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\",\n  \"fullName\": \"John Doe\",\n  \"role\": \"CANDIDATE\",\n  \"phone\": \"+1234567890\"\n}\n```\n\n#### Login\n```http\nPOST /api/auth/login\nContent-Type: application/json\n\n{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}\n```\n\n**Response:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Login successful\",\n  \"data\": {\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9...\",\n    \"refreshToken\": \"refresh_token_here\",\n    \"user\": {\n      \"id\": 1,\n      \"email\": \"user@example.com\",\n      \"fullName\": \"John Doe\",\n      \"role\": \"CANDIDATE\"\n    }\n  },\n  \"timestamp\": \"2026-01-31T10:00:00\"\n}\n```\n\n### 👤 User Management\n\n####",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "ample.com\",\n      \"fullName\": \"John Doe\",\n      \"role\": \"CANDIDATE\"\n    }\n  },\n  \"timestamp\": \"2026-01-31T10:00:00\"\n}\n```\n\n### 👤 User Management\n\n#### ample.com\",\n      \"fullName\": \"John Doe\",\n      \"role\": \"CANDIDATE\"\n    }\n  },\n  \"timestamp\": \"2026-01-31T10:00:00\"\n}\n```\n\n### 👤 User Management\n\n#### Get User Profile\n```http\nGET /api/users/{id}\nAuthorization: Bearer  \n```\n\n#### Update User Profile\n```http\nPUT /api/users/{id}\nAuthorization: Bearer  \nContent-Type: application/json\n\n{\n  \"fullName\": \"John Updated\",\n  \"phone\": \"+1234567891\"\n}\n```\n\n### 💼 Job Management\n\n#### Create Job (Recruiter Only)\n```http\nPOST /api/jobs\nAuthorization: Bearer  \nContent-Type: application/json\n\n{\n  \"title\": \"Senior Java Developer\",\n  \"description\": \"We are looking for a senior Java developer...\",\n  \"requirements\": \"5+ years of Java experience\",\n  \"location\": \"San Francisco, CA\",\n  \"salaryMin\": 100000,\n  \"salaryMax\": 150000,\n  \"skillsRequired\": [\"Java\", \"Spring Boot\", \"PostgreSQL\"],\n  \"experienceLevel\": \"SENIOR\",\n  \"jobType\": \"FULL_TIME\",\n  \"remote\": false",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "ryMax\": 150000,\n  \"skillsRequired\": [\"Java\", \"Spring Boot\", \"PostgreSQL\"],\n  \"experienceLevel\": \"SENIOR\",\n  \"jobType\": \"FULL_TIME\",\n  \"remote\": false\n ryMax\": 150000,\n  \"skillsRequired\": [\"Java\", \"Spring Boot\", \"PostgreSQL\"],\n  \"experienceLevel\": \"SENIOR\",\n  \"jobType\": \"FULL_TIME\",\n  \"remote\": false\n}\n```\n\n#### Get All Jobs\n```http\nGET /api/jobs?page=0&size=10&sort=createdAt,desc\n```\n\n#### Search Jobs\n```http\nGET /api/jobs/search?keyword=Java&location=San Francisco&experienceLevel=SENIOR\n```\n\n#### Apply to Job\n```http\nPOST /api/jobs/{jobId}/apply\nAuthorization: Bearer  \nContent-Type: multipart/form-data\n\ncoverLetter: \"I am interested in this position...\"\nresume: [FILE]\n```\n\n### 🤖 AI-Powered Features\n\n#### Parse Resume\n```http\nPOST /api/ai/parse-resume\nAuthorization: Bearer  \nContent-Type: multipart/form-data\n\nfile: [PDF/DOC file]\n```\n\n**Response:**\n```json\n{\n  \"success\": true,\n  \"data\": {\n    \"personalInfo\": {\n      \"name\": \"John Doe\",\n      \"email\": \"john@example.com\",\n      \"phone\": \"+1234567890\"\n    },\n    \"skills\": [\"Java\", \"Spring",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "\"personalInfo\": {\n      \"name\": \"John Doe\",\n      \"email\": \"john@example.com\",\n      \"phone\": \"+1234567890\"\n    },\n    \"skills\": [\"Java\", \"Spring \"personalInfo\": {\n      \"name\": \"John Doe\",\n      \"email\": \"john@example.com\",\n      \"phone\": \"+1234567890\"\n    },\n    \"skills\": [\"Java\", \"Spring Boot\", \"React\", \"PostgreSQL\"],\n    \"experience\": [\n      {\n        \"company\": \"Tech Corp\",\n        \"position\": \"Senior Developer\",\n        \"duration\": \"2020-2024\",\n        \"description\": \"Led development team...\"\n      }\n    ],\n    \"education\": [\n      {\n        \"institution\": \"University of Technology\",\n        \"degree\": \"Bachelor of Computer Science\",\n        \"year\": \"2020\"\n      }\n    ]\n  }\n}\n```\n\n#### Get Job Recommendations\n```http\nGET /api/ai/recommendations?userId=1&limit=10\nAuthorization: Bearer  \n```\n\n#### Skill Gap Analysis\n```http\nPOST /api/ai/skill-gap-analysis\nAuthorization: Bearer  \nContent-Type: application/json\n\n{\n  \"userId\": 1,\n  \"targetJobId\": 5\n}\n```\n\n#### Generate Interview Questions\n```http\nPOST /api/ai/interview-quest",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "er  \nContent-Type: application/json\n\n{\n  \"userId\": 1,\n  \"targetJobId\": 5\n}\n```\n\n#### Generate Interview Questions\n```http\nPOST /api/ai/interview-quest er  \nContent-Type: application/json\n\n{\n  \"userId\": 1,\n  \"targetJobId\": 5\n}\n```\n\n#### Generate Interview Questions\n```http\nPOST /api/ai/interview-questions\nAuthorization: Bearer  \nContent-Type: application/json\n\n{\n  \"jobId\": 5,\n  \"difficulty\": \"MEDIUM\",\n  \"questionCount\": 10\n}\n```\n\n### 📊 Analytics Endpoints\n\n#### System Health\n```http\nGET /api/analytics/health\nAuthorization: Bearer  \n```\n\n#### Usage Statistics\n```http\nGET /api/analytics/usage?period=LAST_30_DAYS\nAuthorization: Bearer  \n```\n\n#### Performance Metrics\n```http\nGET /api/analytics/performance\nAuthorization: Bearer  \n```\n\n### 📁 File Management\n\n#### Upload File\n```http\nPOST /api/files/upload\nAuthorization: Bearer  \nContent-Type: multipart/form-data\n\nfile: [FILE]\ntype: \"RESUME\" | \"PROFILE_PICTURE\" | \"JOB_DOCUMENT\"\n```\n\n#### Download File\n```http\nGET /api/files/download/{fileId}\nAuthorization: Bearer  \n```\n\n### 🛡️ Admin Endpoints",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "ROFILE_PICTURE\" | \"JOB_DOCUMENT\"\n```\n\n#### Download File\n```http\nGET /api/files/download/{fileId}\nAuthorization: Bearer  \n```\n\n### 🛡️ Admin Endpoints\n ROFILE_PICTURE\" | \"JOB_DOCUMENT\"\n```\n\n#### Download File\n```http\nGET /api/files/download/{fileId}\nAuthorization: Bearer  \n```\n\n### 🛡️ Admin Endpoints\n\n#### Get All Users (Admin Only)\n```http\nGET /api/admin/users?page=0&size=20\nAuthorization: Bearer  \n```\n\n#### System Statistics\n```http\nGET /api/admin/stats\nAuthorization: Bearer  \n```\n\n#### Manage User Status\n```http\nPATCH /api/admin/users/{userId}/status\nAuthorization: Bearer  \nContent-Type: application/json\n\n{\n  \"status\": \"ACTIVE\" | \"INACTIVE\" | \"SUSPENDED\"\n}\n```",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "ATCH /api/admin/users/{userId}/status\nAuthorization: Bearer  \nContent-Type: application/json\n\n{\n  \"status\": \"ACTIVE\" | \"INACTIVE\" | \"SUSPENDED\"\n}\n```\n 🗄️ Database Schema\n\n### Core Tables\n\n#### Users Table\n```sql\nCREATE TABLE users (\n    id BIGSERIAL PRIMARY KEY,\n    email VARCHAR(255) UNIQUE NOT NULL,\n    password VARCHAR(255) NOT NULL,\n    full_name VARCHAR(255) NOT NULL,\n    role VARCHAR(50) NOT NULL,\n    phone VARCHAR(20),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```\n\n#### Jobs Table\n```sql\nCREATE TABLE jobs (\n    id BIGSERIAL PRIMARY KEY,\n    title VARCHAR(255) NOT NULL,\n    description TEXT,\n    requirements TEXT,\n    location VARCHAR(255),\n    salary_min DECIMAL(10,2),\n    salary_max DECIMAL(10,2),\n    experience_level VARCHAR(50),\n    job_type VARCHAR(50),\n    remote BOOLEAN DEFAULT false,\n    status VARCHAR(50) DEFAULT 'ACTIVE',\n    recruiter_id BIGINT REFERENCES users(id),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURREN",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "LT 'ACTIVE',\n    recruiter_id BIGINT REFERENCES users(id),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURREN LT 'ACTIVE',\n    recruiter_id BIGINT REFERENCES users(id),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```\n\n#### Applications Table\n```sql\nCREATE TABLE applications (\n    id BIGSERIAL PRIMARY KEY,\n    job_id BIGINT REFERENCES jobs(id),\n    candidate_id BIGINT REFERENCES users(id),\n    cover_letter TEXT,\n    resume_url VARCHAR(500),\n    status VARCHAR(50) DEFAULT 'PENDING',\n    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "status VARCHAR(50) DEFAULT 'PENDING',\n    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```\n ⚙️ Configuration\n\n### Backend Configuration\nEdit `/src/main/resources/application.properties`:\n\n```properties\n# Database\nspring.datasource.url=jdbc:postgresql://localhost:5432/jobportal_db\nspring.datasource.username=postgres\nspring.datasource.password=admin123\n\n# JWT\njwt.secret=your-secret-key-here\njwt.expiration=900000\n\n# OpenAI\nopenai.api.key=your-openai-api-key\nopenai.model=gpt-4o\nopenai.max.tokens=2000\n\n# File Upload\nspring.servlet.multipart.max-file-size=10MB\nspring.servlet.multipart.max-request-size=10MB\n\n# Server\nserver.port=8080\n```\n\n### Frontend Configuration\nCreate `.env` file:\n\n```env\nREACT_APP_API_URL=http://localhost:8080/api\nREACT_APP_APP_NAME=AI Job Portal\nREACT_APP_VERSION=1.0.0\n```",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "nd Configuration\nCreate `.env` file:\n\n```env\nREACT_APP_API_URL=http://localhost:8080/api\nREACT_APP_APP_NAME=AI Job Portal\nREACT_APP_VERSION=1.0.0\n```\n 🐳 Docker Deployment\n\n### Using Docker Compose\n```bash\n# Start all services\ndocker-compose up -d\n\n# View logs\ndocker-compose logs -f\n\n# Stop services\ndocker-compose down\n```\n\n### Individual Services\n```bash\n# Backend\ndocker build -t jobportal-backend .\ndocker run -p 8080:8080 jobportal-backend\n\n# Frontend\ndocker build -t jobportal-frontend .\ndocker run -p 3000:3000 jobportal-frontend\n```\n\n## ☸️ Kubernetes Deployment\n\n```bash\n# Apply Kubernetes manifests\nkubectl apply -f k8s/\n\n# Check deployment status\nkubectl get pods\nkubectl get services\n\n# Access application\nkubectl port-forward service/jobportal-frontend 3000:3000\n```",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "# Check deployment status\nkubectl get pods\nkubectl get services\n\n# Access application\nkubectl port-forward service/jobportal-frontend 3000:3000\n```\n 🧪 Testing\n\n### Backend Tests\n```bash\ncd jobportal-backend\n./mvnw test\n```\n\n### Frontend Tests\n```bash\ncd jobportal-frontend\nnpm test\n```\n\n### API Testing\n```bash\n# Using the provided test scripts\n./test-functionality.sh\n./api-diagnostic.sh\n```\n\n### Load Testing\n```bash\n# Backend load testing\n./load-test.sh\n```\n\n## 📊 Monitoring\n\n### Application Metrics\n- **Prometheus**: http://localhost:9090\n- **Grafana**: http://localhost:3001\n\n### Health Checks\n- **Backend Health**: http://localhost:8080/actuator/health\n- **Frontend Health**: http://localhost:3000/health\n\n## 🔒 Security Features\n\n- **JWT Authentication** with refresh tokens\n- **Role-based Access Control** (RBAC)\n- **CORS Configuration** for cross-origin requests\n- **Input Validation** and sanitization\n- **SQL Injection Protection** via JPA\n- **Rate Limiting** for API endpoints\n- **Secure Password Hashing** using BCrypt",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "Validation** and sanitization\n- **SQL Injection Protection** via JPA\n- **Rate Limiting** for API endpoints\n- **Secure Password Hashing** using BCrypt\n 🚀 Performance Optimizations\n\n- **Database Connection Pooling**\n- **Query Optimization** with JPA criteria\n- **Caching Layer** with Redis\n- **File Upload Optimization**\n- **Lazy Loading** for large datasets\n- **Response Compression**\n\n## 📈 Monitoring & Analytics\n\n### Key Metrics Tracked\n- **User Registrations** and login patterns\n- **Job Posting** and application rates\n- **AI Feature Usage** (resume parsing, recommendations)\n- **System Performance** (response times, error rates)\n- **Cache Hit Rates** and database performance\n\n### Available Dashboards\n- **Admin Dashboard** - System overview and user management\n- **Recruiter Dashboard** - Job postings and applications\n- **Candidate Dashboard** - Job search and applications\n- **Analytics Dashboard** - Comprehensive metrics and insights",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "Job postings and applications\n- **Candidate Dashboard** - Job search and applications\n- **Analytics Dashboard** - Comprehensive metrics and insights\n 🤝 Contributing\n\n1. Fork the repository\n2. Create a feature branch (`git checkout -b feature/amazing-feature`)\n3. Commit your changes (`git commit -m 'Add amazing feature'`)\n4. Push to the branch (`git push origin feature/amazing-feature`)\n5. Open a Pull Request",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "Commit your changes (`git commit -m 'Add amazing feature'`)\n4. Push to the branch (`git push origin feature/amazing-feature`)\n5. Open a Pull Request\n 📋 Documentation\n\nThis project includes comprehensive documentation:\n\n### 📄 Available Documentation Files\n\n- **`README.md`** - Main project documentation (this file)\n- **`API_TESTING_GUIDE.md`** - Comprehensive API testing guide with curl examples\n- **`AI_Job_Portal_API.postman_collection.json`** - Postman collection for easy API testing\n- **`api-test-complete.sh`** - Automated testing script for all API endpoints\n\n### 🔧 Interactive Documentation\n\n- **Swagger UI**: http://localhost:8080/swagger-ui/index.html\n  - Interactive API documentation\n  - Try out endpoints directly from the browser\n  - View request/response schemas\n  - Authentication support built-in\n\n- **OpenAPI Specification**: http://localhost:8080/v3/api-docs\n  - Machine-readable API definition\n  - Can be imported into various tools\n  - Supports code generation\n\n### 📱 Testing Tools\n\n#### 1. Automated Testing Script\n```bash\n# Ru",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "API definition\n  - Can be imported into various tools\n  - Supports code generation\n\n### 📱 Testing Tools\n\n#### 1. Automated Testing Script\n```bash\n# Ru API definition\n  - Can be imported into various tools\n  - Supports code generation\n\n### 📱 Testing Tools\n\n#### 1. Automated Testing Script\n```bash\n# Run comprehensive API tests\n./api-test-complete.sh\n```\n\n#### 2. Postman Collection\n```bash\n# Import the collection file into Postman\nAI_Job_Portal_API.postman_collection.json\n```\n\n#### 3. Manual Testing Guide\nRefer to `API_TESTING_GUIDE.md` for detailed curl commands and examples.\n\n### 🔍 API Endpoints Overview\n\n| Category | Endpoints | Authentication | Description |\n|----------|-----------|----------------|-------------|\n| **Authentication** | `/api/auth/*` | None | Login, registration, token refresh |\n| **User Management** | `/api/users/*` | Required | Profile management, user operations |\n| **Job Management** | `/api/jobs/*` | Varies | Job CRUD, search, applications |\n| **AI Features** | `/api/ai/*` | Required | Resume parsing, recommendati",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "Job Management** | `/api/jobs/*` | Varies | Job CRUD, search, applications |\n| **AI Features** | `/api/ai/*` | Required | Resume parsing, recommendati Job Management** | `/api/jobs/*` | Varies | Job CRUD, search, applications |\n| **AI Features** | `/api/ai/*` | Required | Resume parsing, recommendations, skill analysis |\n| **Analytics** | `/api/analytics/*` | Required | Performance metrics, usage statistics |\n| **File Management** | `/api/files/*` | Required | Upload, download, file operations |\n| **Admin** | `/api/admin/*` | Admin Only | User management, system administration |\n\n### 🚀 Quick API Test\n\nTest if the API is running:\n```bash\ncurl http://localhost:8080/actuator/health\n```\n\nAccess Swagger UI:\n```bash\nopen http://localhost:8080/swagger-ui/index.html\n```",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "I is running:\n```bash\ncurl http://localhost:8080/actuator/health\n```\n\nAccess Swagger UI:\n```bash\nopen http://localhost:8080/swagger-ui/index.html\n```\n 📄 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## 🙏 Acknowledgments\n\n- Spring Boot team for the excellent framework\n- OpenAI for AI capabilities\n- React team for the frontend framework\n- PostgreSQL team for the robust database\n- All contributors and testers\n\n## 📞 Support\n\nFor support and questions:\n\n- **Email**: Rajveer.24BCS10404@sst.scaler.com\n- **Documentation**: http://localhost:8080/swagger-ui/index.html\n- **Issues**: GitHub Issues page\n\n---\n\n**Built with ❤️ by Rajveer Bishnoi**\n\n*AI-Powered Job Portal - Connecting Talent with Opportunity*",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "readme",
+    "title": "GitHub README — ai-job-portal"
+  },
+  {
+    "text": "# Hackathon Backend — CCPA Compliance Analyzer\n\nAI-powered CCPA compliance analysis using RAG (Retrieval-Augmented Generation) with local LLM inference.\n\n## 🏗️ Architecture Design\n\nThe system implements a hardened RAG (Retrieval-Augmented Generation) pipeline designed specifically for legal compliance.\n\n```text\nPOST /analyze\n      │\n      ├─► 1. Accuracy Boost (Deterministic Rules)\n      │      Checks against known violation patterns (e.g. \"Selling data without consent\")\n      │      └─► MATCH: Returns verified CCPA section instantly ( ` inference and health checks.\n\n### Edge Cases Tested\n\n- *\"Company shares data with partner after opt-out\"* → `harmful=True, ['Section 1798.120']`\n- *\"User deletion request ignored\"* → `harmful=True, ['Section 1798.105']`\n- *\"Privacy policy clearly explains rights\"* → `harmful=False, []`\n- *\"Company collects anonymized data only\"* → `harmful=False, []`",
+    "source": "github",
+    "repo": "ccpa-compliance-engine",
+    "doc_type": "readme",
+    "title": "GitHub README — ccpa-compliance-engine"
+  },
+  {
+    "text": "# ClearPath Support Chatbot\n\nRAG-powered customer support chatbot for ClearPath project management tool. Built from scratch — no LangChain, LlamaIndex, or managed retrieval services.\n\n**🌐 Live Demo:** [https://clearpath-chatbot-928213635181.asia-south1.run.app](https://clearpath-chatbot-928213635181.asia-south1.run.app)\n### ❗️NOTE : (due to some problem in my GCP payment, The live link may not work {Thinking of shifting it to DigitalOcean soon...})",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "a-south1.run.app)\n### ❗️NOTE : (due to some problem in my GCP payment, The live link may not work {Thinking of shifting it to DigitalOcean soon...}) \n How to run locally\n\n```bash\n# Clone and setup\ngit clone https://github.com/RAJVEER42/clearpath-chatbot.git\ncd clearpath-chatbot\n\n# Create virtual environment\npython3 -m venv .venv\nsource .venv/bin/activate\n\n# Install CPU-only PyTorch first (avoids multi-GB CUDA downloads)\npip install torch --index-url https://download.pytorch.org/whl/cpu\n\n# Install backend dependencies\npip install -r backend/requirements.txt\n\n# Configure environment\ncp .env.example .env\n# Edit .env and add your GROQ_API_KEY from https://console.groq.com\n\n# Start backend (first run builds the vector index from 30 PDFs, takes ~30-60s)\ncd backend\nuvicorn main:app --host 0.0.0.0 --port 8000\n```\n\n### Frontend (development)\n\n```bash\n# In a separate terminal\ncd frontend\nnpm install\nnpm run dev\n# Open http://localhost:5173\n```\n\n### Frontend (production)\n\n```bash\ncd frontend\nnpm install\nnpm run build\n# Built files go to frontend/",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "l\nnpm run dev\n# Open http://localhost:5173\n```\n\n### Frontend (production)\n\n```bash\ncd frontend\nnpm install\nnpm run build\n# Built files go to frontend/ l\nnpm run dev\n# Open http://localhost:5173\n```\n\n### Frontend (production)\n\n```bash\ncd frontend\nnpm install\nnpm run build\n# Built files go to frontend/dist/ — FastAPI serves them automatically at http://localhost:8000\n```\n\n### Docker\n\n```bash\ndocker build -t clearpath-chatbot .\ndocker run -p 8000:8000 -e GROQ_API_KEY=your_key_here clearpath-chatbot\n# Open http://localhost:8000\n```",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "```bash\ndocker build -t clearpath-chatbot .\ndocker run -p 8000:8000 -e GROQ_API_KEY=your_key_here clearpath-chatbot\n# Open http://localhost:8000\n```\n Models used\n\n| Model | Groq model string | Used for |\n|-------|-------------------|----------|\n| Llama 3.1 8B | `llama-3.1-8b-instant` | Simple queries — greetings, single-fact lookups, yes/no |\n| Llama 3.3 70B | `llama-3.3-70b-versatile` | Complex queries — comparisons, complaints, multi-step reasoning |\n\n## Environment config\n\n| Variable | Required | Default | Description |\n|----------|----------|---------|-------------|\n| `GROQ_API_KEY` | Yes | — | API key from [Groq console](https://console.groq.com) |\n| `PORT` | No | `8000` | Backend server port |",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "--|-------------|\n| `GROQ_API_KEY` | Yes | — | API key from [Groq console](https://console.groq.com) |\n| `PORT` | No | `8000` | Backend server port |\n Architecture\n\nThree-layer pipeline:\n\n1. **Hybrid Retrieval Pipeline** — PDFs parsed with PyMuPDF, section-aware chunking (500 tokens, 100 overlap), embedded with `all-MiniLM-L6-v2`, dual retrieval using BM25 keyword search (custom implementation) + FAISS semantic search (cosine similarity via `IndexFlatIP`), results merged via Reciprocal Rank Fusion (RRF), top-k=5 with 0.3 threshold and automatic fallback. Vector index persisted to disk and reloaded on restart.\n\n2. **Model Router** — Deterministic rule-based classifier (6 rules: word count ≥15, complex-intent keywords, multiple question marks, complaint markers, conditional/compound markers, negation patterns). No LLM calls. Both models are actually used. Every decision logged as JSON to stdout.\n\n3. **Output Evaluator** — Three flags: `no_context` (answered without chunks), `refusal` (LLM declined to answer), `conflicting_sources` (chunk",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "dout.\n\n3. **Output Evaluator** — Three flags: `no_context` (answered without chunks), `refusal` (LLM declined to answer), `conflicting_sources` (chunk dout.\n\n3. **Output Evaluator** — Three flags: `no_context` (answered without chunks), `refusal` (LLM declined to answer), `conflicting_sources` (chunks from 4+ different documents — domain-specific check). Conversational queries (greetings, small talk) bypass all checks. Flags surface to the user as inline warning banners in the chat UI.",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "pecific check). Conversational queries (greetings, small talk) bypass all checks. Flags surface to the user as inline warning banners in the chat UI.\n Routing log format\n\nEvery query produces a JSON log line to stdout:\n\n```json\n{\n  \"query\": \"How do I reset my password?\",\n  \"classification\": \"simple\",\n  \"model_used\": \"llama-3.1-8b-instant\",\n  \"tokens_input\": 512,\n  \"tokens_output\": 134,\n  \"latency_ms\": 980\n}\n```\n\n## Eval harness\n\n```bash\n# With the backend running:\ncd eval\npython run_eval.py\n# 15/15 passed\n```",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "\"tokens_output\": 134,\n  \"latency_ms\": 980\n}\n```\n\n## Eval harness\n\n```bash\n# With the backend running:\ncd eval\npython run_eval.py\n# 15/15 passed\n```\n Bonus challenges attempted\n\n### ✅ Eval Harness\n15 hand-written test queries with expected answers in `eval/test_queries.json`. Covers simple lookups, complex multi-part questions, off-topic rejection (triggers `refusal` flag), complaints, and edge cases. Validates classification, answer content, and evaluator flags. Run with `cd eval && python run_eval.py`.\n\n### ✅ Conversation Memory\nImplemented in `backend/services/memory.py`. Uses in-memory dict keyed by `conversation_id`, preserving last 5 turns per session. The `conversation_id` is returned in every API response and sent back by the client on subsequent requests. Design tradeoff: 5 turns keeps token cost low (~500 extra tokens per request) while enabling follow-up questions like \"tell me more about that.\" Known limitation: memory is lost on container restart (see Q4 in Written_answers.md).\n\n### ✅ Live Deploy (GCP Cloud Run — Business",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "e more about that.\" Known limitation: memory is lost on container restart (see Q4 in Written_answers.md).\n\n### ✅ Live Deploy (GCP Cloud Run — Business e more about that.\" Known limitation: memory is lost on container restart (see Q4 in Written_answers.md).\n\n### ✅ Live Deploy (GCP Cloud Run — Business-Grade)\nDeployed on Google Cloud Platform using Cloud Run + Artifact Registry in `asia-south1` (Mumbai). Multi-stage Docker build (Node.js build stage + Python 3.11 runtime). Public HTTPS URL with auto-scaling 0→3 instances. Qualifies for extra bonus marks as a business-grade cloud provider.\n\n**Live at:** [https://clearpath-chatbot-928213635181.asia-south1.run.app](https://clearpath-chatbot-928213635181.asia-south1.run.app)",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "loud provider.\n\n**Live at:** [https://clearpath-chatbot-928213635181.asia-south1.run.app](https://clearpath-chatbot-928213635181.asia-south1.run.app)\n Project structure\n\n```\nclearpath-chatbot/\n├── README.md\n├── Written_answers.md\n├── Dockerfile\n├── .env.example\n├── docs/                        # 30 ClearPath PDF files\n├── backend/\n│   ├── main.py                  # FastAPI app, startup lifespan\n│   ├── config.py                # Centralised settings (pydantic-settings)\n│   ├── routers/chat.py          # POST /query endpoint\n│   └── services/\n│       ├── ingestion.py         # PDF parsing + section-aware chunking\n│       ├── embeddings.py        # sentence-transformers wrapper\n│       ├── retriever.py         # BM25 + FAISS + RRF hybrid retrieval\n│       ├── router.py            # Deterministic 6-rule classifier\n│       ├── llm.py               # Groq API calls with retry logic\n│       ├── evaluator.py         # 3-flag output evaluator\n│       └── memory.py            # In-memory conversation history\n├── frontend/\n│   └── src/\n│       ├",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "evaluator.py         # 3-flag output evaluator\n│       └── memory.py            # In-memory conversation history\n├── frontend/\n│   └── src/\n│       ├ evaluator.py         # 3-flag output evaluator\n│       └── memory.py            # In-memory conversation history\n├── frontend/\n│   └── src/\n│       ├── App.tsx              # Root state + API integration\n│       ├── components/\n│       │   ├── chat-message.tsx # Message bubbles + evaluator banners\n│       │   ├── debug-panel.tsx  # Sliding debug drawer\n│       │   ├── chat-input.tsx   # Auto-growing textarea + RGB border\n│       │   └── empty-state.tsx  # Prompt suggestion cards\n│       └── types/index.ts       # Shared TypeScript interfaces\n└── eval/\n    ├── run_eval.py              # Test runner\n    └── test_queries.json        # 15 test cases\n```",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "ts       # Shared TypeScript interfaces\n└── eval/\n    ├── run_eval.py              # Test runner\n    └── test_queries.json        # 15 test cases\n```\n Known issues\n\n- **In-memory conversation history** — lost on container restart / Cloud Run cold start. Swap `_conversations` dict in `memory.py` for Redis or Firestore to fix.\n- **PDF table extraction is lossy** — tabular data (pricing matrices, keyboard shortcut tables) loses row/column structure during PyMuPDF extraction, causing poor retrieval of table-specific facts.\n- **General-purpose embedding model** — `all-MiniLM-L6-v2` is not fine-tuned on ClearPath vocabulary; domain-specific terms may embed suboptimally.\n- **Streaming not implemented** — full response delivered at once; no token-by-token streaming.",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "readme",
+    "title": "GitHub README — clearpath-chatbot"
+  },
+  {
+    "text": "# Portfolio — Rajveer Bishnoi\n\n**[rajveerbishnoi.vercel.app](https://portfolio-gf6xifbc9-rajveers-projects-f952c03e.vercel.app)**\n\nPersonal portfolio site built with vanilla HTML/CSS. Apple Human Interface Guidelines-inspired design.\n\n## Features\n\n- Frosted glass navigation bar\n- Scroll-triggered fade-in animations\n- Project cards with Problem / Approach / Outcome structure\n- Vertical timeline journey section\n- Fully responsive, mobile-first\n- Zero dependencies — single HTML file\n\n## Stack\n\nHTML · CSS · Vanilla JS · Vercel\n\n## Contact\n\n- Email: irajveer.bishnoi2310@gmail.com\n- GitHub: [RAJVEER42](https://github.com/RAJVEER42)\n- LinkedIn: [Rajveer Bishnoi](https://www.linkedin.com/in/rajveer-bishnoi-576b62356/)",
+    "source": "github",
+    "repo": "portfolio",
+    "doc_type": "readme",
+    "title": "GitHub README — portfolio"
+  },
+  {
+    "text": "GitHub repository 'Notebook_LLM' by Rajveer Bishnoi (RAJVEER42). Primary language: JavaScript. Description: DocBlock — a neo-brutalist take on Google NotebookLLM. Upload a PDF or TXT, ask questions, get answers grounded in the document with page-level citations.. Topics: n/a. URL: https://github.com/RAJVEER42/Notebook_LLM. Homepage: https://notebook-llm-five.vercel.app/.",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — Notebook_LLM"
+  },
+  {
+    "text": "GitHub repository 'agent-cli-scaler' by Rajveer Bishnoi (RAJVEER42). Primary language: JavaScript. Description: no description provided. Topics: n/a. URL: https://github.com/RAJVEER42/agent-cli-scaler. Homepage: none.",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — agent-cli-scaler"
+  },
+  {
+    "text": "GitHub repository 'AI-Persona' by Rajveer Bishnoi (RAJVEER42). Primary language: JavaScript. Description: Multi-persona Scaler chatbot with Gemini-backed system prompts and few-shot examples. Live: https://ai-persona-ten.vercel.app. Topics: n/a. URL: https://github.com/RAJVEER42/AI-Persona. Homepage: https://ai-persona-ten.vercel.app.",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — AI-Persona"
+  },
+  {
+    "text": "GitHub repository 'clearpath-chatbot' by Rajveer Bishnoi (RAJVEER42). Primary language: TypeScript. Description: AI-powered HR chatbot using RAG with hybrid BM25 + semantic retrieval, built with FastAPI, React, and Groq LLM. Topics: bm25, chatbot, faiss, fastapi, groq, lambda, nlp, python, rag, rag-chatbot, react. URL: https://github.com/RAJVEER42/clearpath-chatbot. Homepage: https://clearpath-chatbot-928213635181.asia-south1.run.app.",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — clearpath-chatbot"
+  },
+  {
+    "text": "GitHub repository 'ccpa-compliance-engine' by Rajveer Bishnoi (RAJVEER42). Primary language: Python. Description: AI-powered CCPA compliance analysis system that evaluates business data practices and returns structured statutory violation reports using FastAPI, RAG, and a constrained LLM pipeline.. Topics: n/a. URL: https://github.com/RAJVEER42/ccpa-compliance-engine. Homepage: none.",
+    "source": "github",
+    "repo": "ccpa-compliance-engine",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — ccpa-compliance-engine"
+  },
+  {
+    "text": "GitHub repository 'phi3-pr-reviewer' by Rajveer Bishnoi (RAJVEER42). Primary language: Python. Description: QLoRA fine-tune of Phi-3-mini on GitHub PR review comments. Topics: n/a. URL: https://github.com/RAJVEER42/phi3-pr-reviewer. Homepage: none.",
+    "source": "github",
+    "repo": "phi3-pr-reviewer",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — phi3-pr-reviewer"
+  },
+  {
+    "text": "GitHub repository 'Livo_RAG' by Rajveer Bishnoi (RAJVEER42). Primary language: Python. Description: no description provided. Topics: n/a. URL: https://github.com/RAJVEER42/Livo_RAG. Homepage: none.",
+    "source": "github",
+    "repo": "Livo_RAG",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — Livo_RAG"
+  },
+  {
+    "text": "GitHub repository 'META_H' by Rajveer Bishnoi (RAJVEER42). Primary language: Python. Description: no description provided. Topics: n/a. URL: https://github.com/RAJVEER42/META_H. Homepage: none.",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — META_H"
+  },
+  {
+    "text": "GitHub repository 'Network_Security_ML' by Rajveer Bishnoi (RAJVEER42). Primary language: Python. Description: no description provided. Topics: n/a. URL: https://github.com/RAJVEER42/Network_Security_ML. Homepage: none.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — Network_Security_ML"
+  },
+  {
+    "text": "GitHub repository 'ai-job-portal' by Rajveer Bishnoi (RAJVEER42). Primary language: Java. Description: AI-powered job portal platform featuring a full-stack application with separate frontend and backend services. Includes comprehensive RESTful API with Postman collection and testing guides for managing job postings, applications, and user interactions.. Topics: n/a. URL: https://github.com/RAJVEER42/ai-job-portal. Homepage: none.",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — ai-job-portal"
+  },
+  {
+    "text": "GitHub repository 'Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-' by Rajveer Bishnoi (RAJVEER42). Primary language: Python. Description: TTP server that can handle multiple concurrent clients using threading, serve static files and binary content for GET requests, process JSON data for POST requests, and implement various HTTP protocol features including connection persistence and host validation.. Topics: n/a. URL: https://github.com/RAJVEER42/Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-. Homepage: none.",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "GitHub repository 'portfolio' by Rajveer Bishnoi (RAJVEER42). Primary language: HTML. Description: Personal portfolio — HIG-inspired design. Deployed on Vercel.. Topics: n/a. URL: https://github.com/RAJVEER42/portfolio. Homepage: https://portfolio-gf6xifbc9-rajveers-projects-f952c03e.vercel.app.",
+    "source": "github",
+    "repo": "portfolio",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — portfolio"
+  },
+  {
+    "text": "GitHub repository 'Generative-AI-Projects' by Rajveer Bishnoi (RAJVEER42). Primary language: mixed. Description: no description provided. Topics: n/a. URL: https://github.com/RAJVEER42/Generative-AI-Projects. Homepage: none.",
+    "source": "github",
+    "repo": "Generative-AI-Projects",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — Generative-AI-Projects"
+  },
+  {
+    "text": "GitHub repository 'URL_shortner' by Rajveer Bishnoi (RAJVEER42). Primary language: JavaScript. Description: A URL Shortener built with Node.js, Express, PostgreSQL, and Drizzle ORM.. Topics: n/a. URL: https://github.com/RAJVEER42/URL_shortner. Homepage: none.",
+    "source": "github",
+    "repo": "URL_shortner",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — URL_shortner"
+  },
+  {
+    "text": "GitHub repository 'mern-url-shortener' by Rajveer Bishnoi (RAJVEER42). Primary language: TypeScript. Description: Project - mern-url-shortener. Topics: n/a. URL: https://github.com/RAJVEER42/mern-url-shortener. Homepage: https://mern-url-shortener-deployment.vercel.app/.",
+    "source": "github",
+    "repo": "mern-url-shortener",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — mern-url-shortener"
+  },
+  {
+    "text": "GitHub repository 'Dev_Tinder' by Rajveer Bishnoi (RAJVEER42). Primary language: JavaScript. Description: no description provided. Topics: n/a. URL: https://github.com/RAJVEER42/Dev_Tinder. Homepage: none.",
+    "source": "github",
+    "repo": "Dev_Tinder",
+    "doc_type": "repo_card",
+    "title": "GitHub repo — Dev_Tinder"
+  },
+  {
+    "text": "Why Rajveer is a strong fit for the AI Engineer role: Ships AI systems end to end - not toy notebooks. DocBlock, clearpath, and the CCPA engine are deployed RAG apps with real grounding/refusal logic, the exact discipline this voice+chat persona needs. Already fluent in this assignment's stack - HuggingFace router + OpenAI SDK tool-calling (agent-cli), Groq Llama-3.3-70B, RAG with refusal prompts and citations (DocBlock), hybrid BM25+dense retrieval (clearpath). This persona is built from his own playbook. Cares about groundedness and honesty under pressure - his RAG projects force the model to refuse rather than hallucinate, which is precisely what an AI representative of a real person must do. Builds for real users at scale - Samay Sarathi is a live national emergency-response network with real-time WebSocket infrastructure, not a demo. Strong CS fundamentals - top ML grades, multi-threaded HTTP server from sockets, plus leadership (founded a 120+ person league, captained a 1000+ student body).",
+    "source": "personal",
+    "section": "why_hire",
+    "title": "About Rajveer — why_hire"
+  },
+  {
+    "text": "Rajveer's strengths: End-to-end ownership - design, build, deploy, and iterate without hand-holding. RAG and agent engineering - chunking, retrieval, grounding/refusal, tool loops, multi-provider LLM plumbing. Pragmatic latency/cost trade-offs - picks Groq for speed, free tiers and local embeddings to stay cheap. Fundamentals + leadership - strong ML/systems grades and a track record of leading teams.",
+    "source": "personal",
+    "section": "strengths",
+    "title": "About Rajveer — strengths"
+  },
+  {
+    "text": "Rajveer's honest weaknesses / growth areas: Early-career - second-year student; depth of large-scale production/on-call experience is still growing relative to senior engineers. Tends to optimize for shipping fast, so formal test coverage and exhaustive docs sometimes lag the first working version. Breadth across many stacks means some tools (e.g. heavy MLOps / k8s) are familiar but not yet deep.",
+    "source": "personal",
+    "section": "weaknesses",
+    "title": "About Rajveer — weaknesses"
+  },
+  {
+    "text": "Samay Sarathi — National real-time emergency-response platform (co-founded, flagship). Stack: Flutter, Spring Boot, WebSocket, PostgreSQL, PostGIS, Redis. Status: Live - samaysarathi.in. Connects ambulances, hospitals, and traffic police on a single real-time network to cut critical response time. Multi-role Flutter apps with live WebSocket tracking, a hospital-recommendation engine, and green-corridor routing. Presented at India Innovates 2026.",
+    "source": "personal",
+    "section": "project:Samay Sarathi",
+    "title": "About Rajveer — project:Samay Sarathi"
+  },
+  {
+    "text": "DocBlock — Chat-with-your-PDF RAG app with page-level citations. Stack: Next.js 16, React 19, Tailwind 4, LangChain, Qdrant, Groq (Llama-3.3-70B), HuggingFace MiniLM. Status: Live (Code). Per-document isolation - every upload gets its own Qdrant collection so chats never leak across files. Recursive chunking (size 1100, overlap 180 ~16%) with a sentence-aware separator chain; chunks under 24 chars dropped. Strict refusal prompt + temperature 0.15 - the model answers only from retrieved excerpts and cites pages inline. top-k=6 retrieval; would add hybrid BM25+dense and a cross-encoder re-ranker next.",
+    "source": "personal",
+    "section": "project:DocBlock",
+    "title": "About Rajveer — project:DocBlock"
+  },
+  {
+    "text": "AI-Persona — Multi-persona instructor chatbot. Stack: React, Vite, Node.js, Express, Google Gemini. Status: Live (Code). Three distinct instructor personas via custom system prompts with few-shot and chain-of-thought examples. Deployed on Vercel.",
+    "source": "personal",
+    "section": "project:AI-Persona",
+    "title": "About Rajveer — project:AI-Persona"
+  },
+  {
+    "text": "Agent CLI (Scaler Website Cloner) — Multi-step reasoning CLI agent that clones a live website. Stack: Node.js, OpenAI SDK. Status: Code. Strict state machine - START to THINK to TOOL to OBSERVE to OUTPUT; nothing produced in a single shot. Tools - executeCommand, writeFile, readFile, fetchScalerSite. Provider-agnostic via OpenAI SDK + configurable base URL (OpenAI, Anthropic-compat, Gemini-compat, HuggingFace router). Robustness - JSON-mode auto-detect, code-fence stripping, balanced-brace recovery, step fixup, bounded retries.",
+    "source": "personal",
+    "section": "project:Agent CLI (Scaler Website Cloner)",
+    "title": "About Rajveer — project:Agent CLI (Scaler Website Cloner)"
+  },
+  {
+    "text": "clearpath-chatbot — HR chatbot with hybrid retrieval. Stack: FastAPI, React, Groq, BM25 + semantic. Status: Code. RAG with hybrid BM25 + semantic retrieval.",
+    "source": "personal",
+    "section": "project:clearpath-chatbot",
+    "title": "About Rajveer — project:clearpath-chatbot"
+  },
+  {
+    "text": "ccpa-compliance-engine — AI CCPA compliance analysis with a constrained LLM pipeline. Stack: FastAPI, RAG, constrained LLM. Status: Code. Evaluates business data practices and returns structured statutory violation reports.",
+    "source": "personal",
+    "section": "project:ccpa-compliance-engine",
+    "title": "About Rajveer — project:ccpa-compliance-engine"
+  },
+  {
+    "text": "phi3-pr-reviewer — QLoRA fine-tune of Phi-3-mini on GitHub PR review comments. Stack: Python, QLoRA, Phi-3-mini. Status: Code.",
+    "source": "personal",
+    "section": "project:phi3-pr-reviewer",
+    "title": "About Rajveer — project:phi3-pr-reviewer"
+  },
+  {
+    "text": "Multi-threaded HTTP Server — Concurrent HTTP server from scratch with socket programming. Stack: Python, threading, sockets. Status: Code. Handles multiple concurrent clients via threading; serves static + binary files, JSON POST, connection persistence, host validation.",
+    "source": "personal",
+    "section": "project:Multi-threaded HTTP Server",
+    "title": "About Rajveer — project:Multi-threaded HTTP Server"
+  }
+]
