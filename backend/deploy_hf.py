@@ -38,14 +38,12 @@ def main() -> None:
     create_repo(repo_id, repo_type="space", space_sdk="docker",
                 token=write_token, exist_ok=True)
 
-    # README.md must carry the HF Space metadata header.
-    (HERE / "README.md").write_text((HERE / "space_readme.md").read_text())
-
+    # backend/README.md is the Space card (carries the HF metadata header). Uploaded as-is.
     upload_folder(
         repo_id=repo_id, repo_type="space", folder_path=str(HERE),
         token=write_token,
         ignore_patterns=[".env", ".venv/*", "**/__pycache__/*", "*.pyc",
-                         "space_readme.md", "deploy_hf.py", "test_*.py",
+                         "deploy_hf.py", "test_*.py",
                          "app/data/index/*"],  # index is rebuilt at image build
     )
 

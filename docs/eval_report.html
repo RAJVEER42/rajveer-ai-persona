@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Eval Report, Rajveer Bishnoi AI Representative</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; }
+  html { background: #fff; }
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color: #1f1f1f;
+    font-size: 10.5px; line-height: 1.58; margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @media screen {
+    html { background: #e9e9ec; }
+    body { max-width: 900px; margin: 30px auto; background: #fff; padding: 44px 48px;
+      box-shadow: 0 5px 28px rgba(0,0,0,0.18); border-radius: 5px; }
+  }
+
+  .top { border-bottom: 4px solid #111; padding-bottom: 11px; margin-bottom: 16px; }
+  h1 { font-size: 21px; margin: 0 0 5px; letter-spacing: -0.4px; }
+  .meta { color: #707070; font-size: 10.5px; line-height: 1.5; }
+  .stats { display: flex; gap: 9px; margin-top: 13px; }
+  .stat { flex: 1; border: 2px solid #111; border-radius: 7px; padding: 9px 6px; text-align: center; }
+  .stat .n { font-size: 19px; font-weight: 800; color: #0a7d4d; line-height: 1; }
+  .stat .l { font-size: 8.5px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 5px; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  h2 { font-size: 12px; margin: 16px 0 8px; text-transform: uppercase; letter-spacing: 0.7px;
+    color: #111; border-left: 5px solid #ffd23f; padding-left: 9px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 9px; }
+  .lead { color: #555; }
+
+  table { border-collapse: collapse; width: 100%; margin: 7px 0 10px; }
+  td { padding: 5px 8px; vertical-align: middle; }
+  tr:nth-child(odd) td { background: #f6f6f4; }
+  td.v { text-align: right; font-weight: 800; white-space: nowrap; color: #0a7d4d; }
+
+  .fm { margin: 0 0 11px; }
+  .fm .t { display: block; font-weight: 700; color: #111; margin-bottom: 2px; }
+  .fm .r { color: #0a7d4d; font-weight: 700; }
+
+  ul { margin: 5px 0 8px; padding-left: 16px; } li { margin: 5px 0; }
+  b { color: #111; } code { background: #eee; padding: 0 4px; border-radius: 2px; font-size: 10px; }
+  .foot { margin-top: 14px; padding-top: 9px; border-top: 2px solid #111; color: #777; font-size: 9.5px; }
+</style></head>
+<body>
+
+<div class="top">
+  <h1>Eval Report, AI Representative of Rajveer Bishnoi</h1>
+  <div class="meta">Chat: itachi-42-rajveer-ai-representative.hf.space &nbsp;·&nbsp; Voice: +1 (650) 698-2516<br/>
+  gpt-oss-120b (HuggingFace router) · bge-small embeddings (local) · FAISS · Cal.com booking</div>
+  <div class="stats">
+    <div class="stat"><div class="n">100%</div><div class="l">Refusal accuracy</div></div>
+    <div class="stat"><div class="n">93.2%</div><div class="l">Groundedness</div></div>
+    <div class="stat"><div class="n">0.964</div><div class="l">Faithfulness</div></div>
+    <div class="stat"><div class="n">0</div><div class="l">Fabricated facts</div></div>
+    <div class="stat"><div class="n">~1.2s</div><div class="l">TTFT median</div></div>
+  </div>
+</div>
+
+<div class="cols">
+<div>
+
+<h2>Chat groundedness</h2>
+<p class="lead">58 questions across 8 areas: factual, why-hire, weakness, 30 project-detail (6 repos),
+14 adversarial, and booking. Each answer is graded two ways: a deterministic fact-coverage check, and
+an <b>LLM judge that reads the real corpus</b> to verify every claim and classify refusals.</p>
+<table>
+  <tr><td>Refusal accuracy (traps / injection / out-of-scope)</td><td class="v">100% · 14/14</td></tr>
+  <tr><td>Fabricated credentials (fake PhD / job / award)</td><td class="v">0</td></tr>
+  <tr><td>Groundedness (answers fully corpus-supported)</td><td class="v">93.2%</td></tr>
+  <tr><td>Mean faithfulness (claims supported)</td><td class="v">0.964</td></tr>
+  <tr><td>Hallucination rate (LLM-judge)</td><td class="v">6.9%</td></tr>
+  <tr><td>Retrieval hit-rate (top-k, search-path)</td><td class="v">52%</td></tr>
+</table>
+<p><b>On the hallucination number.</b> A naive substring grader first reported 36-57%, all false
+positives: it flagged refusals that <i>name</i> a claim only to deny it ("no record of a PhD from
+Stanford"). The corpus-reading judge gives the true rate; ~half of the residual 6.9% are still
+conservative refusals, leaving roughly two minor over-claims and zero fabrications.</p>
+<p><b>Retrieval.</b> On the search-grounded subset, top-5 retrieval surfaced the expected repo 52% of
+the time. Factual questions bypass search via the deterministic fact tool, so they are excluded here.</p>
+
+<h2>Voice quality</h2>
+<p><b>First-response latency.</b> Backend time-to-first-token, the dominant, controllable component, runs a median of <b>~1.2s</b> (p95 ~3.8s). Streaming starts TTS before the answer completes;
+end-to-end target is under 2 seconds.</p>
+<p><b>Channels &amp; transcription.</b> Voice runs by phone and via a free in-browser call (same Vapi assistant, no dialing). STT: Deepgram <code>nova-3</code> (English).</p>
+<p><b>Interruptions.</b> Barge-in tuned (stop on 2+ words within 0.3s, 1.0s backoff, smart endpointing
+0.4s), interruptions never crash the call.</p>
+<p><b>Task completion.</b> Booking (slots → confirm name/email/time → create) is verified end-to-end on
+the live Cal.com API and through the chat tool path; live-call sampling is the closing step.</p>
+
+</div>
+<div>
+
+<h2>Three failure modes: found &amp; fixed</h2>
+<p class="fm"><span class="t">1 · Technical embellishment under probing</span>
+Probed for internals it lacked (e.g. the private Samay Sarathi repo), the model invented specifics:
+"GCP + Docker + CI/CD", "Dijkstra/A* routing", a WebSocket schema. <b>Cause:</b> thin retrieval, so the
+LLM fills gaps. <b>Fix:</b> anti-embellishment + per-project separation + "internals are private" rules.
+<span class="r">→ refusal 92.9% → 100%, faithfulness 0.884 → 0.964.</span></p>
+
+<p class="fm"><span class="t">2 · Confident false negatives</span>
+Asked "does he have teaching experience?", it said "no formal teaching roles", wrong; he is a Teaching
+Assistant. <b>Cause:</b> it answered from memory without checking the facts. <b>Fix:</b> a "check the
+tool before you deny" rule. <span class="r">→ now leads with the TA / Buddy Program role.</span></p>
+
+<p class="fm"><span class="t">3 · Eval-grader false positives</span>
+The substring grader reported 36-57% hallucination, it can't tell "asserted X" from "denied X", and
+counted fact-path answers as retrieval misses. <b>Fix:</b> an LLM judge that reads the corpus, plus
+excluding fact answers from the retrieval denominator. <span class="r">→ revealed the true
+0%-fabrication, 100%-refusal picture.</span></p>
+
+<h2>Tradeoff made</h2>
+<p><b>Shared HF router (free) vs. a dedicated key (faster).</b> The LLM runs on the HuggingFace
+Inference Providers router on ~$9 of credits, $0 marginal infrastructure, mirroring Rajveer's own
+stack. The cost: occasional HTTP 429 under load and higher p95 latency with concurrency, mitigated by
+retry + backoff and a semantic cache (paraphrased repeats return in milliseconds). The conscious choice
+was <b>cost + authenticity over guaranteed tail-latency</b>, right for a screening demo; a dedicated
+Groq key with router fallback is the production upgrade.</p>
+
+<h2>With two more weeks</h2>
+<ul>
+  <li><b>Hybrid retrieval + re-ranking</b> (BM25 + dense + cross-encoder) to lift the 52% hit-rate and
+  multi-fact recall, the biggest groundedness lever left.</li>
+  <li><b>Automated voice-eval harness</b>, scripted calls measuring WER, end-to-end latency, barge-in
+  timing, and booking-completion rate.</li>
+  <li><b>Per-claim inline citations</b> (which repo, which line) for verifiable grounding.</li>
+  <li><b>Dedicated low-latency inference</b> (Groq) with the HF router as automatic fallback.</li>
+  <li><b>Richer corpus</b> built from commit history, not just READMEs.</li>
+</ul>
+
+</div>
+</div>
+
+<div class="foot">Measured on the live deployment · 58-question golden set · LLM-judge grading over the
+real corpus · full code and test harness in the public repository.</div>
+
+</body></html>

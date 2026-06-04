@@ -3,18 +3,23 @@
 *.env
 !.env.example
 backend/.env
+frontend/.env.local
 
 # python
 backend/.venv/
 __pycache__/
 *.pyc
 
-# node
+# node / next
 node_modules/
 .next/
-frontend/.env.local
+frontend/next-env.d.ts
+
+# build artifact: frontend/out is copied into backend/app/web (the tracked, deployed copy)
+frontend/out/
+
+# local-only prep, not a public deliverable
+docs/loom_script.md
 
 # os
 .DS_Store
-
-# corpus build artifacts are kept (small, reproducible) — index is rebuilt at deploy

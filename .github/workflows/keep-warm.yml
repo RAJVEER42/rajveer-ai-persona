@@ -1,0 +1,23 @@
+name: keep-warm
+# Pings the HF Space so the free tier never sleeps during the 7-day
+# unannounced-testing window. Runs on GitHub's infra, no external service.
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every ~10 minutes
+  workflow_dispatch: {}        # allow manual runs
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping /health
+        run: |
+          URL="https://itachi-42-rajveer-ai-representative.hf.space/health"
+          for i in 1 2 3; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$URL" || echo 000)
+            echo "attempt $i -> HTTP $code"
+            [ "$code" = "200" ] && exit 0
+            sleep 20
+          done
+          echo "ping did not get 200 (Space may be waking) — not failing the job"
+          exit 0

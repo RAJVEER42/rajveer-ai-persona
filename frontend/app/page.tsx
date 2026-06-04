@@ -3,7 +3,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// "" => same-origin (production, served by FastAPI). Dev sets this via .env.local.
+const API = process.env.NEXT_PUBLIC_API_URL || "";
+// Browser voice call (Vapi web SDK) — free, mic-based, no phone needed.
+const VAPI_KEY = process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY || "";
+const VAPI_ASSISTANT = process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID || "";
 
 type Source = { title?: string; repo?: string; source?: string; score?: number };
 type Message = { role: "user" | "assistant"; content: string; sources?: Source[]; cached?: number };
@@ -33,7 +37,25 @@ export default function Home() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [dark, setDark] = useState(false);
+  const [call, setCall] = useState<"idle" | "connecting" | "active">("idle");
+  const vapiRef = useRef<any>(null);
   const feedRef = useRef<HTMLDivElement>(null);
+
+  async function toggleCall() {
+    if (call !== "idle") { vapiRef.current?.stop(); setCall("idle"); return; }
+    setCall("connecting");
+    try {
+      if (!vapiRef.current) {
+        const { default: Vapi } = await import("@vapi-ai/web");
+        const v = new Vapi(VAPI_KEY);
+        v.on("call-start", () => setCall("active"));
+        v.on("call-end", () => setCall("idle"));
+        v.on("error", () => setCall("idle"));
+        vapiRef.current = v;
+      }
+      await vapiRef.current.start(VAPI_ASSISTANT);
+    } catch { setCall("idle"); }
+  }
 
   useEffect(() => {
     feedRef.current?.scrollTo({ top: feedRef.current.scrollHeight, behavior: "smooth" });
@@ -115,7 +137,9 @@ export default function Home() {
               if (ev === "token") last.content += JSON.parse(data);
               else if (ev === "sources") last.sources = JSON.parse(data || "[]");
               else if (ev === "cached") last.cached = JSON.parse(data).similarity;
-            } catch { /* ignore malformed chunk */ }
+            } catch {
+              if (ev === "token" && data) last.content += data; // fallback: never render empty
+            }
             return next;
           });
         }
@@ -143,9 +167,18 @@ export default function Home() {
           <h1>RAJVEER BISHNOI — AI REP</h1>
           <p>Grounded in his real resume &amp; GitHub. Ask anything, or book a call.</p>
         </div>
-        <a className="callnum" href="tel:+16506982516" title="Call the AI rep">
-          <span className="ic">📞</span> +1 650 698 2516
-        </a>
+        <div className="voicegroup">
+          <a className="callnum" href="tel:+16506982516" title="Call this number">
+            <span className="ic">📞</span> +1 650 698 2516
+          </a>
+          {VAPI_KEY && (
+            <button className={`talk ${call}`} onClick={toggleCall}
+              title="Talk to the AI in your browser — free, no phone call">
+              {call === "active" ? <><span className="pulse" /> End</>
+                : call === "connecting" ? "…" : "🎙 Talk free"}
+            </button>
+          )}
+        </div>
         <div className="hgroup">
           <span className="live"><span className="dot" /> LIVE</span>
           <button className="toggle" onClick={() => setDark((d) => !d)} aria-label="Toggle dark mode" title="Toggle theme">
@@ -204,13 +237,15 @@ export default function Home() {
           )}
 
           <form className="composer" onSubmit={(e) => { e.preventDefault(); send(input); }}>
-            <input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask anything about Rajveer…"
-              disabled={busy}
-              autoFocus
-            />
+            <div className="inputwrap">
+              <input
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Ask anything about Rajveer…"
+                disabled={busy}
+                autoFocus
+              />
+            </div>
             <button type="submit" disabled={busy || !input.trim()}>Send</button>
           </form>
         </div>

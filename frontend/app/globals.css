@@ -26,11 +26,11 @@ body.cc, body.cc * { cursor: none !important; }
 .cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 99999;
   transform: translate(-50%, -50%); will-change: left, top; }
 .cursor-dot { width: 6px; height: 6px; background: var(--line); }
-.cursor-ring { width: 26px; height: 26px; border: 2.5px solid var(--line); background: transparent;
+.cursor-ring { width: 18px; height: 18px; border: 2.5px solid var(--line); background: transparent;
   transition: left 110ms ease-out, top 110ms ease-out, width 130ms, height 130ms, background 130ms, transform 130ms; }
-.cursor-ring.hot { width: 42px; height: 42px; background: color-mix(in srgb, var(--pink) 28%, transparent);
+.cursor-ring.hot { width: 28px; height: 28px; background: color-mix(in srgb, var(--pink) 28%, transparent);
   transform: translate(-50%, -50%) rotate(45deg); }
-.cursor-ring.down { width: 18px; height: 18px; }
+.cursor-ring.down { width: 13px; height: 13px; }
 
 .wrap { max-width: 1280px; margin: 0 auto; height: 100dvh; display: flex; flex-direction: column; padding: 18px 22px; gap: 14px; }
 
@@ -40,6 +40,8 @@ body.cc, body.cc * { cursor: none !important; }
 .header h1 { font-size: 19px; margin: 0; font-weight: 700; letter-spacing: -0.4px; }
 .header p { font-size: 13px; margin: 5px 0 0; font-weight: 500; }
 .hgroup { display: flex; align-items: center; gap: 10px; }
+.voicegroup { display: flex; align-items: center; gap: 10px; }
+.header { flex-wrap: wrap; }   /* never overflow on narrow widths */
 .callnum { font-family: "JetBrains Mono", monospace; font-size: 14px; font-weight: 700; color: var(--text);
   background: var(--surface); border: var(--stroke); box-shadow: var(--shadow-tight); padding: 8px 14px;
   text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 150ms; white-space: nowrap; }
@@ -58,6 +60,24 @@ body.cc, body.cc * { cursor: none !important; }
 .toggle:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); background: var(--lilac); color: var(--accent-ink); }
 .toggle:active { transform: translate(1px,1px); box-shadow: 1px 1px 0 0 var(--shadow-c); }
 .toggle .ic { font-size: 14px; line-height: 1; }
+/* a glowing light that runs around the border, at variable speed */
+@property --ta { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+@keyframes talkRun { 0% { --ta: 0deg; } 45% { --ta: 215deg; } 62% { --ta: 242deg; } 100% { --ta: 360deg; } }
+.talk { position: relative; font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 700;
+  background: var(--green); color: var(--accent-ink); border: var(--stroke); box-shadow: var(--shadow-tight);
+  padding: 6px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: transform 140ms;
+  text-transform: uppercase; letter-spacing: 0.5px; }
+.talk::after { content: ""; position: absolute; inset: -4px; padding: 3px; pointer-events: none;
+  background: conic-gradient(from var(--ta), transparent 0 262deg, #ff5da2 308deg, #ffffff 336deg, #ff5da2 352deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude;
+  animation: talkRun 2.6s ease-in-out infinite; }
+.talk:hover { transform: translate(-2px,-2px) scale(1.03) rotate(-1deg); box-shadow: var(--shadow); }
+.talk:active { transform: translate(1px,1px); }
+.talk.active { background: var(--pink); box-shadow: var(--shadow-tight); }
+.talk.active::after, .talk.connecting::after { animation-play-state: paused; opacity: 0.25; }
+.talk .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-ink); animation: pulse 1s infinite; }
+.talk.connecting { opacity: 0.65; }
 
 /* two-column body */
 .body { flex: 1; display: grid; grid-template-columns: 1fr 320px; gap: 16px; min-height: 0; }
@@ -125,10 +145,16 @@ body.cc, body.cc * { cursor: none !important; }
 
 /* composer */
 .composer { display: flex; gap: 10px; }
-.composer input { flex: 1; background: var(--surface); border: var(--stroke); box-shadow: var(--shadow); color: var(--text);
-  padding: 14px 16px; font-size: 15.5px; font-family: "Space Grotesk", sans-serif; outline: none; transition: all 120ms; }
+.inputwrap { position: relative; flex: 1; display: flex; }
+.inputwrap::after { content: ""; position: absolute; inset: -4px; padding: 3px; pointer-events: none;
+  background: conic-gradient(from var(--ta), transparent 0 262deg, #ff5da2 308deg, #ffffff 336deg, #ff5da2 352deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude;
+  animation: talkRun 3s ease-in-out infinite; }
+.composer input { width: 100%; background: var(--surface); border: var(--stroke); box-shadow: var(--shadow); color: var(--text);
+  padding: 14px 16px; font-size: 15.5px; font-family: "Space Grotesk", sans-serif; outline: none; transition: box-shadow 120ms; }
 .composer input::placeholder { color: var(--muted); }
-.composer input:focus { transform: translate(-1px,-1px); box-shadow: var(--shadow-lift); }
+.composer input:focus { box-shadow: var(--shadow-lift); }
 .composer button { background: var(--pink); color: var(--accent-ink); border: var(--stroke); box-shadow: var(--shadow);
   padding: 0 24px; font-size: 15px; font-weight: 700; font-family: "Space Grotesk", sans-serif; cursor: pointer; transition: all 150ms; }
 .composer button:hover:not(:disabled) { transform: translate(-2px,-2px); box-shadow: var(--shadow-lift); }
@@ -138,10 +164,17 @@ body.cc, body.cc * { cursor: none !important; }
 ::-webkit-scrollbar { width: 11px; }
 ::-webkit-scrollbar-thumb { background: var(--line); border: 3px solid var(--bg); }
 
+/* Mobile: clean full-screen chat (header + scrolling feed + pinned composer).
+   The sidebar is a desktop enhancement; its shortcuts are covered by the chips. */
 @media (max-width: 820px) {
-  .wrap { padding: 12px; }
-  .body { grid-template-columns: 1fr; }
-  .side { flex-direction: row; flex-wrap: wrap; overflow: visible; }
-  .side .card { flex: 1; min-width: 150px; }
-  body.cc, body.cc * { cursor: auto !important; } .cursor { display: none; }
+  .wrap { padding: 12px; gap: 10px; }
+  .header { padding: 14px 16px; }
+  .header h1 { font-size: 16px; letter-spacing: -0.3px; }
+  .header p { font-size: 12px; margin-top: 4px; }
+  .callnum { display: none; }
+  .body { grid-template-columns: 1fr; }   /* single column — chat only */
+  .side { display: none; }                 /* hide sidebar on mobile */
+  .bubble { font-size: 15px; }
+  .cursor-dot, .cursor-ring { display: none; }
+  body.cc, body.cc * { cursor: auto !important; }
 }

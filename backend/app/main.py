@@ -23,6 +23,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.middleware("http")
+async def no_cache_html(request, call_next):
+    """Never let browsers cache HTML — so a new deploy's hashed JS is always picked
+    up. (Hashed static chunks can still cache; only the HTML must revalidate.)"""
+    resp = await call_next(request)
+    ctype = resp.headers.get("content-type", "")
+    if ctype.startswith("text/html"):
+        resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    return resp
+
+
 app.include_router(chat.router)
 app.include_router(voice.router)  # OpenAI-compatible endpoint for Vapi custom LLM
 
