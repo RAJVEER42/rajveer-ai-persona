@@ -1,0 +1,20 @@
+# secrets
+.env
+*.env
+!.env.example
+backend/.env
+
+# python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+.next/
+frontend/.env.local
+
+# os
+.DS_Store
+
+# corpus build artifacts are kept (small, reproducible) — index is rebuilt at deploy
