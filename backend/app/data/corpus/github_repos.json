@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Notebook_LLM",
+    "description": "DocBlock \u2014 a neo-brutalist take on Google NotebookLLM. Upload a PDF or TXT, ask questions, get answers grounded in the document with page-level citations.",
+    "language": "JavaScript",
+    "html_url": "https://github.com/RAJVEER42/Notebook_LLM",
+    "topics": [],
+    "created_at": "2026-05-17T14:34:11Z",
+    "pushed_at": "2026-05-17T14:35:39Z",
+    "homepage": "https://notebook-llm-five.vercel.app/"
+  },
+  {
+    "name": "agent-cli-scaler",
+    "description": null,
+    "language": "JavaScript",
+    "html_url": "https://github.com/RAJVEER42/agent-cli-scaler",
+    "topics": [],
+    "created_at": "2026-05-06T10:10:11Z",
+    "pushed_at": "2026-05-07T07:59:37Z",
+    "homepage": null
+  },
+  {
+    "name": "AI-Persona",
+    "description": "Multi-persona Scaler chatbot with Gemini-backed system prompts and few-shot examples. Live: https://ai-persona-ten.vercel.app",
+    "language": "JavaScript",
+    "html_url": "https://github.com/RAJVEER42/AI-Persona",
+    "topics": [],
+    "created_at": "2026-04-29T15:53:42Z",
+    "pushed_at": "2026-04-29T16:20:08Z",
+    "homepage": "https://ai-persona-ten.vercel.app"
+  },
+  {
+    "name": "clearpath-chatbot",
+    "description": "AI-powered HR chatbot using RAG with hybrid BM25 + semantic retrieval, built with FastAPI, React, and Groq LLM",
+    "language": "TypeScript",
+    "html_url": "https://github.com/RAJVEER42/clearpath-chatbot",
+    "topics": [
+      "bm25",
+      "chatbot",
+      "faiss",
+      "fastapi",
+      "groq",
+      "lambda",
+      "nlp",
+      "python",
+      "rag",
+      "rag-chatbot",
+      "react"
+    ],
+    "created_at": "2026-02-22T11:33:51Z",
+    "pushed_at": "2026-03-23T11:20:40Z",
+    "homepage": "https://clearpath-chatbot-928213635181.asia-south1.run.app"
+  },
+  {
+    "name": "ccpa-compliance-engine",
+    "description": "AI-powered CCPA compliance analysis system that evaluates business data practices and returns structured statutory violation reports using FastAPI, RAG, and a constrained LLM pipeline.",
+    "language": "Python",
+    "html_url": "https://github.com/RAJVEER42/ccpa-compliance-engine",
+    "topics": [],
+    "created_at": "2026-03-02T05:59:37Z",
+    "pushed_at": "2026-03-02T06:02:53Z",
+    "homepage": null
+  },
+  {
+    "name": "phi3-pr-reviewer",
+    "description": "QLoRA fine-tune of Phi-3-mini on GitHub PR review comments",
+    "language": "Python",
+    "html_url": "https://github.com/RAJVEER42/phi3-pr-reviewer",
+    "topics": [],
+    "created_at": "2026-04-21T18:54:01Z",
+    "pushed_at": "2026-04-24T03:35:53Z",
+    "homepage": null
+  },
+  {
+    "name": "Livo_RAG",
+    "description": null,
+    "language": "Python",
+    "html_url": "https://github.com/RAJVEER42/Livo_RAG",
+    "topics": [],
+    "created_at": "2026-03-24T18:43:54Z",
+    "pushed_at": "2026-03-24T18:52:57Z",
+    "homepage": null
+  },
+  {
+    "name": "META_H",
+    "description": null,
+    "language": "Python",
+    "html_url": "https://github.com/RAJVEER42/META_H",
+    "topics": [],
+    "created_at": "2026-04-25T06:05:16Z",
+    "pushed_at": "2026-05-06T10:11:13Z",
+    "homepage": null
+  },
+  {
+    "name": "Network_Security_ML",
+    "description": null,
+    "language": "Python",
+    "html_url": "https://github.com/RAJVEER42/Network_Security_ML",
+    "topics": [],
+    "created_at": "2025-12-29T14:27:33Z",
+    "pushed_at": "2026-01-16T10:54:28Z",
+    "homepage": null
+  },
+  {
+    "name": "ai-job-portal",
+    "description": "AI-powered job portal platform featuring a full-stack application with separate frontend and backend services. Includes comprehensive RESTful API with Postman collection and testing guides for managing job postings, applications, and user interactions.",
+    "language": "Java",
+    "html_url": "https://github.com/RAJVEER42/ai-job-portal",
+    "topics": [],
+    "created_at": "2026-01-31T10:52:24Z",
+    "pushed_at": "2026-01-31T11:26:33Z",
+    "homepage": ""
+  },
+  {
+    "name": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "description": "TTP server that can handle multiple concurrent clients using threading, serve static files and binary content for GET requests, process JSON data for POST requests, and implement various HTTP protocol features including connection persistence and host validation.",
+    "language": "Python",
+    "html_url": "https://github.com/RAJVEER42/Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "topics": [],
+    "created_at": "2025-10-10T15:29:54Z",
+    "pushed_at": "2025-10-10T16:25:25Z",
+    "homepage": null
+  },
+  {
+    "name": "portfolio",
+    "description": "Personal portfolio \u2014 HIG-inspired design. Deployed on Vercel.",
+    "language": "HTML",
+    "html_url": "https://github.com/RAJVEER42/portfolio",
+    "topics": [],
+    "created_at": "2026-04-10T06:01:20Z",
+    "pushed_at": "2026-04-10T06:09:01Z",
+    "homepage": "https://portfolio-gf6xifbc9-rajveers-projects-f952c03e.vercel.app"
+  },
+  {
+    "name": "Generative-AI-Projects",
+    "description": null,
+    "language": null,
+    "html_url": "https://github.com/RAJVEER42/Generative-AI-Projects",
+    "topics": [],
+    "created_at": "2025-12-26T23:01:39Z",
+    "pushed_at": "2025-12-26T23:05:59Z",
+    "homepage": null
+  },
+  {
+    "name": "URL_shortner",
+    "description": "A URL Shortener built with Node.js, Express, PostgreSQL, and Drizzle ORM.",
+    "language": "JavaScript",
+    "html_url": "https://github.com/RAJVEER42/URL_shortner",
+    "topics": [],
+    "created_at": "2025-09-02T16:20:51Z",
+    "pushed_at": "2025-10-16T15:32:38Z",
+    "homepage": null
+  },
+  {
+    "name": "mern-url-shortener",
+    "description": "Project - mern-url-shortener",
+    "language": "TypeScript",
+    "html_url": "https://github.com/RAJVEER42/mern-url-shortener",
+    "topics": [],
+    "created_at": "2025-10-24T16:56:34Z",
+    "pushed_at": "2025-10-26T13:36:50Z",
+    "homepage": "https://mern-url-shortener-deployment.vercel.app/"
+  },
+  {
+    "name": "Dev_Tinder",
+    "description": null,
+    "language": "JavaScript",
+    "html_url": "https://github.com/RAJVEER42/Dev_Tinder",
+    "topics": [],
+    "created_at": "2025-07-30T21:48:28Z",
+    "pushed_at": "2025-07-30T21:48:53Z",
+    "homepage": null
+  }
+]
