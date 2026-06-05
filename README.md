@@ -8,6 +8,30 @@ An AI persona of Rajveer Bishnoi, RAG-grounded in his *actual* résumé and GitH
 It knows his projects' tech, purpose, and tradeoffs, and stays honest under pressure:
 it refuses to invent anything it can't cite.
 
+---
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/6a2e6ccc-5f68-4241-8064-4401a5cbd44f" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/b82660a5-4cbf-4bc3-bd3c-081e33bfbdee" width="500">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/eb13eadf-4e48-4798-8373-d2e92ef1add3" width="500">
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/cfa68079-6c27-4edc-8d1a-3f6ead5ed245" width="500">
+    </td>
+  </tr>
+</table>
+
 <br/>
 
 [![Live Chat](https://img.shields.io/badge/💬_Live_Chat-Open_App-4d80ff?style=for-the-badge)](https://itachi-42-rajveer-ai-representative.hf.space)
