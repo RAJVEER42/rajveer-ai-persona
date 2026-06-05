@@ -109,6 +109,24 @@ def load_readme_chunks() -> list[dict]:
     return chunks
 
 
+def load_commit_chunks() -> list[dict]:
+    """Commit-history subjects per repo — so questions answerable only from
+    commit history ('we'll check') have grounding."""
+    chunks: list[dict] = []
+    for path in sorted(config.CORPUS_DIR.glob("*.commits.md")):
+        repo = path.name.replace(".commits.md", "")
+        raw = path.read_text(encoding="utf-8")
+        for piece in _recursive_split(raw, size=900, overlap=120):
+            chunks.append({
+                "text": piece,
+                "source": "github",
+                "repo": repo,
+                "doc_type": "commits",
+                "title": f"GitHub commit history — {repo}",
+            })
+    return chunks
+
+
 def load_repo_card_chunks() -> list[dict]:
     repos = json.loads(config.REPOS_JSON.read_text(encoding="utf-8"))
     chunks: list[dict] = []
@@ -169,7 +187,7 @@ def _strip_markdown_noise(md: str) -> str:
 
 def build() -> None:
     print("Loading sources...")
-    chunks = (load_resume_chunks() + load_readme_chunks()
+    chunks = (load_resume_chunks() + load_readme_chunks() + load_commit_chunks()
               + load_repo_card_chunks() + load_persona_chunks())
     print(f"  {len(chunks)} chunks from "
           f"{sum(c['source']=='resume' for c in chunks)} resume, "

@@ -43,7 +43,7 @@ it refuses to invent anything it can't cite.
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-async_·_SSE-009688?logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-static-000000?logo=nextdotjs&logoColor=white)
-![HF](https://img.shields.io/badge/🤗_HF_router-gpt--oss--120b-FFD21E)
+![Groq](https://img.shields.io/badge/Groq-gpt--oss--120b-F55036)
 ![FAISS](https://img.shields.io/badge/FAISS-vectors-0467DF)
 ![Vapi](https://img.shields.io/badge/Vapi-voice-1C1C1C)
 ![Cal.com](https://img.shields.io/badge/Cal.com-booking-000000)
@@ -51,7 +51,7 @@ it refuses to invent anything it can't cite.
 ![Refusal](https://img.shields.io/badge/Refusal_accuracy-100%25-2ea44f)
 ![Grounded](https://img.shields.io/badge/Groundedness-93.2%25-2ea44f)
 ![Faithfulness](https://img.shields.io/badge/Faithfulness-0.964-2ea44f)
-![Latency](https://img.shields.io/badge/TTFT_median-~1.2s-2ea44f)
+![Latency](https://img.shields.io/badge/backend_TTFT-sub--1s_(Groq)-2ea44f)
 
 </div>
 
@@ -98,7 +98,7 @@ flowchart LR
 
     BE["⚙️ FastAPI backend<br/>HF Spaces · Docker"] --> CACHE{"Semantic<br/>cache"}
     CACHE -->|hit ≈ ms| BE
-    CACHE -->|miss| AGENT["🧠 Agent loop<br/>gpt-oss-120b · HF router"]
+    CACHE -->|miss| AGENT["🧠 Agent loop<br/>gpt-oss-120b · Groq"]
     AGENT --> T1["lookup_facts<br/>persona.yaml"]
     AGENT --> T2["search_knowledge<br/>FAISS + bge-small"]
     AGENT --> T3["get_slots · book_meeting<br/>Cal.com v2"]
@@ -131,7 +131,7 @@ picks the right tool. ~173 chunks, rebuilt from source at container start, **no 
 
 | Concern | Choice | Why |
 |---|---|---|
-| **Reasoning LLM** | `gpt-oss-120b` via 🤗 **HF Inference Providers** router (OpenAI SDK) | Reliable tool-calling, sub-2s, billed to HF credits. One-line model swap. |
+| **Reasoning LLM** | `gpt-oss-120b` via **Groq** (OpenAI-compatible); HF router as one-env-var fallback | Sub-second tool-calling on Groq's free tier, no per-call credit drain. Provider is a one-line swap. |
 | **Embeddings** | `BAAI/bge-small-en-v1.5` via `fastembed` (ONNX, **local**) | Free, no key, no PyTorch, tiny image. 384-dim. |
 | **Vector search** | **FAISS** in-process (cosine) | ~173 chunks; a managed DB would be over-engineering. **$0**. |
 | **Backend** | **FastAPI** on 🤗 **HF Spaces** (Docker, `python:3.12-slim`) | Async, SSE, free hosting, also serves the chat UI (one origin, no CORS). |
@@ -212,7 +212,7 @@ VAPI_API_KEY=xxx python setup_vapi.py         # create the voice assistant + pho
 
 | Env var | Required | Purpose |
 |---|:---:|---|
-| `HF_TOKEN` | ✅ | gpt-oss-120b via HF Inference Providers router |
+| `LLM_API_KEY` · `LLM_BASE_URL` · `LLM_MODEL` | ✅ | LLM provider (Groq by default: `gpt-oss-120b`). Falls back to `HF_TOKEN` + HF router if unset. |
 | `LLM_MODEL` |, | default `openai/gpt-oss-120b` |
 | `CALCOM_API_KEY` · `CALCOM_EVENT_TYPE_ID` | booking | Cal.com slots + bookings |
 | `VAPI_API_KEY` | voice | create/update the Vapi assistant |

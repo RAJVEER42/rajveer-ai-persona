@@ -1,0 +1,29 @@
+# Commit history (subjects) - phi3-pr-reviewer
+
+- Add interactive 50-example manual rubric scorer (Phase 5b)
+- Phase 5 held-out: F1=0.4646 (-0.45% vs in-domain), S2 threshold passed
+- Add precision/recall breakdown + prediction-level analysis to RESULTS
+- Commit per-row predictions under results/ with documentation
+- Record Phase 4 fine-tuned eval: F1 = 0.4667 (+8.13% rel, missed S1 threshold)
+- Patch bert-score overflow: cap tokenizer model_max_length at 512
+- Save predictions before BERTScore + add score_predictions.py recovery script
+- Pass HF_TOKEN to PeftModel.from_pretrained for private adapter downloads
+- Pre-tokenize dataset in main process to sidestep SFTTrainer pickle error
+- Fix Unsloth pickle error: set dataset_num_proc=1 for tokenization
+- Fix TRL 0.13+ API: SFTTrainer uses processing_class instead of tokenizer
+- Add --resume, --eval-steps, --save-steps flags for checkpoint resumption
+- Pre-format dataset with chat template; use dataset_text_field instead of messages
+- Fix TRL 0.12+ API: drop SFTConfig.max_seq_length + import unsloth first
+- Record Phase 3 baseline: BERTScore F1 = 0.4316 (threshold: 0.4748)
+- Batch generation (default batch_size=4) — expected 3-4x speedup on T4
+- Default eval to fp16 (no bitsandbytes) — T4 4-bit dequant is 5x slower than fp16
+- Fix T4 slowdown: pick fp16 compute_dtype when bf16 unsupported
+- Fix: Kaggle accelerator should be T4, not P100 (bitsandbytes sm_60 incompat)
+- Add --no-repo-cap flag to build_pairs.py for single-repo holdout sets
+- Add Phase 3/4/5 Kaggle scripts and runbook
+- Add Phase 2.6 Hugging Face Hub push helper
+- Add Phase 2.5 format + stratified split script
+- Add Phase 2.3/2.4 filter pipeline (build_pairs.py)
+- Add Phase 2 GitHub PR scraper
+- Add 30 source repos with selection rationale
+- Lock Phase 1 task specification

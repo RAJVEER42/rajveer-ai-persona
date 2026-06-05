@@ -50,7 +50,8 @@ def main() -> None:
     # runtime secrets
     runtime_token = _env("HF_TOKEN") or write_token
     add_space_secret(repo_id, "HF_TOKEN", runtime_token, token=write_token)
-    for k in ("CALCOM_API_KEY", "CALCOM_EVENT_TYPE_ID", "LLM_MODEL"):
+    for k in ("CALCOM_API_KEY", "CALCOM_EVENT_TYPE_ID",
+              "LLM_MODEL", "LLM_BASE_URL", "LLM_API_KEY"):
         v = _env(k)
         if v:
             add_space_secret(repo_id, k, v, token=write_token)

@@ -1,0 +1,43 @@
+# Commit history (subjects) - META_H
+
+- env: isolate RelyingParty RNG so task sampling is deterministic across cells
+- eval: add paired/independent analyzer for cipher-eval-v3
+- eval: upload each cell's results to HF Hub immediately on completion
+- eval: add CIPHER_EVAL_N env var override for cheap smoke tests
+- eval: drop pipeline device= argument (transformers 5.x rejects it when model has accelerate hooks)
+- eval: fix accelerate/device conflict in n500 eval script
+- eval: add n=500 HF Jobs script for 0.5B multi-seed evaluation
+- videos: add deep-dive walkthrough OnEKRTlZOec alongside screen recording
+- videos: wire demo video YpeJEbbsQno into README, BLOG_POST, Space card
+- voice: pre-warm TTS voice list (fix Chrome cold-start race)
+- voice: switch to browser Web Speech API (no server deps)
+- blog: use absolute HF Hub URLs for embedded plots
+- blog: add BLOG_POST.md technical writeup (HF mini-blog format)
+- fix: update Space URLs after rename privacy-game-env → CIPHER
+- submit: final CIPHER README with Materials block, demo script, full checklist
+- brand: rename to CIPHER (Contextual-Integrity Privacy via Hardened Episodic Reasoning)
+- docs: PAPER_ROADMAP — post-hackathon publication plan
+- Add train_7b_hfjob.py — Qwen2.5-7B variant for the scaling table
+- README: add 3B scaling row + diminishing-returns research finding
+- train_3b_hfjob: speed-tune for ~60 min on H200 (was ~120 min)
+- README: add 1.5B trained results — clean scaling Δ=+0.061 → +0.0813
+- Add train_3b_hfjob.py: Qwen2.5-3B variant of the GRPO training script
+- train_15b_hfjob: drop pip install — uv envs don't ship pip
+- Space iframe → /play (pixel UI) + HF Jobs script for 1.5B training
+- Mount pixel UI on the HF Space at /play
+- server/app.py: argparse fallback for zero-arg invocation
+- Test trained model qualitatively + smoother pixel UI animations
+- README: add frontier-model headline — trained 0.5B beats Llama-8B / Qwen-7B by 5×
+- README: HF namespace is Itachi-42, not RAJVEER42
+- README: fill in v2 results — Δ=+0.061 (vs v1's +0.014)
+- trained v2
+- docs: rewrite HANDOFF_COLAB for 14h budget — optimize for top-tier score
+- docs: HANDOFF_COLAB — pick-up doc for teammate continuing the run
+- gitignore: untrack pip-install-e build artifacts (*.egg-info/)
+- Add GRPO training run: 80 steps T4 Qwen2.5-0.5B+LoRA
+- README: story-shaped pitch + frontier-model policy adapters
+- notebooks/grpo_train: don't pin torch in Colab
+- Register privacy_game.eval and privacy_game.voice as installable subpackages
+- Training scaffolding (Colab GRPO) + Piper TTS + brutal-v2 security fixes
+- Add trajectory logger, pilot eval, pixel UI, click-to-copy persona fields
+- Initial commit: META_H privacy game project

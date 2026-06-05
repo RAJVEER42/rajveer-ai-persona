@@ -1012,6 +1012,160 @@
     "title": "GitHub README — portfolio"
   },
   {
+    "text": "# Commit history (subjects) - AI-Persona\n\n- Switch default model to gemini-2.5-flash\n- Convert backend to Vercel serverless functions and deploy\n- Add prompt documentation and reflection\n- Add Bauhaus design system styling\n- Bootstrap Vite + React frontend\n- Add three Scaler instructor personas\n- Add Express backend with Gemini API integration\n- Initialize project structure",
+    "source": "github",
+    "repo": "AI-Persona",
+    "doc_type": "commits",
+    "title": "GitHub commit history — AI-Persona"
+  },
+  {
+    "text": "# Commit history (subjects) - Livo_RAG\n\n- add GitHub link to submission\n- add final submission: 5 QA pairs with methodology note\n- add answer quality evaluation with LLM-as-judge\n- add retrieval evaluation: TF-IDF, BM25, Dense retrievers\n- generate 29 QA pairs across 5 failure modes\n- add keyword annotation pipeline and concept group outputs\n- add Hindi translation script and fetched transcripts\n- init project, add transcript fetcher",
+    "source": "github",
+    "repo": "Livo_RAG",
+    "doc_type": "commits",
+    "title": "GitHub commit history — Livo_RAG"
+  },
+  {
+    "text": "# Commit history (subjects) - META_H",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "commits",
+    "title": "GitHub commit history — META_H"
+  },
+  {
+    "text": "# Commit history (subjects) - META_H - env: isolate RelyingParty RNG so task sampling is deterministic across cells\n- eval: add paired/independent analyzer for cipher-eval-v3\n- eval: upload each cell's results to HF Hub immediately on completion\n- eval: add CIPHER_EVAL_N env var override for cheap smoke tests\n- eval: drop pipeline device= argument (transformers 5.x rejects it when model has accelerate hooks)\n- eval: fix accelerate/device conflict in n500 eval script\n- eval: add n=500 HF Jobs script for 0.5B multi-seed evaluation\n- videos: add deep-dive walkthrough OnEKRTlZOec alongside screen recording\n- videos: wire demo video YpeJEbbsQno into README, BLOG_POST, Space card\n- voice: pre-warm TTS voice list (fix Chrome cold-start race)\n- voice: switch to browser Web Speech API (no server deps)\n- blog: use absolute HF Hub URLs for embedded plots\n- blog: add BLOG_POST.md technical writeup (HF mini-blog format)\n- fix: update Sp",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "commits",
+    "title": "GitHub commit history — META_H"
+  },
+  {
+    "text": "bsolute HF Hub URLs for embedded plots\n- blog: add BLOG_POST.md technical writeup (HF mini-blog format)\n- fix: update Sp bsolute HF Hub URLs for embedded plots\n- blog: add BLOG_POST.md technical writeup (HF mini-blog format)\n- fix: update Space URLs after rename privacy-game-env → CIPHER\n- submit: final CIPHER README with Materials block, demo script, full checklist\n- brand: rename to CIPHER (Contextual-Integrity Privacy via Hardened Episodic Reasoning)\n- docs: PAPER_ROADMAP — post-hackathon publication plan\n- Add train_7b_hfjob.py — Qwen2.5-7B variant for the scaling table\n- README: add 3B scaling row + diminishing-returns research finding\n- train_3b_hfjob: speed-tune for ~60 min on H200 (was ~120 min)\n- README: add 1.5B trained results — clean scaling Δ=+0.061 → +0.0813\n- Add train_3b_hfjob.py: Qwen2.5-3B variant of the GRPO training script\n- train_15b_hfjob: drop pip install — uv envs don't ship pip\n- Space iframe → /play (pixel UI) + HF Jobs script for 1.5B training\n- Mount pixel UI on the HF Space at",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "commits",
+    "title": "GitHub commit history — META_H"
+  },
+  {
+    "text": "don't ship pip\n- Space iframe → /play (pixel UI) + HF Jobs script for 1.5B training\n- Mount pixel UI on the HF Space at  don't ship pip\n- Space iframe → /play (pixel UI) + HF Jobs script for 1.5B training\n- Mount pixel UI on the HF Space at /play\n- server/app.py: argparse fallback for zero-arg invocation\n- Test trained model qualitatively + smoother pixel UI animations\n- README: add frontier-model headline — trained 0.5B beats Llama-8B / Qwen-7B by 5×\n- README: HF namespace is Itachi-42, not RAJVEER42\n- README: fill in v2 results — Δ=+0.061 (vs v1's +0.014)\n- trained v2\n- docs: rewrite HANDOFF_COLAB for 14h budget — optimize for top-tier score\n- docs: HANDOFF_COLAB — pick-up doc for teammate continuing the run\n- gitignore: untrack pip-install-e build artifacts (*.egg-info/)\n- Add GRPO training run: 80 steps T4 Qwen2.5-0.5B+LoRA\n- README: story-shaped pitch + frontier-model policy adapters\n- notebooks/grpo_train: don't pin torch in Colab\n- Register privacy_game.eval and privacy_game.voice as installable sub",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "commits",
+    "title": "GitHub commit history — META_H"
+  },
+  {
+    "text": "- notebooks/grpo_train: don't pin torch in Colab\n- Register privacy_game.eval and privacy_game.voice as installable sub - notebooks/grpo_train: don't pin torch in Colab\n- Register privacy_game.eval and privacy_game.voice as installable subpackages\n- Training scaffolding (Colab GRPO) + Piper TTS + brutal-v2 security fixes\n- Add trajectory logger, pilot eval, pixel UI, click-to-copy persona fields\n- Initial commit: META_H privacy game project",
+    "source": "github",
+    "repo": "META_H",
+    "doc_type": "commits",
+    "title": "GitHub commit history — META_H"
+  },
+  {
+    "text": "# Commit history (subjects) - Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-\n\n- Rename sample.txt to sample-2.txt\n- Delete resources  directory\n- Create sample-4.json\n- Create sample-3.json\n- Create sample-2.json\n- Create sample-1.json\n- Add files via upload\n- Delete resources/jodhpur.jpg\n- jodhpur.jpg\n- Add files via upload\n- Add files via upload\n- Add files via upload\n- Add files via upload\n- Create sample-2.json\n- Create sample-1.json\n- Create sample.txt\n- Create index.html\n- Create contact.html\n- Create sample-1.txt\n- Create about.html\n- Update README.md\n- Create requirements.md\n- Create test_server.py\n- Create serve.py\n- serve.py",
+    "source": "github",
+    "repo": "Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-",
+    "doc_type": "commits",
+    "title": "GitHub commit history — Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-"
+  },
+  {
+    "text": "# Commit history (subjects) - Network_Security_ML\n\n- Simplify README by removing introductory text\n- Update README.md\n- pipeline is completed\n- training & evaluation done with mlflow\n- Data Tranformation completed\n- Data Validation is completed\n- Data Ingestion Component\n- ETL pipeline completed\n- Exception handling & Logging completed\n- Setup.py file ready\n- README updated\n- Packages Created\n- This is my Project Structure set up.",
+    "source": "github",
+    "repo": "Network_Security_ML",
+    "doc_type": "commits",
+    "title": "GitHub commit history — Network_Security_ML"
+  },
+  {
+    "text": "# Commit history (subjects) - Notebook_LLM\n\n- Add toggleable chat history sidebar with session switching and delete\n- Add CRAG pipeline — query rewriting, multi-query retrieval, LLM-as-judge, and RagBadges UI\n- Revise README for improved clarity and organization\n- Initial commit — DocBlock: neo-brutalist RAG app (Next.js + Qdrant + Groq)",
+    "source": "github",
+    "repo": "Notebook_LLM",
+    "doc_type": "commits",
+    "title": "GitHub commit history — Notebook_LLM"
+  },
+  {
+    "text": "# Commit history (subjects) - agent-cli-scaler\n\n- Update README.md\n- Update README.md\n- Finalized Scaler clone with Hugging Face Llama 3.3 and fixed serve scripts\n- Rename OPENAI env vars to GEMINI env vars for clarity\n- Update README with new scaler_clone file structure\n- Refactor scaler_clone into standard css/js/images directory structure\n- Update scaler_clone UI with new images and styles\n- Update README.md\n- feat: add RAJVEER42 ASCII banner with gradient + figlet dependency\n- Update README.md\n- Update README.md\n- Update README.md\n- Update project title emoji in README\n- Update README.md\n- Assignment 02: AI agent CLI for Scaler clone",
+    "source": "github",
+    "repo": "agent-cli-scaler",
+    "doc_type": "commits",
+    "title": "GitHub commit history — agent-cli-scaler"
+  },
+  {
+    "text": "# Commit history (subjects) - ai-job-portal\n\n- Add backend and frontend code\n- Remove an image from the README\n- Enhance README with HTML title and images\n- 📚 Add comprehensive Swagger documentation and API testing tools\n- Initial commit: AI Job Portal with backend and frontend",
+    "source": "github",
+    "repo": "ai-job-portal",
+    "doc_type": "commits",
+    "title": "GitHub commit history — ai-job-portal"
+  },
+  {
+    "text": "# Commit history (subjects) - ccpa-compliance-engine\n\n- Add adversarial validation suites, negation patching, and zip backups\n- Add deterministic rule-based bypass overrides and Dockerfile\n- Implement FastAPI endpoints and CCPA compliance pipeline\n- Add RAG FAISS retrieval and local Llama 3 loading\n- Initial commit - Project structure and dependencies",
+    "source": "github",
+    "repo": "ccpa-compliance-engine",
+    "doc_type": "commits",
+    "title": "GitHub commit history — ccpa-compliance-engine"
+  },
+  {
+    "text": "# Commit history (subjects) - clearpath-chatbot",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "commits",
+    "title": "GitHub commit history — clearpath-chatbot"
+  },
+  {
+    "text": "# Commit history (subjects) - clearpath-chatbot - Update README note about live demo link issues\n- Update live demo note in README\n- Add note about live demo link issues\n- Enhance README with architecture and logging details\n- style: remove doc pills, enhance confidence warning visibility, and finalize scroll fixes\n- fix: resolve chat panel scroll overlap and refine doc pills\n- feat: apply halftone diagonal gradient aesthetic\n- ui changes\n- Redesign UI: premium dark theme with glowing input bar, ambient effects\n- Fix submission: rename Written_answers.md, update Q4, clean up README\n- Detail bonus challenges attempted vs not attempted in README\n- Update README with live demo URL, Docker and GCP deployment docs\n- Add Dockerfile with multi-stage build for containerized deployment\n- Switch to hybrid BM25 + semantic retrieval to handle short and misspelled queries\n- Add project README with setup instructions and written design answers\n- Ad",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "commits",
+    "title": "GitHub commit history — clearpath-chatbot"
+  },
+  {
+    "text": "eval to handle short and misspelled queries\n- Add project README with setup instructions and written design answers\n- Ad eval to handle short and misspelled queries\n- Add project README with setup instructions and written design answers\n- Add automated evaluation harness with 15 test cases across query categories\n- Build chat interface with message components, markdown rendering, and debug panel\n- Set up React frontend with Vite, TypeScript, and Tailwind CSS\n- Add ClearPath knowledge base with 30 internal documents for RAG pipeline\n- Add chat API endpoint with streaming responses and conversation history\n- Add LLM integration, query complexity router, response evaluator, and conversation memory\n- Implement document ingestion pipeline with PDF parsing, embeddings, and FAISS retrieval\n- Add backend foundation with FastAPI app, config, data models, and dependencies\n- Set up project structure with gitignore and environment template",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "commits",
+    "title": "GitHub commit history — clearpath-chatbot"
+  },
+  {
+    "text": "th FastAPI app, config, data models, and dependencies\n- Set up project structure with gitignore and environment template with gitignore and environment template",
+    "source": "github",
+    "repo": "clearpath-chatbot",
+    "doc_type": "commits",
+    "title": "GitHub commit history — clearpath-chatbot"
+  },
+  {
+    "text": "# Commit history (subjects) - phi3-pr-reviewer",
+    "source": "github",
+    "repo": "phi3-pr-reviewer",
+    "doc_type": "commits",
+    "title": "GitHub commit history — phi3-pr-reviewer"
+  },
+  {
+    "text": "# Commit history (subjects) - phi3-pr-reviewer - Add interactive 50-example manual rubric scorer (Phase 5b)\n- Phase 5 held-out: F1=0.4646 (-0.45% vs in-domain), S2 threshold passed\n- Add precision/recall breakdown + prediction-level analysis to RESULTS\n- Commit per-row predictions under results/ with documentation\n- Record Phase 4 fine-tuned eval: F1 = 0.4667 (+8.13% rel, missed S1 threshold)\n- Patch bert-score overflow: cap tokenizer model_max_length at 512\n- Save predictions before BERTScore + add score_predictions.py recovery script\n- Pass HF_TOKEN to PeftModel.from_pretrained for private adapter downloads\n- Pre-tokenize dataset in main process to sidestep SFTTrainer pickle error\n- Fix Unsloth pickle error: set dataset_num_proc=1 for tokenization\n- Fix TRL 0.13+ API: SFTTrainer uses processing_class instead of tokenizer\n- Add --resume, --eval-steps, --save-steps flags for checkpoint resumption\n- Pre-format dataset with chat templa",
+    "source": "github",
+    "repo": "phi3-pr-reviewer",
+    "doc_type": "commits",
+    "title": "GitHub commit history — phi3-pr-reviewer"
+  },
+  {
+    "text": "kenizer\n- Add --resume, --eval-steps, --save-steps flags for checkpoint resumption\n- Pre-format dataset with chat templa kenizer\n- Add --resume, --eval-steps, --save-steps flags for checkpoint resumption\n- Pre-format dataset with chat template; use dataset_text_field instead of messages\n- Fix TRL 0.12+ API: drop SFTConfig.max_seq_length + import unsloth first\n- Record Phase 3 baseline: BERTScore F1 = 0.4316 (threshold: 0.4748)\n- Batch generation (default batch_size=4) — expected 3-4x speedup on T4\n- Default eval to fp16 (no bitsandbytes) — T4 4-bit dequant is 5x slower than fp16\n- Fix T4 slowdown: pick fp16 compute_dtype when bf16 unsupported\n- Fix: Kaggle accelerator should be T4, not P100 (bitsandbytes sm_60 incompat)\n- Add --no-repo-cap flag to build_pairs.py for single-repo holdout sets\n- Add Phase 3/4/5 Kaggle scripts and runbook\n- Add Phase 2.6 Hugging Face Hub push helper\n- Add Phase 2.5 format + stratified split script\n- Add Phase 2.3/2.4 filter pipeline (build_pairs.py)\n- Add Phase 2 GitHub PR scr",
+    "source": "github",
+    "repo": "phi3-pr-reviewer",
+    "doc_type": "commits",
+    "title": "GitHub commit history — phi3-pr-reviewer"
+  },
+  {
+    "text": "se 2.5 format + stratified split script\n- Add Phase 2.3/2.4 filter pipeline (build_pairs.py)\n- Add Phase 2 GitHub PR scr se 2.5 format + stratified split script\n- Add Phase 2.3/2.4 filter pipeline (build_pairs.py)\n- Add Phase 2 GitHub PR scraper\n- Add 30 source repos with selection rationale\n- Lock Phase 1 task specification",
+    "source": "github",
+    "repo": "phi3-pr-reviewer",
+    "doc_type": "commits",
+    "title": "GitHub commit history — phi3-pr-reviewer"
+  },
+  {
+    "text": "# Commit history (subjects) - portfolio\n\n- Add README with live link\n- Initial portfolio — Apple HIG-inspired personal site",
+    "source": "github",
+    "repo": "portfolio",
+    "doc_type": "commits",
+    "title": "GitHub commit history — portfolio"
+  },
+  {
     "text": "GitHub repository 'Notebook_LLM' by Rajveer Bishnoi (RAJVEER42). Primary language: JavaScript. Description: DocBlock — a neo-brutalist take on Google NotebookLLM. Upload a PDF or TXT, ask questions, get answers grounded in the document with page-level citations.. Topics: n/a. URL: https://github.com/RAJVEER42/Notebook_LLM. Homepage: https://notebook-llm-five.vercel.app/.",
     "source": "github",
     "repo": "Notebook_LLM",

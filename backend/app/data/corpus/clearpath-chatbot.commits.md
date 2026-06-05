@@ -1,0 +1,26 @@
+# Commit history (subjects) - clearpath-chatbot
+
+- Update README note about live demo link issues
+- Update live demo note in README
+- Add note about live demo link issues
+- Enhance README with architecture and logging details
+- style: remove doc pills, enhance confidence warning visibility, and finalize scroll fixes
+- fix: resolve chat panel scroll overlap and refine doc pills
+- feat: apply halftone diagonal gradient aesthetic
+- ui changes
+- Redesign UI: premium dark theme with glowing input bar, ambient effects
+- Fix submission: rename Written_answers.md, update Q4, clean up README
+- Detail bonus challenges attempted vs not attempted in README
+- Update README with live demo URL, Docker and GCP deployment docs
+- Add Dockerfile with multi-stage build for containerized deployment
+- Switch to hybrid BM25 + semantic retrieval to handle short and misspelled queries
+- Add project README with setup instructions and written design answers
+- Add automated evaluation harness with 15 test cases across query categories
+- Build chat interface with message components, markdown rendering, and debug panel
+- Set up React frontend with Vite, TypeScript, and Tailwind CSS
+- Add ClearPath knowledge base with 30 internal documents for RAG pipeline
+- Add chat API endpoint with streaming responses and conversation history
+- Add LLM integration, query complexity router, response evaluator, and conversation memory
+- Implement document ingestion pipeline with PDF parsing, embeddings, and FAISS retrieval
+- Add backend foundation with FastAPI app, config, data models, and dependencies
+- Set up project structure with gitignore and environment template

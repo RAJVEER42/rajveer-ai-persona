@@ -33,6 +33,9 @@ TOP_K = int(os.getenv("TOP_K", "5"))
 HF_TOKEN = os.getenv("HF_TOKEN", "")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://router.huggingface.co/v1")
 LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-120b")  # reliable tool-calling on HF router
+# Lets us point the OpenAI-compatible client at Groq (faster) without code changes:
+# set LLM_API_KEY + LLM_BASE_URL + LLM_MODEL. Defaults to the HF router + HF token.
+LLM_API_KEY = os.getenv("LLM_API_KEY", "") or HF_TOKEN
 LLM_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0.2"))
 LLM_MAX_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "700"))
 

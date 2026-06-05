@@ -64,9 +64,9 @@ _client: OpenAI | None = None
 def _client_singleton() -> OpenAI:
     global _client
     if _client is None:
-        if not config.HF_TOKEN:
-            raise RuntimeError("HF_TOKEN not set — the brain needs it.")
-        _client = OpenAI(base_url=config.LLM_BASE_URL, api_key=config.HF_TOKEN)
+        if not config.LLM_API_KEY:
+            raise RuntimeError("LLM_API_KEY/HF_TOKEN not set — the brain needs it.")
+        _client = OpenAI(base_url=config.LLM_BASE_URL, api_key=config.LLM_API_KEY)
     return _client
 
 

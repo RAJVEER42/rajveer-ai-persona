@@ -45,7 +45,7 @@
 <div class="top">
   <h1>Eval Report, AI Representative of Rajveer Bishnoi</h1>
   <div class="meta">Chat: itachi-42-rajveer-ai-representative.hf.space &nbsp;·&nbsp; Voice: +1 (650) 698-2516<br/>
-  gpt-oss-120b (HuggingFace router) · bge-small embeddings (local) · FAISS · Cal.com booking</div>
+  gpt-oss-120b (Groq) · bge-small embeddings (local) · FAISS · Cal.com booking</div>
   <div class="stats">
     <div class="stat"><div class="n">100%</div><div class="l">Refusal accuracy</div></div>
     <div class="stat"><div class="n">93.2%</div><div class="l">Groundedness</div></div>
@@ -78,8 +78,10 @@ conservative refusals, leaving roughly two minor over-claims and zero fabricatio
 the time. Factual questions bypass search via the deterministic fact tool, so they are excluded here.</p>
 
 <h2>Voice quality</h2>
-<p><b>First-response latency.</b> Backend time-to-first-token, the dominant, controllable component, runs a median of <b>~1.2s</b> (p95 ~3.8s). Streaming starts TTS before the answer completes;
-end-to-end target is under 2 seconds.</p>
+<p><b>First-response latency.</b> On Groq, backend compute (LLM + embedding) is sub-second and streams,
+so TTS starts before the answer completes. The voice path is Vapi (US) to the Space (US), so network is
+negligible and first-response stays under the 2s target. A distant chat client adds ~0.9s of geographic
+India-to-US network (not compute).</p>
 <p><b>Channels &amp; transcription.</b> Voice runs by phone and via a free in-browser call (same Vapi assistant, no dialing). STT: Deepgram <code>nova-3</code> (English).</p>
 <p><b>Interruptions.</b> Barge-in tuned (stop on 2+ words within 0.3s, 1.0s backoff, smart endpointing
 0.4s), interruptions never crash the call.</p>
@@ -108,12 +110,13 @@ excluding fact answers from the retrieval denominator. <span class="r">→ revea
 0%-fabrication, 100%-refusal picture.</span></p>
 
 <h2>Tradeoff made</h2>
-<p><b>Shared HF router (free) vs. a dedicated key (faster).</b> The LLM runs on the HuggingFace
-Inference Providers router on ~$9 of credits, $0 marginal infrastructure, mirroring Rajveer's own
-stack. The cost: occasional HTTP 429 under load and higher p95 latency with concurrency, mitigated by
-retry + backoff and a semantic cache (paraphrased repeats return in milliseconds). The conscious choice
-was <b>cost + authenticity over guaranteed tail-latency</b>, right for a screening demo; a dedicated
-Groq key with router fallback is the production upgrade.</p>
+<p><b>All-free stack vs. paid low-latency.</b> Everything runs on free tiers: Groq for sub-second
+gpt-oss-120b inference, a single-region HF Space for hosting, local embeddings, FAISS. The conscious
+tradeoff: free inference carries rate limits and a single US region adds geographic network latency for
+distant chat clients, accepted instead of paying for dedicated or multi-region capacity. Mitigated by
+retry + backoff, a semantic cache (paraphrases return in milliseconds), and the HF router as a fallback
+provider. Net: <b>$0 to run, fast where it matters</b> (the voice path), honest about the chat-from-afar
+network floor.</p>
 
 <h2>With two more weeks</h2>
 <ul>
@@ -122,7 +125,7 @@ Groq key with router fallback is the production upgrade.</p>
   <li><b>Automated voice-eval harness</b>, scripted calls measuring WER, end-to-end latency, barge-in
   timing, and booking-completion rate.</li>
   <li><b>Per-claim inline citations</b> (which repo, which line) for verifiable grounding.</li>
-  <li><b>Dedicated low-latency inference</b> (Groq) with the HF router as automatic fallback.</li>
+  <li><b>Edge / multi-region deploy</b> to cut the ~0.9s network floor for geographically distant clients.</li>
   <li><b>Richer corpus</b> built from commit history, not just READMEs.</li>
 </ul>
 

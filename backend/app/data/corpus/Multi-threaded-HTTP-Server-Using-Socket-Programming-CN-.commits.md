@@ -1,0 +1,27 @@
+# Commit history (subjects) - Multi-threaded-HTTP-Server-Using-Socket-Programming-CN-
+
+- Rename sample.txt to sample-2.txt
+- Delete resources  directory
+- Create sample-4.json
+- Create sample-3.json
+- Create sample-2.json
+- Create sample-1.json
+- Add files via upload
+- Delete resources/jodhpur.jpg
+- jodhpur.jpg
+- Add files via upload
+- Add files via upload
+- Add files via upload
+- Add files via upload
+- Create sample-2.json
+- Create sample-1.json
+- Create sample.txt
+- Create index.html
+- Create contact.html
+- Create sample-1.txt
+- Create about.html
+- Update README.md
+- Create requirements.md
+- Create test_server.py
+- Create serve.py
+- serve.py
