@@ -251,6 +251,10 @@ docs/                      # architecture · eval_report.pdf
 ---
 
 <div align="center">
+  <div>
+    ~ One Call Away 📞
+  </div>
+  <br/>
   
   ![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2xlOWJpcnpzc2lveGloN2M1MWtmMHJ6eGFyOTRyb2xva2pxdjRzZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3yRHVLXGeodopGpq7l/giphy.gif)
   
