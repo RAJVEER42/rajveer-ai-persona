@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Rajveer Bishnoi, AI Representative
+# 🫪 Rajveer Bishnoi, AI Representative
 
 **Call it. Chat with it. It books a meeting on a real calendar, with no human in the loop.**
 
@@ -247,3 +247,11 @@ docs/                      # architecture · eval_report.pdf
 - **`gpt-oss-120b`** over a 70B model, the 70B produced malformed tool calls on the shared router.
 - **Honesty by construction**, a retrieval-score floor plus explicit anti-embellishment rules stop the
   model inventing infrastructure, algorithms, or private internals; it refuses instead.
+
+---
+
+<div align="center">
+  
+  ![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2xlOWJpcnpzc2lveGloN2M1MWtmMHJ6eGFyOTRyb2xva2pxdjRzZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3yRHVLXGeodopGpq7l/giphy.gif)
+  
+</div>
